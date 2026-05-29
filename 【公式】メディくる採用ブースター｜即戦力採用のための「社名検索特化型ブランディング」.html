@@ -1127,26 +1127,77 @@
       </div>
     </section>
 
-    <section class="py-16 bg-bglight" id="video-about">
+    <section class="py-20 bg-bglight" id="video-about">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-8 aos-init" data-aos="fade-up">
+
+        <div class="text-center mb-10 aos-init" data-aos="fade-up">
           <span class="bg-magenta text-white font-black px-6 py-2 rounded-full inline-block mb-4 text-sm">
             <i class="fa-solid fa-play mr-1"></i> MOVIE
           </span>
           <h2 class="text-2xl md:text-4xl font-black mb-4 leading-tight">
-            <span class="inline-block">動画で見る</span><span class="inline-block">「採用ブースター」とは\uff1f</span>
+            <span class="inline-block">動画で見る</span><span class="inline-block">「採用ブースター」とは？</span>
           </h2>
           <div class="w-16 h-1 bg-gradient-primary mx-auto rounded-full mb-4"></div>
           <p class="text-graytext font-medium text-sm md:text-base">
-            メディくる採用ブースターの仕組み·効果を<strong class="text-magenta">動画でわかりやすく解説</strong>しています。
+            メディくる採用ブースターの仕組み・効果を<strong class="text-magenta">動画でわかりやすく解説</strong>しています。
           </p>
         </div>
-        <div class="relative max-w-4xl mx-auto aos-init" data-aos="zoom-in">
-          <div class="absolute -inset-2 bg-gradient-primary rounded-3xl opacity-20 blur-xl"></div>
-          <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white" style="aspect-ratio: 16 / 9;">
-            <iframe src="https://www.youtube.com/embed/ZqXoNqIK0ts" title="メディくる採用ブースター 紹介動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
+
+        <!-- PC モニター風フレーム -->
+        <div class="flex flex-col items-center aos-init" data-aos="zoom-in">
+          <!-- モニター本体 -->
+          <div style="
+            width: 100%;
+            max-width: 800px;
+            background: #1a1a2e;
+            border-radius: 16px 16px 0 0;
+            padding: 16px 16px 10px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.45), 0 0 0 2px #2d2d4e;
+            position: relative;
+          ">
+            <!-- カメラ dot -->
+            <div style="display:flex;justify-content:center;margin-bottom:10px;">
+              <span style="width:10px;height:10px;background:#3a3a5c;border-radius:50%;display:inline-block;"></span>
+            </div>
+            <!-- 画面ベゼル -->
+            <div style="
+              background: #000;
+              border-radius: 8px;
+              overflow: hidden;
+              position: relative;
+              aspect-ratio: 16/9;
+              box-shadow: inset 0 0 12px rgba(0,0,0,0.8);
+            ">
+              <iframe
+                src="https://www.youtube.com/embed/ZqXoNqIK0ts"
+                title="メディくる採用ブースター 紹介動画"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;">
+              </iframe>
+            </div>
+            <!-- 下部ベゼル -->
+            <div style="height:14px;"></div>
           </div>
+          <!-- スタンド首 -->
+          <div style="
+            width: 60px;
+            height: 28px;
+            background: linear-gradient(to bottom, #2d2d4e, #1a1a2e);
+            clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+          "></div>
+          <!-- スタンド台 -->
+          <div style="
+            width: 200px;
+            height: 14px;
+            background: linear-gradient(to bottom, #2d2d4e, #1a1a2e);
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+          "></div>
         </div>
+
       </div>
     </section>
 
