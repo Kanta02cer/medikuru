@@ -838,6 +838,34 @@
         footer dl {
           font-size: 0.9rem;
         }
+
+        /* 求職者行動フロー：ボックスのテキストをスマホ向けに調整 */
+        .space-y-4 .rounded-full {
+          font-size: 0.9rem !important;
+          padding-left: 1.25rem !important;
+          padding-right: 1.25rem !important;
+        }
+
+        /* フォーム入力フィールドのタップ領域を確保 */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+          min-height: 48px !important;
+          font-size: 16px !important; /* iOS zoom防止 */
+        }
+
+        /* フォームラベル間隔 */
+        form .space-y-4 > div,
+        form .grid > div {
+          margin-bottom: 0.75rem;
+        }
+
+        /* 実績数値グリッド：1列時のカード高さを自動に */
+        .grid.grid-cols-1 > div.rounded-2xl {
+          padding: 1.25rem !important;
+        }
       }
 
       @media (max-width: 380px) {
@@ -1055,7 +1083,7 @@
           <p class="text-graytext font-medium text-sm md:text-base">導入企業が実感した変化を、数字でお伝えします。</p>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-10">
           <div class="bg-bglight rounded-2xl p-6 text-center shadow-md border border-turquoise/20" data-aos="fade-up" data-aos-delay="0">
             <div class="text-4xl md:text-5xl font-black text-turquoise mb-1">95<span class="text-2xl">%</span></div>
             <div class="text-xs md:text-sm font-bold text-graytext leading-snug">応募者が社名検索を<br>行う前に確認</div>
@@ -1236,7 +1264,7 @@
 
           
           <div class="relative z-10 flex justify-center">
-            <div class="bg-gray-100 border border-gray-300 rounded-full px-8 py-4 font-bold text-graytext shadow-sm w-64">
+            <div class="bg-gray-100 border border-gray-300 rounded-full px-8 py-4 font-bold text-graytext shadow-sm w-full max-w-xs sm:w-64">
               求人広告を見る
             </div>
           </div>
@@ -1246,7 +1274,7 @@
           </div>
 
           <div class="relative z-10 flex justify-center">
-            <div class="bg-white border-2 border-turquoise rounded-full px-8 py-4 font-bold text-turquoise shadow-md w-64 transform scale-110">
+            <div class="bg-white border-2 border-turquoise rounded-full px-8 py-4 font-bold text-turquoise shadow-md w-full max-w-xs sm:w-64 transform scale-110">
               会社名で検索する
             </div>
           </div>
@@ -1256,7 +1284,7 @@
           </div>
 
           <div class="relative z-10 flex justify-center">
-            <div class="bg-white border-2 border-magenta rounded-full px-8 py-4 font-bold text-magenta shadow-md w-80 transform scale-105">
+            <div class="bg-white border-2 border-magenta rounded-full px-8 py-4 font-bold text-magenta shadow-md w-full max-w-sm sm:w-80 transform scale-105">
               ニュース・評判・口コミ・事業内容を見る
             </div>
           </div>
@@ -1266,13 +1294,13 @@
           </div>
 
           <div class="relative z-10 flex justify-center">
-            <div class="bg-gray-100 border border-gray-300 rounded-full px-8 py-4 font-bold text-graytext shadow-sm w-64">
+            <div class="bg-gray-100 border border-gray-300 rounded-full px-8 py-4 font-bold text-graytext shadow-sm w-full max-w-xs sm:w-64">
               安心できるか判断する
             </div>
           </div>
 
           <div class="relative z-10 flex justify-center py-2">
-            <div class="flex gap-16">
+            <div class="flex gap-4 sm:gap-16">
               <i class="fa-solid fa-arrow-down-left text-gray-400 text-2xl"></i>
               <i class="fa-solid fa-arrow-down-right text-gray-400 text-2xl"></i>
             </div>
@@ -1779,7 +1807,7 @@
             <span class="bg-turquoise text-white font-black px-4 py-2 rounded-full text-sm">CASE 01</span>
           </div>
 
-          <div class="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 mb-8">
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 md:gap-4 mb-8">
             <div class="text-center">
               <div class="bg-bglight border-2 border-turquoise rounded-2xl p-4 mb-2">
                 <i class="fa-solid fa-rectangle-ad text-3xl text-turquoise mb-2"></i>
