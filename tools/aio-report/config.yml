@@ -1,0 +1,41 @@
+site:
+  url: "https://medikuru.com"
+
+log:
+  # GitHub Pages静的サイトのためnginxログは不使用
+  nginx_access_log: ""
+  format: "combined"
+  window_hours: 24
+  bot_patterns:
+    - "bot"
+    - "crawler"
+    - "spider"
+    - "GPTBot"
+    - "ClaudeBot"
+    - "PerplexityBot"
+    - "Googlebot"
+    - "Bingbot"
+
+seo_competitor:
+  report_dir: "data/seo_reports"
+  cache_dir: "data/competitor_cache"
+  top_opportunity_limit: 10
+  discovery_top_n: 10
+  discovery_serp_results: 10
+  discovery_search_delay: 2.5
+  discovery_cache_ttl: 43200
+  exclude_domains:
+    - "en.wikipedia.org"
+    - "ja.wikipedia.org"
+    - "prtimes.jp"
+    - "mynavi.jp"
+    - "rikunabi.com"
+    - "recruit.co.jp"
+    - "boxil.jp"
+    - "itreview.jp"
+  extra_keywords: []
+  extra_competitors: []
+
+scheduler:
+  report_file: "data/last_report.json"
+  log_file: "data/aio_report.log"

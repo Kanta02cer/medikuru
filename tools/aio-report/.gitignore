@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+data/competitor_cache/
+data/seo_reports/
+data/aio_report.log
+data/last_report.json
