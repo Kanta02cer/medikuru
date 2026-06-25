@@ -1,0 +1,69 @@
+{
+  "memories": [
+    {
+      "type": "site_structure",
+      "content": "サイト構成(2026-06-12): index.html(TOP/2サービス選択), rjnqmw.html(企業・商品ブランディング), kx15h2.html(採用ブランディング), ダウンロード.png(ロゴ+ファビコン), CNAME(medikuru.com)。GitHub Pages: Kanta02cer/medikuru。",
+      "added_at": "2026-06-12T11:00:00.000000",
+      "source": "consolidated"
+    },
+    {
+      "type": "tech_choices",
+      "content": "全ページ共通: Tailwind(cdn.tailwindcss.com), FontAwesome(cdnjs 6.5.2), AOS(unpkg 2.3.1), Noto Sans JP。GTM: GTM-WLJLFGBG(head+body両方)。ロゴ/ファビコン: src=\"ダウンロード.png\"。ローカルassets不使用。",
+      "added_at": "2026-06-12T11:00:00.000000",
+      "source": "consolidated"
+    },
+    {
+      "type": "line_urls",
+      "content": "LINE LIFF URL: 企業・商品ブランディング(rjnqmw.html) → lp=NbEQq9 / 採用ブランディング(kx15h2.html) → lp=3iFFNz。共通prefix: https://liff.line.me/2008402152-x8WDy4eX/landing?follow=%40658txruh&liff_id=2008402152-x8WDy4eX",
+      "added_at": "2026-06-12T11:00:00.000000",
+      "source": "consolidated"
+    },
+    {
+      "type": "correction",
+      "content": "日本語ファイル名HTMLをPythonで処理する際はNFD→NFC正規化必須: unicodedata.normalize('NFC', content)。str.replace()はNFC/NFDを別文字として扱うためマッチしない。",
+      "added_at": "2026-06-12T11:00:00.000000",
+      "source": "consolidated"
+    },
+    {
+      "type": "completed",
+      "content": "ケーススタディ画像マッピング完了(2026-06-14): S__80085038.jpg=ITキャリアスクール, 28473BE1-AD51-4919-9446-D5AB89FF9E74.png=製作所, 4A79497E-DCEA-4E8B-BB61-2C9F8423410B.png=エステサロン, 968BCACD-...png=クラウド業務管理ツール, S__80085039.jpg=パーソナルジム。両ページ(rjnqmw/kx15h2)の対応スロットに配置・プッシュ済み。",
+      "added_at": "2026-06-14T17:38:41.000000",
+      "source": "consolidated"
+    },
+    {
+      "type": "fix",
+      "content": "rjnqmw.html BEFORE/AFTERセクション修正済み(commit e04df60, 2026-06-15): BEFOREカード直後に</div></div></section>が誤挿入されAFTERカードがグリッド外に浮いていた。閉じタグをAFTERカードの後ろに移動して解決。origin/mainへプッシュ済み。",
+      "added_at": "2026-06-15T16:00:00.000000",
+      "source": "consolidated"
+    }
+  ],
+  "manual_memories": [],
+  "realtime_memories": [
+    {
+      "type": "claude_response",
+      "content": "完了です。18件の `realtime_memories` を整理しました：\n\n- **削除（ノイズ）:** 単純な指示・確認メッセージ、処理経過の応答など14件\n- **統合（シグナル）:** 画像マッピング完了情報、BEFORE/AFTERバグ修正履歴を `memories` に追加\n- **結果:** 6件の `memories`、`realtime_memories` はクリア",
+      "added_at": "2026-06-15T16:22:07.913226",
+      "source": "realtime_capture"
+    },
+    {
+      "type": "message",
+      "content": "現在の進捗を確認",
+      "added_at": "2026-06-15T16:22:07.913239",
+      "source": "realtime_capture"
+    },
+    {
+      "type": "message",
+      "content": "進捗を教えて",
+      "added_at": "2026-06-15T16:27:13.633929",
+      "source": "realtime_capture"
+    },
+    {
+      "type": "message",
+      "content": "Figmaの指示やフォントカラーをもとに実装を進めてください。",
+      "added_at": "2026-06-15T20:16:18.975995",
+      "source": "realtime_capture"
+    }
+  ],
+  "created_at": "2026-06-10T21:40:52.912886",
+  "updated_at": "2026-06-15T20:16:18.976002"
+}
