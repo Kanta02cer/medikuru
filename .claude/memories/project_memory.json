@@ -62,8 +62,26 @@
       "content": "Figmaの指示やフォントカラーをもとに実装を進めてください。",
       "added_at": "2026-06-15T20:16:18.975995",
       "source": "realtime_capture"
+    },
+    {
+      "type": "message",
+      "content": "'/Users/wantan/medikuru/メディくる｜成果直結型メディアブランディング｜問い合わせ・契約・採用応募に直結_files'にトップページを差し替えて",
+      "added_at": "2026-06-25T21:45:54.344786",
+      "source": "realtime_capture"
+    },
+    {
+      "type": "claude_response",
+      "content": "`★ Insight ─────────────────────────────────────`\nOGPのog:imageはSNSクローラーが取得するため、パス名に日本語や特殊文字を含むURLはURLエンコードが必要な場合があります。将来的に画像を`images/`フォルダに移すと安全です。\n`─────────────────────────────────────────────────`\n",
+      "added_at": "2026-06-25T22:26:25.677348",
+      "source": "realtime_capture"
+    },
+    {
+      "type": "message",
+      "content": "正常にGithubに反映をさせて",
+      "added_at": "2026-06-25T22:26:25.677368",
+      "source": "realtime_capture"
     }
   ],
   "created_at": "2026-06-10T21:40:52.912886",
-  "updated_at": "2026-06-15T20:16:18.976002"
+  "updated_at": "2026-06-25T22:26:25.677370"
 }
