@@ -20,8 +20,8 @@
     <meta name="twitter:image" content="https://medikuru.com/メディくる｜成果直結型メディアブランディング｜問い合わせ・契約・採用応募に直結_files/SZnv5bNr.webp">
 
     <!-- Favicon (ロゴ) -->
-    <link rel="icon" type="image/png" href="ダウンロード.png">
-    <link rel="apple-touch-icon" href="ダウンロード.png">
+    <link rel="icon" type="image/png" href="mdlogo_ver2_01.png">
+    <link rel="apple-touch-icon" href="mdlogo_ver2_01.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -367,7 +367,7 @@
     <header id="header" class="fixed w-full z-50 transition-all duration-300 bg-white shadow-sm text-navy py-4">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <a href="#" class="flex items-center gap-2 z-50">
-          <img loading="lazy" decoding="async" src="ダウンロード.png" alt="メディくるロゴ" class="h-10 w-auto">
+          <img loading="lazy" decoding="async" src="mdlogo_ver2_01.png" alt="メディくるロゴ" class="h-10 w-auto">
         </a>
 
         <!-- PC Menu -->
@@ -1589,15 +1589,18 @@
           <h2 class="text-3xl md:text-5xl font-bold mb-4">お問い合わせ</h2>
           <p class="text-graytext">無料相談・お見積り・ご質問など、お気軽にお問い合わせください。</p>
         </div>
-        <form action="mailto:lp@medikuru.com" method="post" enctype="text/plain" class="space-y-6 bg-offwhite rounded-3xl p-8 md:p-12 border border-gray-100">
-          <div><label class="block font-bold text-navy mb-2 text-sm">お名前 <span class="text-red-500">*</span></label><input type="text" name="name" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="山田 太郎"></div>
-          <div><label class="block font-bold text-navy mb-2 text-sm">役職 <span class="text-red-500">*</span></label><input type="text" name="position" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="代表取締役 / 経営企画部長 など"></div>
-          <div><label class="block font-bold text-navy mb-2 text-sm">会社名 <span class="text-red-500">*</span></label><input type="text" name="company" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="株式会社○○"></div>
-          <div><label class="block font-bold text-navy mb-2 text-sm">メールアドレス <span class="text-red-500">*</span></label><input type="email" name="email" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="example@company.com"></div>
-          <div><label class="block font-bold text-navy mb-2 text-sm">電話番号 <span class="text-red-500">*</span></label><input type="tel" name="tel" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="03-1234-5678"></div>
-          <div><label class="block font-bold text-navy mb-2 text-sm">ご相談内容 <span class="text-red-500">*</span></label><select name="topic" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors bg-white"><option value="">選択してください</option><option>企業・商品ブランディング</option><option>採用ブランディング</option><option>両方検討中</option><option>その他</option></select></div>
-          <div><label class="block font-bold text-navy mb-2 text-sm">お問い合わせ詳細 <span class="text-red-500">*</span></label><textarea name="message" rows="5" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="ご相談内容をお書きください"></textarea></div>
+        <form id="contact-form" class="space-y-6 bg-offwhite rounded-3xl p-8 md:p-12 border border-gray-100">
+          <div><label class="block font-bold text-navy mb-2 text-sm">お名前 <span class="text-red-500">*</span></label><input type="text" id="c-name" name="name" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="山田 太郎"></div>
+          <div><label class="block font-bold text-navy mb-2 text-sm">役職 <span class="text-red-500">*</span></label><input type="text" id="c-position" name="position" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="代表取締役 / 経営企画部長 など"></div>
+          <div><label class="block font-bold text-navy mb-2 text-sm">会社名 <span class="text-red-500">*</span></label><input type="text" id="c-company" name="company" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="株式会社○○"></div>
+          <div><label class="block font-bold text-navy mb-2 text-sm">メールアドレス <span class="text-red-500">*</span></label><input type="email" id="c-email" name="email" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="example@company.com"></div>
+          <div><label class="block font-bold text-navy mb-2 text-sm">電話番号 <span class="text-red-500">*</span></label><input type="tel" id="c-tel" name="tel" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="03-1234-5678"></div>
+          <div><label class="block font-bold text-navy mb-2 text-sm">ご相談内容 <span class="text-red-500">*</span></label><select id="c-topic" name="topic" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors bg-white"><option value="">選択してください</option><option>企業・商品ブランディング</option><option>採用ブランディング</option><option>両方検討中</option><option>その他</option></select></div>
+          <div><label class="block font-bold text-navy mb-2 text-sm">お問い合わせ詳細 <span class="text-red-500">*</span></label><textarea id="c-message" name="message" rows="5" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="ご相談内容をお書きください"></textarea></div>
           <button type="submit" class="w-full bg-gold hover:bg-gold-light text-white font-bold py-5 rounded-full transition-colors shadow-xl text-lg">送信する <i class="fa-solid fa-paper-plane ml-2"></i></button>
+          <div id="form-success" class="hidden bg-gold/10 border-2 border-gold rounded-xl p-5 text-center mt-4">
+            <p class="text-gold font-bold text-base"><i class="fa-solid fa-circle-check mr-2"></i>メールアプリが開きます。そのまま送信してください。</p>
+          </div>
         </form>
       </div>
     </section>
@@ -1607,7 +1610,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-3 gap-10 mb-12 pb-12 border-b border-white/10">
           <div>
-            <div class="flex items-center gap-2 mb-6"><img loading="lazy" decoding="async" src="ダウンロード.png" alt="メディくる" class="h-12 w-auto"></div>
+            <div class="flex items-center gap-2 mb-6"><img loading="lazy" decoding="async" src="mdlogo_ver2_02.png" alt="メディくる" class="h-12 w-auto"></div>
             <p class="text-white/70 text-sm leading-relaxed mb-4">問い合わせ・契約・採用応募に直結させる、<br>成果直結型メディアブランディングサービス。</p>
           </div>
           <div>
@@ -1671,6 +1674,27 @@
         });
       }
       document.querySelectorAll('.faq-toggle').forEach(btn => { btn.addEventListener('click', () => { btn.parentElement.classList.toggle('faq-active'); }); });
+
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const name = document.getElementById('c-name').value;
+          const position = document.getElementById('c-position').value;
+          const company = document.getElementById('c-company').value;
+          const email = document.getElementById('c-email').value;
+          const tel = document.getElementById('c-tel').value;
+          const topic = document.getElementById('c-topic').value;
+          const message = document.getElementById('c-message').value;
+          const subject = encodeURIComponent('【メディくる】お問い合わせ');
+          const body = encodeURIComponent(
+            `■お名前\r\n${name}\r\n\r\n■役職\r\n${position}\r\n\r\n■会社名\r\n${company}\r\n\r\n■メールアドレス\r\n${email}\r\n\r\n■電話番号\r\n${tel}\r\n\r\n■ご相談内容\r\n${topic}\r\n\r\n■お問い合わせ詳細\r\n${message}\r\n\r\n---\r\nメディくるTOPページから送信`
+          );
+          window.location.href = `mailto:lp@medikuru.com?subject=${subject}&body=${body}`;
+          document.getElementById('form-success').classList.remove('hidden');
+          document.getElementById('form-success').scrollIntoView({ behavior: 'smooth' });
+        });
+      }
     </script>
   
 
