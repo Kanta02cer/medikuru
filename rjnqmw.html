@@ -1391,7 +1391,7 @@
           <p class="text-base md:text-lg text-graytext font-medium leading-relaxed">企業・商品ブランディングについてのご相談を承ります。</p>
         </div>
         <div class="bg-lightbg rounded-3xl p-8 md:p-12 border border-gray-100 aos-init" data-aos="fade-up" data-aos-delay="100">
-          <form id="business-contact-form" class="space-y-6">
+          <form id="business-contact-form" action="" method="POST" class="space-y-6">
             <div>
               <label for="bc-company" class="block text-sm font-black text-dark mb-2">企業名 <span class="text-magenta">*</span></label>
               <input type="text" id="bc-company" name="company" required="" class="w-full px-5 py-3.5 rounded-xl border-2 border-gray-200 focus:border-turquoise focus:outline-none transition-colors bg-white text-dark font-medium" placeholder="株式会社○○">
@@ -1416,7 +1416,7 @@
               <i class="fa-solid fa-paper-plane mr-2"></i>送信する
             </button>
             <div id="form-success" class="hidden bg-turquoise/10 border-2 border-turquoise rounded-xl p-5 text-center">
-              <p class="text-turquoise font-black text-base"><i class="fa-solid fa-circle-check mr-2"></i>メールアプリが開きます。そのまま送信してください。</p>
+              <p class="text-turquoise font-black text-base"><i class="fa-solid fa-circle-check mr-2"></i>お問い合わせが送信されました。内容を確認の上、担当者よりご連絡いたします。</p>
             </div>
           </form>
         </div>
@@ -1427,7 +1427,7 @@
     <footer id="footer" class="bg-dark py-16">
       <div class="max-w-7xl mx-auto px-5 text-center">
         <div class="bg-white p-3 rounded-xl inline-block mb-6 shadow-sm">
-          <img src="mdlogo_ver2_01.png" alt="メディくる ロゴ" class="h-10 w-auto">
+          <img src="mdlogo_ver2_White.png" alt="メディくる ロゴ" class="h-10 w-auto">
         </div>
         <h3 class="text-white font-black text-xl tracking-[0.2em] mb-2">株式会社メディくる</h3>
         <p class="text-white/60 text-sm mb-8">企業・商品ブランディング</p>
@@ -1475,7 +1475,7 @@
           <h4 class="font-bold text-dark mt-6">2. 第三者提供</h4>
           <p>法令に基づく場合を除き、ご本人の同意なしに個人情報を第三者に提供することはありません。</p>
           <h4 class="font-bold text-dark mt-6">3. お問い合わせ</h4>
-          <p>個人情報に関するお問い合わせは <a href="mailto:lp@medikuru.com" class="text-turquoise underline">lp@medikuru.com</a> までご連絡ください。</p>
+          <p>個人情報に関するお問い合わせは <a href="mailto:urushizawa@medikuru.com" class="text-turquoise underline">urushizawa@medikuru.com</a> までご連絡ください。</p>
         </div>
       </div>
     </div>
@@ -1490,7 +1490,7 @@
           <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4 py-3 border-b border-gray-100"><dt class="font-bold text-graytext w-full sm:w-40 text-sm shrink-0">販売事業者</dt><dd class="text-dark font-medium">株式会社メディくる</dd></div>
           <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4 py-3 border-b border-gray-100"><dt class="font-bold text-graytext w-full sm:w-40 text-sm shrink-0">代表責任者</dt><dd class="text-dark font-medium">漆沢 祐樹</dd></div>
           <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4 py-3 border-b border-gray-100"><dt class="font-bold text-graytext w-full sm:w-40 text-sm shrink-0">所在地</dt><dd class="text-dark font-medium">〒104-0061<br>東京都中央区銀座3-14-13 第一厚生館ビル5F</dd></div>
-          <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4 py-3 border-b border-gray-100"><dt class="font-bold text-graytext w-full sm:w-40 text-sm shrink-0">連絡先</dt><dd class="text-dark font-medium"><a href="mailto:lp@medikuru.com" class="text-turquoise underline">lp@medikuru.com</a></dd></div>
+          <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4 py-3 border-b border-gray-100"><dt class="font-bold text-graytext w-full sm:w-40 text-sm shrink-0">連絡先</dt><dd class="text-dark font-medium"><a href="mailto:urushizawa@medikuru.com" class="text-turquoise underline">urushizawa@medikuru.com</a></dd></div>
           <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4 py-3 border-b border-gray-100"><dt class="font-bold text-graytext w-full sm:w-40 text-sm shrink-0">サービス内容</dt><dd class="text-dark font-medium">企業・商品ブランディング</dd></div>
           <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4 py-3"><dt class="font-bold text-graytext w-full sm:w-40 text-sm shrink-0">お申込・解約</dt><dd class="text-dark font-medium">個別契約書に基づきます。詳細はお問い合わせください。</dd></div>
         </dl>
@@ -1710,17 +1710,65 @@
       if (businessForm) {
         businessForm.addEventListener('submit', function(e) {
           e.preventDefault();
-          const company = document.getElementById('bc-company').value;
-          const person = document.getElementById('bc-person').value;
-          const email = document.getElementById('bc-email').value;
-          const message = document.getElementById('bc-message').value;
-          const subject = encodeURIComponent('【企業・商品ブランディング】お問い合わせ');
-          const body = encodeURIComponent(
-            `■企業名\r\n${company}\r\n\r\n■ご担当者名\r\n${person}\r\n\r\n■メールアドレス\r\n${email}\r\n\r\n■お問い合わせ内容\r\n${message}\r\n\r\n---\r\n企業・商品ブランディング詳細ページから送信`
-          );
-          window.location.href = `mailto:lp@medikuru.com?subject=${subject}&body=${body}`;
-          document.getElementById('form-success').classList.remove('hidden');
-          document.getElementById('form-success').scrollIntoView({ behavior: 'smooth' });
+
+          // ==========================================
+          // 【ユーザー設定箇所】SSGformなどのエンドポイントURLをここに設定してください
+          // 設定例: const formEndpoint = 'https://ssgform.com/s/xxxxxxxxxxxx';
+          // ==========================================
+          const formEndpoint = 'YOUR_SSGFORM_ENDPOINT_URL';
+
+          const submitBtn = businessForm.querySelector('button[type="submit"]');
+          const successDiv = document.getElementById('form-success');
+
+          // 送信先URLが初期値のままであれば、テスト動作用のダミー送信とする
+          if (formEndpoint === 'YOUR_SSGFORM_ENDPOINT_URL') {
+            console.warn('SSGform endpoint is not configured yet. Running in demo mode.');
+            submitBtn.disabled = true;
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i>送信中...';
+
+            setTimeout(() => {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = originalText;
+              successDiv.classList.remove('hidden');
+              successDiv.scrollIntoView({ behavior: 'smooth' });
+              businessForm.reset();
+              alert('【デモモード】お問い合わせフォームの送信処理テストが成功しました。本番でメールを受信するには、JavaScriptコード内の「YOUR_SSGFORM_ENDPOINT_URL」をSSGform等で発行したエンドポイントURLに書き換えてください。');
+            }, 1000);
+            return;
+          }
+
+          // 二重送信防止とローディング表示
+          submitBtn.disabled = true;
+          const originalText = submitBtn.innerHTML;
+          submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i>送信中...';
+
+          const formData = new FormData(businessForm);
+
+          fetch(formEndpoint, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          })
+          .then(response => {
+            if (response.ok) {
+              successDiv.classList.remove('hidden');
+              successDiv.scrollIntoView({ behavior: 'smooth' });
+              businessForm.reset();
+            } else {
+              alert('送信に失敗しました。お手数ですが、時間をおいて再度お試しいただくか、urushizawa@medikuru.com まで直接ご連絡ください。');
+            }
+          })
+          .catch(error => {
+            console.error('Submission error:', error);
+            alert('通信エラーが発生しました。接続状況を確認の上、再度お試しください。');
+          })
+          .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+          });
         });
       }
     </script>

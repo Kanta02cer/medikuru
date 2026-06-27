@@ -1581,7 +1581,7 @@
           <h2 class="text-3xl md:text-5xl font-bold mb-4">お問い合わせ</h2>
           <p class="text-graytext">無料相談・お見積り・ご質問など、お気軽にお問い合わせください。</p>
         </div>
-        <form id="contact-form" class="space-y-6 bg-offwhite rounded-3xl p-8 md:p-12 border border-gray-100">
+        <form id="contact-form" action="" method="POST" class="space-y-6 bg-offwhite rounded-3xl p-8 md:p-12 border border-gray-100">
           <div><label class="block font-bold text-navy mb-2 text-sm">お名前 <span class="text-red-500">*</span></label><input type="text" id="c-name" name="name" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="山田 太郎"></div>
           <div><label class="block font-bold text-navy mb-2 text-sm">役職 <span class="text-red-500">*</span></label><input type="text" id="c-position" name="position" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="代表取締役 / 経営企画部長 など"></div>
           <div><label class="block font-bold text-navy mb-2 text-sm">会社名 <span class="text-red-500">*</span></label><input type="text" id="c-company" name="company" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="株式会社○○"></div>
@@ -1591,7 +1591,7 @@
           <div><label class="block font-bold text-navy mb-2 text-sm">お問い合わせ詳細 <span class="text-red-500">*</span></label><textarea id="c-message" name="message" rows="5" required="" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-gold transition-colors" placeholder="ご相談内容をお書きください"></textarea></div>
           <button type="submit" class="w-full bg-gold hover:bg-gold-light text-white font-bold py-5 rounded-full transition-colors shadow-xl text-lg">送信する <i class="fa-solid fa-paper-plane ml-2"></i></button>
           <div id="form-success" class="hidden bg-gold/10 border-2 border-gold rounded-xl p-5 text-center mt-4">
-            <p class="text-gold font-bold text-base"><i class="fa-solid fa-circle-check mr-2"></i>メールアプリが開きます。そのまま送信してください。</p>
+            <p class="text-gold font-bold text-base"><i class="fa-solid fa-circle-check mr-2"></i>お問い合わせが送信されました。内容を確認の上、担当者よりご連絡いたします。</p>
           </div>
         </form>
       </div>
@@ -1602,7 +1602,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-3 gap-10 mb-12 pb-12 border-b border-white/10">
           <div>
-            <div class="flex items-center gap-2 mb-6"><img loading="lazy" decoding="async" src="mdlogo_ver2_02.png" alt="メディくる" class="h-12 w-auto"></div>
+            <div class="flex items-center gap-2 mb-6"><img loading="lazy" decoding="async" src="mdlogo_ver2_White.png" alt="メディくる" class="h-12 w-auto"></div>
             <p class="text-white/70 text-sm leading-relaxed mb-4">問い合わせ・契約・採用応募に直結させる、<br>成果直結型メディアブランディングサービス。</p>
           </div>
           <div>
@@ -1671,20 +1671,66 @@
       if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
           e.preventDefault();
-          const name = document.getElementById('c-name').value;
-          const position = document.getElementById('c-position').value;
-          const company = document.getElementById('c-company').value;
-          const email = document.getElementById('c-email').value;
-          const tel = document.getElementById('c-tel').value;
-          const topic = document.getElementById('c-topic').value;
-          const message = document.getElementById('c-message').value;
-          const subject = encodeURIComponent('【メディくる】お問い合わせ');
-          const body = encodeURIComponent(
-            `■お名前\r\n${name}\r\n\r\n■役職\r\n${position}\r\n\r\n■会社名\r\n${company}\r\n\r\n■メールアドレス\r\n${email}\r\n\r\n■電話番号\r\n${tel}\r\n\r\n■ご相談内容\r\n${topic}\r\n\r\n■お問い合わせ詳細\r\n${message}\r\n\r\n---\r\nメディくるTOPページから送信`
-          );
-          window.location.href = `mailto:lp@medikuru.com?subject=${subject}&body=${body}`;
-          document.getElementById('form-success').classList.remove('hidden');
-          document.getElementById('form-success').scrollIntoView({ behavior: 'smooth' });
+
+          // ==========================================
+          // 【ユーザー設定箇所】SSGformなどのエンドポイントURLをここに設定してください
+          // 設定例: const formEndpoint = 'https://ssgform.com/s/xxxxxxxxxxxx';
+          // ==========================================
+          const formEndpoint = 'YOUR_SSGFORM_ENDPOINT_URL';
+
+          const submitBtn = contactForm.querySelector('button[type="submit"]');
+          const successDiv = document.getElementById('form-success');
+          
+          // 送信先URLが初期値のままであれば、テスト動作用のダミー送信とする
+          if (formEndpoint === 'YOUR_SSGFORM_ENDPOINT_URL') {
+            console.warn('SSGform endpoint is not configured yet. Running in demo mode.');
+            submitBtn.disabled = true;
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i>送信中...';
+
+            setTimeout(() => {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = originalText;
+              successDiv.classList.remove('hidden');
+              successDiv.scrollIntoView({ behavior: 'smooth' });
+              // フォームをリセット
+              contactForm.reset();
+              alert('【デモモード】お問い合わせフォームの送信処理テストが成功しました。本番でメールを受信するには、JavaScriptコード内の「YOUR_SSGFORM_ENDPOINT_URL」をSSGform等で発行したエンドポイントURLに書き換えてください。');
+            }, 1000);
+            return;
+          }
+
+          // 二重送信防止とローディング表示
+          submitBtn.disabled = true;
+          const originalText = submitBtn.innerHTML;
+          submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i>送信中...';
+
+          const formData = new FormData(contactForm);
+
+          fetch(formEndpoint, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          })
+          .then(response => {
+            if (response.ok) {
+              successDiv.classList.remove('hidden');
+              successDiv.scrollIntoView({ behavior: 'smooth' });
+              contactForm.reset();
+            } else {
+              alert('送信に失敗しました。お手数ですが、時間をおいて再度お試しいただくか、urushizawa@medikuru.com まで直接ご連絡ください。');
+            }
+          })
+          .catch(error => {
+            console.error('Submission error:', error);
+            alert('通信エラーが発生しました。接続状況を確認の上、再度お試しください。');
+          })
+          .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+          });
         });
       }
     </script>
