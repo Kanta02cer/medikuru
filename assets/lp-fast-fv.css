@@ -1,6 +1,6 @@
 /* Original masthead and portraits are cropped in CSS, never edited as bitmaps. */
 .faithful-landing .faithful-fv-consolidated .faithful-original-fv{aspect-ratio:auto;overflow:hidden;container-type:inline-size;background:#f6f6f7}
-.faithful-fv-masthead{aspect-ratio:750/96;background-image:url('../design-20260924-v1/images/fv_01.webp');background-position:top center;background-size:100% auto;background-repeat:no-repeat}
+.faithful-fv-masthead{aspect-ratio:750/96;background-image:url('legacy/fv_01.webp');background-position:top center;background-size:100% auto;background-repeat:no-repeat}
 .faithful-landing .faithful-fv-headline{position:relative;inset:auto;height:auto;padding:1.4cqw 3cqw 2.2cqw;overflow:visible}
 .faithful-landing .faithful-fv-headline .faithful-fv-brands{font-size:4.3cqw;line-height:1.35;margin-bottom:1.35cqw}
 .faithful-landing .faithful-fv-headline .faithful-ai-brand{font-size:1.17em}
