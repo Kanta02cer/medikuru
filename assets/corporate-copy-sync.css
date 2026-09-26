@@ -1,0 +1,85 @@
+/* Shared approved copy, adapted to the existing photo-led corporate layout. */
+.corporate .hero-copy { min-width: 0; container-type: inline-size; }
+.corporate .hero .corporate-branding-keywords.hp-branding-keywords {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 22px;
+  font-size: clamp(22px, 5.8cqw, 32px);
+  line-height: 1.4;
+  letter-spacing: -.025em;
+  font-weight: 800;
+}
+.corporate .hp-branding-keywords .hp-news-line {
+  display: flex;
+  align-items: baseline;
+  gap: .2em;
+  white-space: nowrap;
+}
+.corporate .hp-branding-keywords .hp-news {
+  color: #20364b;
+  font-weight: 800;
+}
+.corporate .hp-branding-keywords .hp-ai-line {
+  color: #20364b;
+  white-space: nowrap;
+  width: max-content;
+  max-width: 100%;
+  text-decoration: underline;
+  text-decoration-color: #dcc792;
+  text-decoration-thickness: .13em;
+  text-underline-offset: .13em;
+}
+.corporate .hero .hp-connector,
+.corporate .hero .corporate-benefit-title.hp-benefit-title .personalized-lead {
+  display: inline;
+  margin: 0;
+  font-size: clamp(11px, 3.9cqw, 19px);
+  font-weight: 700;
+  line-height: inherit;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+.corporate .hero .corporate-benefit-title.hp-benefit-title {
+  display: grid;
+  gap: .2em;
+  font-size: clamp(20px, 6.7cqw, 36px);
+  line-height: 1.5;
+  letter-spacing: -.04em;
+}
+.corporate .hp-promise-top { display: flex; align-items: baseline; gap: .08em; white-space: nowrap; }
+.corporate .hp-promise-bottom { display: block; white-space: nowrap; }
+.corporate .hero .benefit-hero-condition .hp-billing-summary {
+  display: block;
+  margin-bottom: 7px;
+  color: #20364b;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.75;
+}
+.corporate .service-card,
+.corporate .price-card { container-type: inline-size; }
+.corporate .service-card > h3,
+.corporate .price-card > h3 {
+  font-size: clamp(16px, 7.3cqw, 25px);
+  line-height: 1.6;
+  letter-spacing: -.035em;
+  white-space: nowrap;
+}
+.corporate .branding-concept { container-type: inline-size; }
+.corporate #branding-concept-title.hp-branding-title {
+  display: grid;
+  gap: .16em;
+  font-size: clamp(18px, 6.6cqw, 36px);
+  line-height: 1.55;
+  letter-spacing: -.025em;
+}
+.corporate #branding-concept-title .hp-branding-line { display: block; white-space: nowrap; }
+.corporate #branding-concept-title .hp-branding-line .branding-times { font-size: .82em; padding-right: .08em; vertical-align: baseline; }
+.corporate .hp-primary-consult { white-space: nowrap; }
+.corporate #site-nav > .hp-primary-consult { gap: 8px; padding-left: 12px; padding-right: 12px; }
+@media(max-width:600px) {
+  .corporate .hero .corporate-branding-keywords.hp-branding-keywords { gap: 7px; margin-bottom: 20px; }
+  .corporate .hero .benefit-hero-condition .hp-billing-summary { font-size: 12px; }
+  .corporate .mobile-cta { gap: 8px; }
+  .corporate .mobile-cta > .hp-primary-consult { min-width: 0; max-width: none; padding: 10px; gap: 5px; font-size: 11px; }
+}

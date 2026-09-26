@@ -1,0 +1,17 @@
+/* Keep pricing labels in normal flow and legible on the original navy bands. */
+body.faithful-landing #pricing .price-card .plan-ribbon{
+ position:static;inset:auto;display:block;width:auto;max-width:100%;
+ margin:0 0 18px;padding:11px 12px;box-sizing:border-box;
+ background:#142b66;color:#fff;border-radius:0;transform:none;
+ font-size:14px;line-height:1.7;letter-spacing:.015em;text-align:center;
+}
+body.faithful-landing #pricing .plan-quantity b{color:#ffe59c}
+body.faithful-landing #pricing .plan-quantity small{color:#e4e9f4}
+@media(max-width:600px){body.faithful-landing #pricing .price-card .plan-ribbon{font-size:12px;line-height:1.75;padding:10px 9px;margin-bottom:17px}}
+body.faithful-landing #pricing .plan-quantity small{display:block;margin:5px 0 0;font-size:11px;line-height:1.6}
+body.hp-form-theme #pricing .plan-quantity b{color:#162d53}
+body.hp-form-theme #pricing .plan-quantity small{color:#536176;font-size:11px}
+#pricing .plan-quantity-label{display:block;margin:0 0 4px}
+#pricing .plan-quantity-count{display:inline-flex;align-items:baseline;gap:.35em;white-space:nowrap}
+#pricing .plan-quantity-count b{display:inline-block;white-space:nowrap}
+body.hp-form-theme #pricing .price-card .plan-sub{font-size:14px;line-height:1.7}

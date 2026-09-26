@@ -1,0 +1,608 @@
+/* 2026-09-25: bring the added HP explanations back to the original LP art direction.
+   Intentionally limited to comparison, mechanism and citation metrics. */
+.corporate #news-comparison,
+.corporate #branding,
+.corporate #ai-comparison {
+  --hp-lp-navy:#142b66;
+  --hp-lp-gold:#b59a50;
+  --hp-lp-paper:#fff;
+  --hp-lp-yellow:#fff45a;
+  color:var(--hp-lp-navy);
+}
+.corporate #news-comparison {background:#fff;border-top:1px solid #e0d8c4}
+.corporate #news-comparison .section-heading {text-align:center;margin:0 auto 42px;max-width:960px}
+.corporate #news-comparison .section-heading .eyebrow {color:var(--hp-lp-gold);font-weight:800;font-size:14px;letter-spacing:.1em}
+.corporate #news-comparison .section-heading h2 {font-size:clamp(27px,3.3vw,42px);line-height:1.65;letter-spacing:-.035em;color:var(--hp-lp-navy)}
+.corporate #news-comparison .section-heading h2 em {display:inline;color:var(--hp-lp-navy);text-decoration:none;background:linear-gradient(transparent 72%,var(--hp-lp-yellow) 72%,var(--hp-lp-yellow) 96%,transparent 96%);font-style:italic;padding:0 .08em}
+.corporate #news-comparison .section-heading>p:not(.eyebrow) {color:#43516a;font-size:15px;line-height:1.9}
+.corporate #news-comparison .interview-process {border:0;border-radius:0;overflow:visible;background:transparent;margin-bottom:18px}
+.corporate #news-comparison .process-route {grid-template-columns:220px minmax(0,1fr);padding:28px 30px;gap:30px;background:#f4f4f5;border:0;border-top:2px solid #d7d9e0}
+.corporate #news-comparison .route-label>span {font-size:19px;color:#35435d}
+.corporate #news-comparison .route-label>small {font-size:14px;line-height:1.8;color:#647083}
+.corporate #news-comparison .route-steps {gap:18px}
+.corporate #news-comparison .route-steps>div {border:0;border-radius:0;background:transparent;padding:15px 3px}
+.corporate #news-comparison .route-steps>div>b {font-size:21px;color:#35435d}
+.corporate #news-comparison .route-steps>div>small {font-size:14px;line-height:1.7;color:#647083}
+.corporate #news-comparison .route-steps>span {font-size:26px;color:#9ca4b2}
+.corporate #news-comparison .route-steps>.conditional-step {border-bottom:1px dashed #7e8796}
+.corporate #news-comparison .our-route {position:relative;background:var(--hp-lp-navy);color:#fff;border-top:0;margin-top:18px;box-shadow:0 5px 0 #10265716}
+.corporate #news-comparison .our-route .route-label>span {color:#e3cc80;font-size:23px}
+.corporate #news-comparison .our-route .route-label>small {color:#fff}
+.corporate #news-comparison .our-route .route-steps>div {background:transparent;border:0}
+.corporate #news-comparison .our-route .route-steps>div>b {color:#fff;font-size:23px}
+.corporate #news-comparison .our-route .route-steps>div>small {color:#e5eaf4}
+.corporate #news-comparison .our-route .route-steps>span {color:#e3cc80}
+.corporate #news-comparison .interview-result {background:#fff;color:var(--hp-lp-navy);border:2px solid #c3a75e;border-top:0;padding:30px;gap:24px}
+.corporate #news-comparison .interview-result>div>span {color:#8a723b}
+.corporate #news-comparison .interview-result h3 {color:var(--hp-lp-navy);font-size:clamp(21px,2.5vw,30px);line-height:1.65}
+.corporate #news-comparison .interview-result p {color:#55627a;font-size:16px}
+.corporate #news-comparison .interview-result>strong {color:var(--hp-lp-navy);font-size:54px;letter-spacing:-.035em}
+.corporate #news-comparison .interview-result>strong>span {font-size:17px;font-weight:700}
+.corporate #news-comparison .table-scroll,.corporate #news-comparison .comparison-details {border-radius:0}
+.corporate #news-comparison .comparison-table .our-column {background:#fffbe6;color:var(--hp-lp-navy)}
+.corporate #news-comparison .comparison-table thead .our-column {background:var(--hp-lp-navy);color:#fff}
+.corporate #news-comparison .quote-panel {padding:36px 25px;border:0;border-left:5px solid #b59a50;background:#f8f7f3;text-align:left}
+.corporate #news-comparison .quote-panel>p {color:var(--hp-lp-navy);font-size:29px;font-weight:800}
+.corporate #news-comparison .quote-panel>div {color:#8b7135}
+
+.corporate #branding {padding-top:80px;background:#fff}
+.corporate #branding .branding-concept {--brand-ink:#142b66;--brand-gold:#b59a50;background:#fff;border:0;padding:0 0 32px;color:var(--hp-lp-navy)}
+.corporate #branding .branding-concept-kicker {display:inline-block;background:var(--hp-lp-navy);color:#fff;border:0;padding:9px 24px;font-size:14px;font-weight:800;line-height:1.8;margin-bottom:22px}
+.corporate #branding .branding-concept h2 {font-size:clamp(26px,3.2vw,42px);line-height:1.55;color:var(--hp-lp-navy);letter-spacing:-.025em}
+.corporate #branding .branding-times {color:var(--hp-lp-gold)}
+.corporate #branding .branding-concept-intro {color:#3c4b69;font-size:17px;line-height:1.9;margin:22px 0 34px}
+.corporate #branding .branding-equation {display:grid;grid-template-columns:minmax(0,1fr) 54px minmax(0,1fr);gap:0;max-width:none;align-items:stretch}
+.corporate #branding .branding-operand {border:0;border-top:3px solid var(--hp-lp-gold);padding:20px 18px 0;min-width:0;background:#fff}
+.corporate #branding .branding-role {font-size:14px;line-height:1.7;color:#8c7135;font-weight:800}
+.corporate #branding .branding-multiply {align-self:center;color:var(--hp-lp-navy);font-size:50px;font-weight:900}
+.corporate #branding .hp-news-evidence {width:100%;margin:18px 0 20px;aspect-ratio:1.55;overflow:hidden;position:relative;border:1px solid #d3d6de;background:#fff;display:flex;align-items:center;justify-content:center}
+.corporate #branding .hp-news-evidence img {display:block;width:100%;height:auto;object-fit:contain}
+.corporate #branding .hp-news-evidence figcaption {position:absolute;bottom:0;left:0;right:0;padding:5px 8px;background:#ffffffef;color:#5c6881;font-size:12px;line-height:1.6;text-align:left}
+.corporate #branding .hp-search-evidence {margin:18px 0 20px;width:100%;aspect-ratio:1.55;border:1px solid #d3d6de;background:#fff;display:flex;flex-direction:column;justify-content:center;padding:22px 24px;text-align:left;gap:13px;box-sizing:border-box}
+.corporate #branding .hp-search-evidence>span {font-size:14px;line-height:1.5;color:#7b6531;font-weight:700;letter-spacing:.08em}
+.corporate #branding .hp-search-question {border-bottom:2px solid var(--hp-lp-navy);color:var(--hp-lp-navy);font-size:20px;font-weight:800;line-height:1.65;padding:0 0 10px;margin:0;white-space:nowrap}
+.corporate #branding .hp-search-evidence .hp-search-body {font-size:16px;line-height:1.9;color:#3a4a69;margin:0}
+.corporate #branding .hp-search-source {display:block;border-left:3px solid var(--hp-lp-gold);padding-left:9px;font-size:12px;line-height:1.6;color:var(--hp-lp-navy);margin-top:auto}
+.corporate #branding .branding-operand h3 {font-size:26px;line-height:1.6;margin:0 0 12px;letter-spacing:0}
+.corporate #branding .branding-operand p {font-size:16px;color:#526077;line-height:1.9;margin:0 0 22px}
+.corporate #branding .branding-operand>b {background:var(--hp-lp-navy);color:#fff;border:0;font-size:20px;padding:15px 8px;margin:auto -18px 0;white-space:nowrap;letter-spacing:-.025em}
+.corporate #branding .branding-down {font-size:28px;margin:24px 0 8px}
+.corporate #branding .branding-journey {border:0;padding-top:24px;margin-top:0}
+.corporate #branding .branding-journey>h3 {font-size:30px;line-height:1.65;color:var(--hp-lp-navy)}
+.corporate #branding .branding-journey-lead {margin:15px 0 26px}
+.corporate #branding .branding-journey-steps {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;text-align:left;border-top:2px solid var(--hp-lp-navy);border-bottom:1px solid #d4d9e3}
+.corporate #branding .branding-journey-steps>li {position:relative;display:flex;flex-direction:column;align-items:stretch;gap:0;background:#fff;border:0;padding:24px 22px 22px}
+.corporate #branding .branding-journey-steps>li+li {border-left:1px solid #d4d9e3}
+.corporate #branding .branding-journey-steps>li+li:before {display:none}
+.corporate #branding .journey-step {color:#b59a50;font:italic 30px/1.25 Arial,sans-serif;letter-spacing:0;margin-bottom:17px;text-align:left}
+.corporate #branding .journey-step b {display:block;font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-style:normal;color:var(--hp-lp-navy);font-size:18px;margin:8px 0 0;line-height:1.65}
+.corporate #branding .branding-journey-steps>li>svg {display:none}
+.corporate #branding .journey-queries {gap:0;margin:0 auto}
+.corporate #branding .journey-queries>span {font-size:16px;line-height:1.8;padding:9px 0;background:transparent;border:0;border-bottom:1px solid #e0e3e9;border-radius:0;white-space:normal}
+.corporate #branding .journey-answer {margin:0;padding:14px 15px;background:#f5f5f6;border-left:3px solid #b59a50;text-align:left}
+.corporate #branding .journey-answer p {font-size:16px;line-height:1.9}
+.corporate #branding .journey-answer p>br {display:none}
+.corporate #branding .journey-answer>span {font-size:12px;line-height:1.7}
+.corporate #branding .journey-decision-copy {margin:10px 0;text-align:center}
+.corporate #branding .journey-decision-copy>strong {font-size:16px;line-height:1.7}
+.corporate #branding .journey-decision-copy>b {font-size:21px;line-height:1.7}
+.corporate #branding .journey-decision-copy>span {font-size:15px;margin:8px 0}
+.corporate #branding .branding-journey-steps>li>p {font-size:16px;color:#526077;line-height:1.9;margin:20px 0 0;text-align:left}
+.corporate #branding .branding-journey-summary {padding:20px 0;color:#142b66;font-size:16px;line-height:1.9}
+.corporate #branding .branding-journey-summary strong {background:linear-gradient(transparent 70%,var(--hp-lp-yellow) 70%,var(--hp-lp-yellow) 97%,transparent 97%)}
+.corporate #branding .branding-outcome {background:var(--hp-lp-navy);border:0;padding:32px 20px;margin:30px 0;color:#fff}
+.corporate #branding .branding-outcome h3 {font-size:34px;line-height:1.9;letter-spacing:-.02em}
+.corporate #branding .branding-outcome mark {background:var(--hp-lp-yellow);color:var(--hp-lp-navy);padding:3px 8px}
+.corporate #branding .branding-difference b {font-size:20px}
+
+.corporate #ai-comparison .section-heading h2 {color:var(--hp-lp-navy);font-size:clamp(27px,3.1vw,40px);line-height:1.65}
+.corporate #ai-comparison .section-heading h2 em {color:var(--hp-lp-navy);text-decoration:none;background:linear-gradient(transparent 74%,var(--hp-lp-yellow) 74%,var(--hp-lp-yellow) 97%,transparent 97%)}
+.corporate #ai-comparison .citation-targets {background:#fff;border:2px solid var(--hp-lp-navy);border-top:5px solid var(--hp-lp-navy);padding:30px 34px;max-width:900px;margin:32px auto 40px}
+.corporate #ai-comparison .citation-target-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:0}
+.corporate #ai-comparison .citation-target-grid>div {padding:0 16px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0}
+.corporate #ai-comparison .citation-target-grid>div+div {border-left:1px solid #cbbc95}
+.corporate #ai-comparison .citation-target-grid>div>span {font-size:14px;color:#9b803c;font-weight:700;margin:0 0 10px;white-space:nowrap}
+.corporate #ai-comparison .citation-target-grid strong {display:flex;align-items:baseline;justify-content:center;gap:8px;font-size:82px;line-height:1.15;white-space:nowrap;color:var(--hp-lp-navy);font-variant-numeric:tabular-nums}
+.corporate #ai-comparison .citation-target-grid strong small {font-size:27px;margin:0;line-height:1.3}
+.corporate #ai-comparison .citation-report {background:var(--hp-lp-yellow);border:0;color:var(--hp-lp-navy);padding:12px 18px;margin:25px 0 18px;font-size:17px;line-height:1.8}
+.corporate #ai-comparison .table-scroll {border-radius:0}
+.corporate #ai-comparison .comparison-table .our-column {background:#fffbe6;color:var(--hp-lp-navy)}
+.corporate #ai-comparison .comparison-table thead .our-column {background:var(--hp-lp-navy);color:#fff}
+.corporate #ai-comparison .three-pillars {gap:30px}
+.corporate #ai-comparison .three-pillars article {border-color:var(--hp-lp-gold)}
+.corporate #ai-comparison .three-pillars span {font-size:25px;font-style:italic;font-family:Arial,sans-serif;color:var(--hp-lp-gold)}
+.corporate #ai-comparison .three-pillars h3 {color:var(--hp-lp-navy)}
+
+@media(max-width:900px) {
+.corporate #news-comparison .process-route {grid-template-columns:1fr;gap:14px;padding:24px}
+.corporate #news-comparison .route-label {display:flex;gap:15px;align-items:center;justify-content:space-between}
+.corporate #news-comparison .route-label>small {margin:0}
+.corporate #branding .branding-operand {padding:18px 12px 0}
+.corporate #branding .branding-operand>b {font-size:17px;margin-left:-12px;margin-right:-12px}
+.corporate #branding .hp-search-evidence {padding:18px 16px;gap:10px}
+.corporate #branding .hp-search-question {font-size:17px}
+.corporate #branding .hp-search-evidence .hp-search-body {font-size:16px}
+.corporate #branding .branding-journey-steps>li {padding:21px 15px}
+.corporate #branding .journey-step b {font-size:18px}
+}
+@media(max-width:600px) {
+.corporate #news-comparison .section-heading {margin-bottom:28px}
+.corporate #news-comparison .section-heading .eyebrow {font-size:14px}
+.corporate #news-comparison .section-heading h2 {font-size:clamp(20px,5.85vw,30px);line-height:1.7;letter-spacing:-.035em}
+.corporate #news-comparison .section-heading>p:not(.eyebrow) {font-size:14px;line-height:1.95}
+.corporate #news-comparison .process-route {padding:20px 14px;gap:13px}
+.corporate #news-comparison .route-label {display:block}
+.corporate #news-comparison .route-label>span {font-size:17px}
+.corporate #news-comparison .route-label>small {font-size:14px;margin-top:3px}
+.corporate #news-comparison .route-steps {gap:5px;align-items:stretch}
+.corporate #news-comparison .route-steps>div {display:flex;flex-direction:column;justify-content:center;padding:10px 0}
+.corporate #news-comparison .route-steps>div>b {font-size:18px}
+.corporate #news-comparison .route-steps>div>small {font-size:14px;min-height:30px;line-height:1.65}
+.corporate #news-comparison .route-steps>span {font-size:16px;align-self:center}
+.corporate #news-comparison .our-route .route-label>span {font-size:20px}
+.corporate #news-comparison .our-route .route-steps>div>b {font-size:18px}
+.corporate #news-comparison .interview-result {display:block;text-align:center;padding:22px 14px}
+.corporate #news-comparison .interview-result h3 {font-size:19px;letter-spacing:-.025em}
+.corporate #news-comparison .interview-result p {font-size:16px;line-height:1.9}
+.corporate #news-comparison .interview-result>strong {font-size:48px;margin-top:16px}
+.corporate #news-comparison .interview-result>strong>span {font-size:15px}
+.corporate #news-comparison .quote-panel {padding:26px 19px}
+.corporate #news-comparison .quote-panel>p {font-size:21px;line-height:1.8}
+.corporate #news-comparison .quote-panel>div {justify-content:flex-start}
+.corporate #branding {padding-top:56px}
+.corporate #branding .branding-concept-kicker {font-size:14px;padding:9px 10px;display:block;margin-bottom:21px}
+.corporate #branding .branding-concept h2 {font-size:clamp(22px,6vw,31px);line-height:1.6;letter-spacing:-.025em}
+.corporate #branding .branding-concept-intro {font-size:16px;margin:18px 0 27px}
+.corporate #branding .branding-equation {grid-template-columns:1fr}
+.corporate #branding .branding-operand {padding:20px 18px 0}
+.corporate #branding .branding-role {font-size:14px}
+.corporate #branding .branding-multiply {font-size:34px;line-height:1.2;margin:18px 0}
+.corporate #branding .hp-news-evidence,.corporate #branding .hp-search-evidence {aspect-ratio:1.7;margin:16px 0 20px}
+.corporate #branding .hp-search-evidence {padding:20px 22px;gap:10px}
+.corporate #branding .hp-search-question {font-size:20px}
+.corporate #branding .hp-search-evidence .hp-search-body {font-size:16px}
+.corporate #branding .hp-search-source {font-size:12px}
+.corporate #branding .branding-operand h3 {font-size:23px;line-height:1.6}
+.corporate #branding .branding-operand p {font-size:16px}
+.corporate #branding .branding-operand>b {font-size:19px;margin-left:-18px;margin-right:-18px;padding:14px 7px}
+.corporate #branding .branding-down {margin:24px 0 0}
+.corporate #branding .branding-journey>h3 {font-size:23px;line-height:1.65}
+.corporate #branding .branding-journey-lead {font-size:16px;line-height:1.9;margin-bottom:24px}
+.corporate #branding .branding-journey-steps {grid-template-columns:1fr;border:0}
+.corporate #branding .branding-journey-steps>li {display:grid;grid-template-columns:1fr;gap:14px;padding:22px 0 26px;border-top:2px solid var(--hp-lp-navy);border-bottom:1px solid #d4d9e3}
+.corporate #branding .branding-journey-steps>li+li {border-left:0;margin-top:24px}
+.corporate #branding .journey-step {display:flex;align-items:center;gap:13px;font-size:29px;margin:0;grid-column:auto}
+.corporate #branding .journey-step b {display:inline;font-size:18px;line-height:1.65;margin:0}
+.corporate #branding .journey-queries>span {font-size:16px;padding:9px 12px}
+.corporate #branding .journey-answer {padding:16px 18px}
+.corporate #branding .journey-answer small {font-size:12px}
+.corporate #branding .journey-answer p {font-size:16px;line-height:1.9}
+.corporate #branding .journey-answer>span {font-size:12px}
+.corporate #branding .journey-decision-copy {margin:5px 0}
+.corporate #branding .journey-decision-copy>strong {font-size:16px}
+.corporate #branding .journey-decision-copy>b {font-size:23px;line-height:1.7}
+.corporate #branding .branding-journey-steps>li>p {grid-column:auto;margin:0;font-size:16px;line-height:1.9;text-align:center}
+.corporate #branding .branding-journey-summary {font-size:16px;line-height:2}
+.corporate #branding .branding-outcome {padding:27px 12px}
+.corporate #branding .branding-outcome h3 {font-size:clamp(19px,5.1vw,28px);line-height:1.9;letter-spacing:-.025em}
+.corporate #branding .branding-outcome mark {padding:3px 5px;white-space:nowrap;display:inline-block}
+.corporate #branding .branding-difference b {font-size:16px}
+.corporate #ai-comparison .section-heading h2 {font-size:27px;line-height:1.65}
+.corporate #ai-comparison .citation-targets {padding:24px 13px;margin:28px 0 32px}
+.corporate #ai-comparison .citation-target-grid>div {padding:0 7px}
+.corporate #ai-comparison .citation-target-grid>div>span {font-size:14px;line-height:1.7;margin-bottom:9px}
+.corporate #ai-comparison .citation-target-grid strong {font-size:54px;gap:4px}
+.corporate #ai-comparison .citation-target-grid strong small {font-size:18px}
+.corporate #ai-comparison .citation-report {font-size:16px;padding:12px 10px;margin-top:21px}
+.corporate #ai-comparison .three-pillars {gap:26px}
+}
+@media(max-width:360px) {
+.corporate #news-comparison .route-steps>div>b {font-size:18px}
+.corporate #news-comparison .our-route .route-steps>div>b {font-size:18px}
+.corporate #news-comparison .route-steps>div>small {font-size:14px}
+.corporate #news-comparison .interview-result h3 {font-size:17px}
+.corporate #branding .hp-search-question {font-size:17px}
+.corporate #branding .hp-search-evidence .hp-search-body {font-size:16px}
+.corporate #branding .hp-search-evidence {padding:17px;gap:8px}
+.corporate #branding .hp-search-source {font-size:12px}
+.corporate #branding .branding-operand>b {font-size:18px}
+.corporate #branding .journey-step b {font-size:18px}
+.corporate #ai-comparison .citation-target-grid strong {font-size:46px;gap:3px}
+.corporate #ai-comparison .citation-target-grid strong small {font-size:15px}
+.corporate #ai-comparison .citation-target-grid>div>span {font-size:14px}
+}
+
+/* Reading sizes are stable on mobile; the layout yields instead of shrinking text. */
+.corporate #news-comparison .interview-result>div>span {font-size:14px;line-height:1.6}
+.corporate #news-comparison .quote-panel>div {font-size:14px;line-height:1.9}
+.corporate #news-comparison .quote-panel>small {font-size:12px;line-height:1.9}
+.corporate #news-comparison .source-note,
+.corporate #ai-comparison .source-note,
+.corporate #ai-comparison .scope-note,
+.corporate #branding .branding-journey-note,
+.corporate #branding .branding-concept-note,
+.corporate #branding .branding-concept-sources {font-size:12px;line-height:1.9}
+.corporate #news-comparison .table-hint,
+.corporate #ai-comparison .table-hint {font-size:14px;line-height:1.7}
+.corporate #news-comparison .comparison-table,
+.corporate #news-comparison .comparison-details .comparison-table,
+.corporate #ai-comparison .comparison-table {font-size:16px;line-height:1.9}
+.corporate #news-comparison .comparison-table thead th,
+.corporate #news-comparison .comparison-details .comparison-table thead th,
+.corporate #ai-comparison .comparison-table thead th {font-size:17px;line-height:1.7}
+.corporate #news-comparison .comparison-table small,
+.corporate #ai-comparison .comparison-table small {font-size:12px;line-height:1.8}
+.corporate #news-comparison .comparison-details summary {font-size:16px;line-height:1.8}
+.corporate #branding .branding-outcome>p,
+.corporate #branding .branding-difference,
+.corporate #ai-comparison .section-heading>p:not(.eyebrow),
+.corporate #ai-comparison .three-pillars p {font-size:16px;line-height:1.9}
+.corporate #branding .journey-answer small {font-size:12px;line-height:1.7}
+.corporate #branding .hp-search-evidence {aspect-ratio:auto;min-height:240px}
+.corporate #branding .hp-news-evidence {aspect-ratio:auto;min-height:240px;align-self:stretch;flex:1}
+.corporate #branding .hp-search-evidence .hp-search-body {font-size:16px}
+.corporate #branding .hp-search-source {font-size:12px}
+.corporate #ai-comparison .citation-target-grid>div>span {white-space:normal;max-width:12em;min-height:3.4em;display:flex;align-items:center;justify-content:center;line-height:1.7}
+@media(max-width:600px) {
+ .corporate #news-comparison .route-steps {display:flex;flex-direction:column;gap:6px;align-items:stretch}
+ .corporate #news-comparison .route-steps>div {width:100%;flex:none;padding:12px 4px;text-align:center}
+ .corporate #news-comparison .route-steps>div>b,
+ .corporate #news-comparison .our-route .route-steps>div>b {font-size:22px;line-height:1.6;white-space:normal}
+ .corporate #news-comparison .route-steps>div>small {font-size:14px;line-height:1.8;min-height:0;margin-top:3px}
+ .corporate #news-comparison .route-steps>span {font-size:23px;line-height:1;display:block;transform:rotate(90deg);align-self:center}
+ .corporate #news-comparison .route-steps>.conditional-step {border-bottom:0;border-top:1px dashed #9ca4b2;margin-top:8px}
+ .corporate #news-comparison .route-label {text-align:center;padding-bottom:13px;border-bottom:1px solid #d7d9e0}
+ .corporate #news-comparison .our-route .route-label {border-bottom-color:#7180a2}
+ .corporate #news-comparison .route-label>small {font-size:14px;line-height:1.8;margin-top:6px}
+ .corporate #news-comparison .section-heading>p:not(.eyebrow) {font-size:16px}
+ .corporate #branding .hp-news-evidence {min-height:0;aspect-ratio:1.4;flex:none}
+ .corporate #branding .hp-search-evidence {min-height:0;aspect-ratio:auto;padding:22px 18px;gap:13px}
+ .corporate #branding .hp-search-question {font-size:20px;white-space:normal}
+ .corporate #branding .hp-search-source {margin-top:0}
+ .corporate #branding .branding-operand {padding-left:12px;padding-right:12px}
+ .corporate #branding .branding-operand>b {margin-left:-12px;margin-right:-12px}
+ .corporate #branding .branding-operand p>br,
+ .corporate #branding .branding-journey-lead>br {display:none}
+ .corporate #branding .branding-journey-steps>li>p>br {display:none}
+ .corporate #branding .journey-step {align-items:baseline;gap:10px}
+ .corporate #branding .journey-step b {font-size:18px;line-height:1.7}
+ .corporate #branding .branding-journey-summary {font-size:16px;line-height:1.9}
+ .corporate #branding .branding-journey-summary br {display:none}
+ .corporate #ai-comparison .citation-target-grid>div>span {font-size:14px;min-height:3.4em;margin-bottom:14px}
+ .corporate #ai-comparison .citation-report {font-size:16px}
+}
+
+/* ========================================================================== 
+   Approved continuation: services, price/terms, simulator and research.
+   CSS only: copy, controls, datasets, formulas and original photographs remain.
+   ========================================================================== */
+.corporate #services,
+.corporate #pricing,
+.corporate #simulation,
+.corporate #research {--hp-lp-navy:#142b66;--hp-lp-gold:#b59a50;--hp-lp-yellow:#fff45a;color:#142b66}
+.corporate #services .section-heading h2,
+.corporate #pricing .section-heading h2,
+.corporate #research .section-heading h2 {color:#142b66;font-size:clamp(28px,3.2vw,42px);line-height:1.65;letter-spacing:-.025em}
+.corporate #services .section-heading h2 em,
+.corporate #research .section-heading h2 em {color:#142b66;font-style:normal;text-decoration:none;background:linear-gradient(transparent 74%,#fff45a 74%,#fff45a 96%,transparent 96%)}
+.corporate #services .eyebrow,
+.corporate #pricing .eyebrow,
+.corporate #simulation .eyebrow,
+.corporate #research .eyebrow {font-size:14px;line-height:1.7;color:#8a7138;letter-spacing:.06em;font-weight:800}
+.corporate #services .section-heading>p,
+.corporate #services .section-heading p:not(.eyebrow),
+.corporate #pricing .section-heading p:not(.eyebrow),
+.corporate #research .section-heading p:not(.eyebrow) {font-size:16px;line-height:1.9;color:#42516c}
+.corporate #services .source-note,
+.corporate #pricing .source-note,
+.corporate #pricing .scope-note,
+.corporate #research .source-note {font-size:12px;line-height:1.9;color:#526077}
+
+/* Services: two clear columns with solid section labels, no floating cards. */
+.corporate #services .service-grid {gap:38px}
+.corporate #services .service-card {border:0;border-top:4px solid #142b66;border-bottom:1px solid #bcc4d6;border-radius:0;background:#fff;box-shadow:none;padding:26px 0;container-type:inline-size}
+.corporate #services .service-card .card-label {font-size:14px;color:#8a7138;line-height:1.7;letter-spacing:.04em;font-weight:800}
+.corporate #services .service-card h3 {font-size:clamp(20px,6.8cqw,30px);color:#142b66;line-height:1.65;margin:17px 0;white-space:nowrap}
+.corporate #services .service-card>p {font-size:16px;line-height:1.9;color:#42516c}
+.corporate #services .service-card .chip-list {gap:0;margin-top:20px;display:flex;flex-wrap:wrap}
+.corporate #services .service-card .chip-list li {font-size:14px;line-height:1.8;color:#675b40;padding:3px 13px 3px 0;margin-right:13px;border-right:1px solid #d0c3a5}
+.corporate #services .service-card .service-bottom {border-top:1px solid #c5b17c;padding-top:23px;margin-top:26px}
+.corporate #services .service-card .service-value-text {font-size:22px;line-height:1.65;letter-spacing:0;color:#142b66}
+.corporate #services .circle-link {border-radius:0;border:0;background:#142b66;color:#fff;width:46px;height:46px;flex:none}
+
+/* Pricing: the offer is a readable printed sheet, with a navy frame and gold rule. */
+.corporate #pricing {background:#faf9f6;border-top:1px solid #dcd5c6}
+.corporate #pricing .price-grid {gap:32px;align-items:stretch}
+.corporate #pricing .price-card {border:2px solid #142b66;border-top:6px solid #142b66;border-radius:0;background:#fff;box-shadow:none;padding:32px 30px 28px;container-type:inline-size}
+.corporate #pricing .price-featured {border-top-color:#b59a50}
+.corporate #pricing .plan-type {font-size:14px;line-height:1.7;color:#8a7138;letter-spacing:.04em;font-weight:800}
+.corporate #pricing .price-card h3 {color:#142b66;font-size:clamp(20px,6.9cqw,30px);line-height:1.65;white-space:nowrap;letter-spacing:-.025em}
+.corporate #pricing .price-card .plan-sub {font-size:16px;line-height:1.9;color:#526077}
+.corporate #pricing .price-card .price {color:#142b66;align-items:baseline;gap:7px}
+.corporate #pricing .price-card .price strong {font-size:78px;line-height:1.1;color:#142b66;letter-spacing:-.045em}
+.corporate #pricing .price-card .price>span {font-size:25px;line-height:1.6}
+.corporate #pricing .price-card .price small {font-size:14px;line-height:1.8;letter-spacing:0}
+.corporate #pricing .price-card .tax {font-size:14px;line-height:1.8;color:#526077}
+.corporate #pricing .price-card .plan-ribbon {background:#dec67d;color:#142b66;border-radius:0;font-size:14px;line-height:1.65;padding:8px 12px;position:static;margin:-32px -30px 24px}
+.corporate #pricing .price-card .plan-quantity {background:#fff9ce;border:0;border-top:1px solid #b59a50;border-bottom:1px solid #b59a50;border-radius:0;padding:16px 9px;font-size:16px;line-height:1.8;color:#142b66}
+.corporate #pricing .plan-quantity small {font-size:12px;line-height:1.7;display:block}
+.corporate #pricing .price-card .check-list {font-size:16px;line-height:1.9;color:#344561;margin-top:23px}
+.corporate #pricing .price-card .check-list li {padding-top:5px;padding-bottom:5px}
+.corporate #pricing .price-card .scope-note,
+.corporate #pricing .price-card .contract {font-size:12px;line-height:1.9;color:#526077}
+.corporate #pricing .price-card .button,
+.corporate #pricing .dedicated-lp-option .button {font-size:16px;line-height:1.65;border-radius:0;white-space:normal;min-height:54px;padding:14px 16px;text-align:center;gap:10px}
+.corporate #pricing .total-strip {background:#142b66;color:#fff;border-radius:0;box-shadow:none;border:0;padding:30px;margin-top:30px;gap:25px}
+.corporate #pricing .total-strip>div>span {font-size:14px;line-height:1.8;color:#e8d38f}
+.corporate #pricing .total-strip h3 {font-size:22px;line-height:1.7;color:#fff}
+.corporate #pricing .total-strip>p {color:#fff;font-size:25px}
+.corporate #pricing .total-strip>p strong {font-size:64px;line-height:1.2;color:#fff45a}
+.corporate #pricing .total-strip>p small {font-size:14px;line-height:1.8;color:#fff}
+.corporate #pricing .total-strip>div:last-child {font-size:16px;line-height:1.9;color:#fff}
+.corporate #pricing .total-strip>div:last-child small {font-size:14px;line-height:1.8;color:#e3e8f2}
+.corporate #pricing .dedicated-lp-option {background:#fff;border:1px solid #b59a50;border-radius:0;box-shadow:none;padding:30px;gap:30px}
+.corporate #pricing .dedicated-lp-option h3 {font-size:25px;color:#142b66;line-height:1.7}
+.corporate #pricing .dedicated-lp-option>div>p:not(.eyebrow) {font-size:16px;line-height:1.9;color:#42516c}
+.corporate #pricing .option-price strong {color:#142b66;font-size:62px}
+.corporate #pricing .option-price>span {font-size:14px;line-height:1.8;color:#526077}
+.corporate #pricing .option-price>p {font-size:14px!important;line-height:1.8;color:#826831}
+.corporate #pricing .performance-box {background:#fff;color:#142b66;border:2px solid #142b66;border-left:7px solid #b59a50;border-radius:0;padding:30px;box-shadow:none;gap:28px}
+.corporate #pricing .performance-box .seal {border-radius:0;background:#142b66;border:0;color:#e5cf86;font-size:19px;width:77px;height:77px;flex:none}
+.corporate #pricing .performance-heading h3 {font-size:27px;line-height:1.7;color:#142b66}
+.corporate #pricing .performance-box p {font-size:16px;line-height:1.9;color:#42516c}
+.corporate #pricing .performance-box p.source-note {font-size:12px;line-height:1.9;color:#526077}
+.corporate #pricing .performance-heading .eyebrow {font-size:14px;line-height:1.7}
+.corporate #pricing .process-grid {gap:30px}
+.corporate #pricing .process-grid article {border-top:3px solid #142b66;padding-top:20px}
+.corporate #pricing .process-grid span {font-size:35px;color:#b59a50;font-style:italic}
+.corporate #pricing .process-grid h3 {font-size:18px;line-height:1.7;color:#142b66}
+.corporate #pricing .process-grid p {font-size:16px;line-height:1.9;color:#42516c}
+
+/* Calculator: inputs first, a single result sheet, assumptions under a clear rule. */
+.corporate #simulation {background:#fff;border:0;border-top:5px solid #142b66;border-radius:0;box-shadow:none;padding:38px 0;margin-top:34px}
+.corporate #simulation .simple-simulator-heading {text-align:center;max-width:800px;margin:0 auto 30px}
+.corporate #simulation .simple-simulator-heading h2 {color:#142b66;font-size:clamp(28px,3.2vw,40px);line-height:1.65}
+.corporate #simulation .simple-simulator-heading>p:not(.eyebrow) {font-size:16px;line-height:1.9;color:#42516c;margin-top:18px}
+.corporate #simulation .simple-model-fields {gap:26px;margin-bottom:30px}
+.corporate #simulation .simple-model-field {background:#fff;border:0;border-top:2px solid #b59a50;border-bottom:1px solid #d4d9e3;border-radius:0;padding:22px 0;box-shadow:none}
+.corporate #simulation .simple-model-field-top {gap:16px;align-items:center}
+.corporate #simulation .simple-model-field-top label {font-size:16px;line-height:1.8;color:#142b66}
+.corporate #simulation .simple-model-number {border:1px solid #a9b5cc;border-radius:0;background:#fff;padding:7px 12px;min-width:140px;flex:none}
+.corporate #simulation .simple-model-number input {font-size:30px;color:#142b66;background:transparent;border-radius:0;max-width:100%;min-width:0}
+.corporate #simulation .simple-model-number>span {font-size:16px;color:#42516c}
+.corporate #simulation .simple-model-chips {gap:9px;margin-top:15px}
+.corporate #simulation .simple-model-chips button {border-radius:0;font-size:16px;line-height:1.6;min-height:44px;padding:8px 16px;border:1px solid #c6cdde;color:#142b66;background:#fff}
+.corporate #simulation .simple-model-chips button.active {background:#142b66;color:#fff;border-color:#142b66}
+.corporate #simulation .simple-result {border:3px solid #142b66;border-top:8px solid #142b66;border-radius:0;background:#fff;box-shadow:none;padding:28px 30px}
+.corporate #simulation .simple-result-kicker {font-size:14px;line-height:1.8;color:#8a7138}
+.corporate #simulation .simple-result h3 {color:#142b66;font-size:24px;line-height:1.5;letter-spacing:0}
+.corporate #simulation .simple-result h3 strong {font-size:clamp(50px,6.8vw,84px);color:#142b66;line-height:1.3;letter-spacing:-.045em;background:linear-gradient(transparent 78%,#fff45a 78%,#fff45a 96%,transparent 96%)}
+.corporate #simulation .simple-result h3>span {font-size:25px;color:#142b66;line-height:1.6}
+.corporate #simulation .simple-result-subtitle {font-size:16px;color:#42516c;line-height:1.8}
+.corporate #simulation .simple-result-secondary {border-top:1px solid #b59a50;border-bottom:1px solid #b59a50;background:#fff;margin-top:24px;padding:20px 0;gap:20px}
+.corporate #simulation .simple-result-secondary>div {background:transparent;border:0;border-radius:0;padding:0 10px}
+.corporate #simulation .simple-result-secondary span {font-size:14px;line-height:1.8;color:#526077}
+.corporate #simulation .simple-result-secondary p {font-size:18px;line-height:1.8;color:#142b66}
+.corporate #simulation .simple-result-secondary strong {font-size:30px;color:#142b66}
+.corporate #simulation .simple-fee-strip {border:0;border-radius:0;background:#fff8cb;color:#142b66;padding:17px 20px;gap:16px;margin:22px 0 18px}
+.corporate #simulation .simple-fee-strip>span {font-size:14px;line-height:1.8;color:#142b66}
+.corporate #simulation .simple-fee-strip>strong {font-size:36px;line-height:1.4;color:#142b66;white-space:nowrap}
+.corporate #simulation .simple-fee-strip small {font-size:14px;line-height:1.8}
+.corporate #simulation .simple-fee-period {font-size:12px;line-height:1.8}
+.corporate #simulation .simple-main-assumption,
+.corporate #simulation .simple-grounding,
+.corporate #simulation .simple-error-note {font-size:12px;line-height:1.9;color:#526077}
+.corporate #simulation .simple-future {border:0;border-radius:0;background:#f6f4ee;padding:23px 25px;margin-top:22px}
+.corporate #simulation .simple-future p {font-size:18px;line-height:1.8;color:#142b66}
+.corporate #simulation .simple-future p>b {font-size:28px;color:#142b66}
+.corporate #simulation .simple-future small {font-size:12px;line-height:1.9;color:#526077;display:block;margin-top:10px}
+.corporate #simulation .simple-model-details {border-radius:0;border:0;border-top:2px solid #b59a50;border-bottom:2px solid #b59a50;background:#fff;margin-top:27px}
+.corporate #simulation .simple-model-details>summary {font-size:16px;line-height:1.8;padding:21px 0;color:#142b66}
+.corporate #simulation .simulator-inputs,
+.corporate #simulation .simulator-results,
+.corporate #simulation .model-result-grid>article,
+.corporate #simulation .model-visible-assumptions,
+.corporate #simulation .model-before-after,
+.corporate #simulation .model-uplift,
+.corporate #simulation .model-cost-check,
+.corporate #simulation .model-future,
+.corporate #simulation .model-future-charts>figure {border-radius:0;box-shadow:none}
+.corporate #simulation .simulator-inputs {background:#f8f7f3;border:1px solid #ddd4bf}
+.corporate #simulation .simulator-results {background:#fff;border:1px solid #ccd3e0}
+.corporate #simulation .model-result-grid>article {background:#fff;border:0;border-top:2px solid #b59a50;padding:20px 12px}
+.corporate #simulation .model-entry-switch button,
+.corporate #simulation .model-scenarios button {border-radius:0;min-height:48px}
+.corporate #simulation .model-entry-switch button.active,
+.corporate #simulation .model-scenarios button.active {background:#142b66;color:#fff;border-color:#142b66}
+.corporate #simulation .model-detail-content p,
+.corporate #simulation .model-detail-content label,
+.corporate #simulation .model-detail-content select {font-size:16px;line-height:1.85}
+.corporate #simulation .model-detail-content label,
+.corporate #simulation .model-detail-content select {min-width:0;max-width:100%}
+.corporate #simulation .model-detail-content small,
+.corporate #simulation .model-detail-content .model-scope,
+.corporate #simulation .model-detail-content .model-output-note,
+.corporate #simulation .model-detail-content .model-future-note,
+.corporate #simulation .model-detail-content .model-chart-legend,
+.corporate #simulation .model-detail-content .model-table-hint {font-size:12px;line-height:1.9}
+.corporate #simulation .model-detail-content .model-field>p,
+.corporate #simulation .model-detail-content .model-cost-mode>p {font-size:14px;line-height:1.9}
+.corporate #simulation .model-detail-content .model-result-grid article>span,
+.corporate #simulation .model-detail-content .model-entry-switch span,
+.corporate #simulation .model-detail-content .model-scenarios span,
+.corporate #simulation .model-detail-content .model-cost-check>div>span {font-size:14px;line-height:1.8}
+.corporate #simulation .model-detail-content table {font-size:14px;line-height:1.8}
+.corporate #simulation .model-detail-content summary {font-size:16px;line-height:1.8}
+.corporate #simulation .model-detail-content .simulator-panel-title h3 {font-size:22px;line-height:1.7}
+
+/* Research: real measurements and assumptions retain their original chart geometry. */
+.corporate #research {background:#faf9f6;border-top:1px solid #e3ddce}
+.corporate #research .review-data {background:#fff;border:0;border-top:4px solid #142b66;border-bottom:1px solid #b59a50;border-radius:0;box-shadow:none;padding:35px;gap:40px}
+.corporate #research .review-data h3 {font-size:28px;line-height:1.7;color:#142b66}
+.corporate #research .review-data>div>p:not(.eyebrow):not(.source-note) {font-size:16px;line-height:1.9;color:#42516c}
+.corporate #research .donut small {font-size:14px;line-height:1.7;color:#526077}
+.corporate #research .donut strong {color:#142b66}
+.corporate #research .adoption-card {border:0;border-top:4px solid #142b66;border-bottom:1px solid #b59a50;border-radius:0;box-shadow:none;padding:32px;background:#fff}
+.corporate #research .chart-heading h3 {font-size:26px;line-height:1.65;color:#142b66}
+.corporate #research .delta {color:#142b66;font-size:34px}
+.corporate #research .delta small {font-size:14px;line-height:1.8}
+.corporate #research .chart-y {font-size:14px;width:44px;color:#526077}
+.corporate #research .bar-chart {height:285px;margin:28px 0 46px}
+.corporate #research .bar-label {font-size:14px;line-height:1.7;white-space:nowrap;color:#42516c}
+.corporate #research .bar-value {font-size:31px;color:#142b66}
+.corporate #research .bar-value small {font-size:16px}
+.corporate #research .bar-new {background:#142b66;border-radius:0}
+.corporate #research .bar-old {background:#d9c37c;border-radius:0}
+.corporate #research .future-outlook {border:0;border-top:5px solid #142b66;border-radius:0;box-shadow:none;background:#fff;padding:32px;margin-top:30px}
+.corporate #research .future-heading {gap:30px;align-items:center}
+.corporate #research .future-heading h3 {font-size:27px;line-height:1.7;color:#142b66}
+.corporate #research .future-highlight {background:#142b66;color:#fff;border:0;border-radius:0;padding:20px;min-width:230px}
+.corporate #research .future-highlight>span {font-size:14px;line-height:1.8;color:#e5cf86}
+.corporate #research .future-highlight strong {font-size:58px;line-height:1.3;color:#fff45a}
+.corporate #research .future-highlight strong small {font-size:24px;color:#fff45a}
+.corporate #research .future-highlight>p {font-size:14px;line-height:1.8;color:#fff}
+.corporate #research .future-definition {font-size:16px;line-height:1.9;color:#42516c}
+.corporate #research .future-controls {gap:10px;flex-wrap:wrap}
+.corporate #research .future-controls button {border-radius:0;border:1px solid #b9c2d5;min-height:46px;padding:10px 16px;background:#fff;color:#142b66;font-size:16px;line-height:1.7}
+.corporate #research .future-controls button.active {background:#142b66;border-color:#142b66;color:#fff}
+.corporate #research .future-graphic {overflow-x:auto;overscroll-behavior-x:contain;margin-top:24px}
+.corporate #research .future-chart-svg {width:100%;min-width:640px;height:auto;display:block}
+.corporate #research .future-chart-svg text {font-size:14px}
+.corporate #research .future-legend {font-size:14px;line-height:1.8;gap:12px 22px;flex-wrap:wrap}
+.corporate #research .future-year-table {overflow-x:auto;overscroll-behavior-x:contain}
+.corporate #research .future-year-table table {font-size:16px;line-height:1.8;min-width:480px}
+.corporate #research .future-year-table th {background:#f5f2e9;color:#142b66}
+.corporate #research .source-library {border:0;border-top:3px solid #b59a50;background:#fff;border-radius:0;box-shadow:none;padding:28px 0;margin-top:34px}
+.corporate #research .source-library h3 {font-size:23px;color:#142b66}
+.corporate #research .source-library>p {font-size:16px;line-height:1.9;color:#42516c}
+.corporate #research .source-library li {font-size:14px;line-height:1.9;color:#42516c}
+.corporate #research .source-library b {font-size:16px;line-height:1.8;color:#142b66}
+.corporate #research .source-library small {font-size:12px;line-height:1.9;color:#526077}
+
+@media(max-width:900px) {
+ .corporate #pricing .total-strip {flex-wrap:wrap;justify-content:center;text-align:center}
+ .corporate #pricing .process-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+ .corporate #research .future-heading {display:block}
+ .corporate #research .future-highlight {margin-top:24px;min-width:0;text-align:center}
+ .corporate #simulation .simple-model-field-top {flex-wrap:wrap}
+}
+@media(max-width:600px) {
+ .corporate #services .section-heading h2,
+ .corporate #pricing .section-heading h2,
+ .corporate #research .section-heading h2 {font-size:27px;line-height:1.65}
+ .corporate #services .service-grid {gap:26px}
+ .corporate #services .service-card {padding:22px 0}
+ .corporate #services .service-card .service-value-text {font-size:21px}
+ .corporate #pricing .price-grid {gap:30px}
+ .corporate #pricing .price-card {padding:26px 18px 24px}
+ .corporate #pricing .price-card .plan-ribbon {margin:-26px -18px 21px;font-size:14px;padding:10px 12px}
+ .corporate #pricing .price-card .price strong {font-size:72px}
+ .corporate #pricing .price-card .price>span {font-size:22px}
+ .corporate #pricing .price-card .button {font-size:16px;padding:13px 10px}
+ .corporate #pricing .total-strip {padding:26px 18px;gap:18px}
+ .corporate #pricing .total-strip h3 {font-size:21px}
+ .corporate #pricing .dedicated-lp-option {padding:25px 18px;grid-template-columns:1fr;gap:24px}
+ .corporate #pricing .dedicated-lp-option h3 {font-size:23px;line-height:1.7}
+ .corporate #pricing .performance-box {padding:24px 18px;gap:24px;display:block}
+ .corporate #pricing .performance-heading {gap:14px;align-items:flex-start;margin-bottom:20px}
+ .corporate #pricing .performance-heading h3 {font-size:21px;line-height:1.7}
+ .corporate #pricing .performance-heading h3>span {white-space:normal}
+ .corporate #pricing .performance-box .seal {width:59px;height:59px;font-size:16px}
+ .corporate #pricing .performance-heading .eyebrow {font-size:12px}
+ .corporate #pricing .process-grid {grid-template-columns:1fr;gap:24px}
+ .corporate #pricing .process-grid article {display:grid;grid-template-columns:42px minmax(0,1fr);gap:5px 14px}
+ .corporate #pricing .process-grid article>span {grid-row:1/3;margin:0;font-size:32px}
+ .corporate #pricing .process-grid article>h3 {grid-column:2;margin:0;font-size:19px}
+ .corporate #pricing .process-grid article>p {grid-column:2;margin:0;font-size:16px}
+ .corporate #simulation {padding:27px 0}
+ .corporate #simulation .simple-simulator-heading h2 {font-size:27px}
+ .corporate #simulation .simple-model-fields {grid-template-columns:1fr;gap:16px}
+ .corporate #simulation .simple-model-field {padding:20px 0}
+ .corporate #simulation .simple-model-field-top {display:flex;flex-direction:column;align-items:stretch;gap:11px}
+ .corporate #simulation .simple-model-number {width:100%;min-width:0;justify-content:flex-end}
+ .corporate #simulation .simple-model-number input {max-width:calc(100% - 44px);width:120px;text-align:right}
+ .corporate #simulation .simple-model-chips {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+ .corporate #simulation .simple-model-chips button {padding:9px 4px;font-size:16px}
+ .corporate #simulation .simple-result {padding:23px 16px}
+ .corporate #simulation .simple-result h3 {font-size:19px;display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:0 4px}
+ .corporate #simulation .simple-result h3 strong {font-size:58px}
+ .corporate #simulation .simple-result h3>span {font-size:22px;white-space:nowrap}
+ .corporate #simulation .simple-result-secondary {display:grid;grid-template-columns:1fr;gap:18px;text-align:center}
+ .corporate #simulation .simple-result-secondary>div+div {border-top:1px solid #ddd6c7;padding-top:18px}
+ .corporate #simulation .simple-fee-strip {display:flex;flex-direction:column;gap:8px;padding:16px 12px;text-align:center}
+ .corporate #simulation .simple-future {padding:22px 18px}
+ .corporate #simulation .simple-model-details>summary {padding:19px 0;gap:14px}
+ .corporate #simulation .simulator-inputs,
+ .corporate #simulation .simulator-results {padding:22px 14px}
+ .corporate #simulation .model-field-top {display:flex;flex-wrap:wrap;gap:10px}
+ .corporate #simulation .model-field-top label {width:100%}
+ .corporate #simulation .model-number-wrap {max-width:100%}
+ .corporate #simulation .model-entry-switch {display:grid;grid-template-columns:1fr;gap:10px}
+ .corporate #simulation .model-entry-switch button {padding:13px 12px}
+ .corporate #simulation .model-entry-switch b {font-size:16px;line-height:1.7}
+ .corporate #simulation .model-result-grid {grid-template-columns:1fr}
+ .corporate #simulation .model-before-after {padding:18px 8px;overflow-x:auto}
+ .corporate #simulation .model-before-after table {min-width:430px}
+ .corporate #simulation .model-future-heading {display:block}
+ .corporate #simulation .model-future-control {margin-top:20px}
+ .corporate #research .review-data {padding:28px 18px;gap:26px;grid-template-columns:1fr}
+ .corporate #research .review-data h3 {font-size:24px;line-height:1.7}
+ .corporate #research .adoption-card {padding:27px 18px}
+ .corporate #research .chart-heading {display:block}
+ .corporate #research .chart-heading h3 {font-size:24px}
+ .corporate #research .delta {margin-top:20px;display:flex;align-items:baseline;gap:10px;font-size:32px;flex-wrap:wrap}
+ .corporate #research .chart-bars {padding:0 10px;gap:25px}
+ .corporate #research .bar-group {width:70px}
+ .corporate #research .bar-label {font-size:14px}
+ .corporate #research .future-outlook {padding:27px 18px}
+ .corporate #research .future-heading h3 {font-size:24px;line-height:1.7}
+ .corporate #research .future-controls {display:grid;grid-template-columns:1fr}
+ .corporate #research .future-controls button {width:100%}
+ .corporate #research .future-legend {display:grid;gap:10px}
+ .corporate #research .source-library ol {grid-template-columns:1fr;gap:26px}
+}
+@media(max-width:360px) {
+ .corporate #pricing .price-card {padding-left:14px;padding-right:14px}
+ .corporate #pricing .price-card .plan-ribbon {margin-left:-14px;margin-right:-14px}
+ .corporate #pricing .performance-heading {display:block}
+ .corporate #pricing .performance-box .seal {margin-bottom:14px}
+ .corporate #simulation .simple-result {padding-left:12px;padding-right:12px}
+ .corporate #simulation .simple-result h3 strong {font-size:52px}
+ .corporate #research .chart-bars {gap:19px;padding-left:9px;padding-right:0}
+ .corporate #research .bar-group {width:63px}
+}
+
+.corporate #branding .hp-kicker-phrase{display:inline-block;white-space:nowrap}
+@media(max-width:600px){.corporate #branding .hp-kicker-phrase{display:block}}
+
+/* Deliberate two-line headings. Each line fits its own real container, so short
+   suffixes cannot fall to an isolated third line at 320px or 390px. */
+.corporate .hp-two-line {container-type:inline-size;display:block;width:100%;max-width:100%;min-width:0}
+.corporate .hp-two-line>.hp-heading-line {display:block;white-space:nowrap;line-height:1.65;letter-spacing:-.025em}
+.corporate .hp-two-line>.hp-heading-line+.hp-heading-line {margin-top:.08em}
+.corporate .hp-two-line>.hp-heading-line>em {font-size:inherit;line-height:inherit;white-space:nowrap}
+.corporate #services .split-heading>div {flex:1;min-width:0}
+.corporate #services .split-heading>p {font-size:16px!important;line-height:1.9}
+.corporate #services .hp-fit-services>.hp-heading-line {font-size:clamp(18px,6.9cqw,42px)}
+.corporate #news-comparison .hp-fit-comparison>.hp-heading-line {font-size:clamp(18px,6.7cqw,42px)}
+.corporate #news-comparison .interview-result>div {flex:1;min-width:0}
+.corporate #news-comparison .hp-fit-deliverable>.hp-heading-line {font-size:clamp(19px,8cqw,30px)}
+.corporate #ai-comparison .hp-fit-ai>.hp-heading-line {font-size:clamp(20px,7.7cqw,40px)}
+.corporate #simulation .hp-fit-simulation>.hp-heading-line {font-size:clamp(20px,7.7cqw,40px)}
+.corporate #research .hp-fit-reputation>.hp-heading-line {font-size:clamp(18px,7.7cqw,28px)}
+.corporate #pricing .total-strip>div:first-child {flex:1;min-width:0}
+.corporate #pricing .hp-fit-total>.hp-heading-line {font-size:clamp(20px,9cqw,24px)}
+.corporate #pricing .dedicated-lp-option>div:first-child {min-width:0}
+.corporate #pricing .hp-fit-option>.hp-heading-support {font-size:clamp(14px,6cqw,19px);font-weight:600;line-height:1.7;color:#42516c;letter-spacing:-.025em}
+.corporate #pricing .hp-fit-option>.hp-heading-main {font-size:clamp(20px,8.1cqw,30px);font-weight:800;line-height:1.65;margin-top:.18em;color:#142b66}
+.corporate .closing-section .hp-fit-closing>.hp-heading-line {font-size:clamp(18px,6.5cqw,42px)}
+@media(max-width:600px) {
+ .corporate #pricing .total-strip>div:first-child {width:100%}
+ .corporate #news-comparison .hp-fit-deliverable {margin-top:12px}
+ .corporate .closing-section .hp-fit-closing>.hp-heading-line:first-child {font-size:clamp(23px,7.5cqw,32px)}
+}
+
+/* The future-value statement keeps its two full phrases together. */
+.corporate #research .future-heading>div:first-child {min-width:0;flex:1}
+.corporate #research .hp-fit-future>.hp-heading-line {font-size:clamp(14px,5.2cqw,26px);line-height:1.7;letter-spacing:-.025em}
+@media(max-width:600px){.corporate .future-heading>div:first-child{width:100%;min-width:0}}

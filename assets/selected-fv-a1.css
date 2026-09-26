@@ -1,0 +1,50 @@
+/* Three unapproved first-view options. Canonical LP is unchanged. */
+.faithful-landing .faithful-fv-headline[class*=fv-option-]{padding:2cqw 3.7cqw 2.2cqw;}
+.fv-service{margin:0;padding:0;text-align:center;line-height:1.2;font-weight:900;color:#142b66}
+.fv-service strong,.fv-service span{display:block;white-space:nowrap}
+.fv-service .fv-news{font-size:7.7cqw;letter-spacing:-.035em;font-style:italic;line-height:1.15;font-weight:900}
+.fv-service .fv-ai{font-size:6.65cqw;letter-spacing:-.025em;line-height:1.2;font-style:italic;font-weight:900}
+.fv-connector{font-size:3.2cqw;line-height:1.2;font-weight:700;margin:.65cqw 0;font-style:normal}
+.faithful-landing .faithful-fv-headline .fv-promise{font-size:5.55cqw;line-height:1.28;margin-top:2.6cqw;letter-spacing:-.055em}
+.faithful-landing .faithful-fv-headline .fv-promise .personalized-lead{font-size:3.6cqw;line-height:1.25;margin-bottom:.25cqw}
+.fv-option-a .fv-news{text-decoration:underline;text-decoration-color:#bd9f50;text-decoration-thickness:.45cqw;text-underline-offset:.65cqw}
+.fv-option-a .fv-ai{background:linear-gradient(transparent 62%,#fff45a 62%);width:max-content;max-width:100%;margin:auto;padding:0 .35cqw}
+.faithful-landing .fv-option-b .fv-service{display:grid;grid-template-columns:1fr;justify-items:stretch}
+.fv-option-b .fv-news{background:#142b66;color:#fff;padding:1.3cqw .7cqw 1.5cqw;font-size:7.3cqw;box-shadow:1cqw 1cqw 0 #e6dfcd}
+.fv-option-b .fv-multiply{font-size:4.2cqw;line-height:1;margin:.9cqw 0 .4cqw;color:#a78c43;font-weight:500}
+.fv-option-b .fv-ai{background:#fff45a;padding:.8cqw .7cqw 1cqw;font-size:6.4cqw}
+.faithful-landing .faithful-fv-headline.fv-option-b .fv-promise{font-size:5.3cqw;margin-top:2cqw}
+.faithful-landing .faithful-fv-headline.fv-option-c .fv-promise{font-size:6.2cqw;margin-top:0;line-height:1.25}
+.faithful-landing .faithful-fv-headline.fv-option-c .fv-promise .personalized-lead{font-size:3.6cqw}
+.fv-option-c .fv-service{border-top:1px solid #bca05b;margin-top:2cqw;padding-top:1.5cqw}
+.fv-option-c .fv-news{font-size:6.6cqw;color:#a4873f}
+.fv-option-c .fv-ai{font-size:6.35cqw;background:linear-gradient(transparent 68%,#fff45a 68%);width:max-content;margin:auto}
+.fv-option-c .fv-connector{font-size:2.9cqw;margin:.4cqw 0}
+
+/* A direction refinements: same sentence, photos and approved CTA. */
+.faithful-landing .faithful-fv-headline[class*=fv-refine] .fv-service-top{display:flex;justify-content:center;align-items:baseline;gap:.5cqw;white-space:nowrap;margin-bottom:1.1cqw}
+.faithful-landing .faithful-fv-headline[class*=fv-refine] .fv-service-top .fv-news{margin:0;flex:none}
+.faithful-landing .faithful-fv-headline[class*=fv-refine] .fv-service-top .fv-connector{display:inline;flex:none;font-size:clamp(10px,3.5cqw,27px);line-height:1.2;letter-spacing:-.025em;margin:0}
+
+.faithful-landing .faithful-fv-headline[class*=fv-refine] .fv-promise-top{display:flex;justify-content:center;align-items:baseline;gap:.12em;white-space:nowrap}
+.faithful-landing .faithful-fv-headline[class*=fv-refine] .fv-promise .personalized-lead{display:inline;font-size:clamp(10px,3.5cqw,27px);line-height:inherit;margin:0;white-space:nowrap}
+.faithful-landing .faithful-fv-headline[class*=fv-refine] .fv-promise-time{display:inline;white-space:nowrap}
+.faithful-landing .faithful-fv-headline[class*=fv-refine] .fv-promise-bottom{display:block;white-space:nowrap;margin-top:.25cqw}
+
+.faithful-landing .fv-refine-1 .fv-news{font-size:8cqw;letter-spacing:-.035em}
+.faithful-landing .fv-refine-1 .fv-ai{font-size:6.9cqw;letter-spacing:-.03em}
+.faithful-landing .fv-refine-2 .fv-news{font-size:8.75cqw;letter-spacing:-.06em;text-decoration:none;background:linear-gradient(transparent 72%,#e7d89f 72%);width:max-content;margin:0 auto;padding:0 .4cqw}
+.faithful-landing .fv-refine-2 .fv-ai{font-size:6.3cqw;letter-spacing:-.025em;background:linear-gradient(transparent 68%,#fff45a 68%)}
+.faithful-landing .fv-refine-2 .fv-connector{margin:1.1cqw 0 .6cqw;font-size:3.3cqw}
+.faithful-landing .fv-refine-3 .fv-news{font-size:6.9cqw;letter-spacing:-.025em;text-decoration:none}
+.faithful-landing .fv-refine-3 .fv-ai{font-size:7.4cqw;letter-spacing:-.055em;background:linear-gradient(transparent 55%,#fff45a 55%);padding:0 .4cqw}
+.faithful-landing .fv-refine-3 .fv-connector{margin:.9cqw 0 1cqw;font-size:3.2cqw}
+/* Optical spacing follows each headline size; both messages retain two lines. */
+.faithful-landing .faithful-fv-headline[class*=fv-refine]{--service-gap:1.05cqw;--message-gap:1.05cqw;--block-gap:2.4cqw;padding-top:2.2cqw;padding-bottom:2.2cqw}
+.faithful-landing .faithful-fv-headline.fv-refine-2{--service-gap:.95cqw;--block-gap:2.45cqw}
+.faithful-landing .faithful-fv-headline.fv-refine-3{--service-gap:1.2cqw;--block-gap:2.25cqw}
+.faithful-landing .faithful-fv-headline[class*=fv-refine] .fv-service{display:grid;row-gap:var(--service-gap);margin:0;padding:0}
+.faithful-landing .faithful-fv-headline[class*=fv-refine] .fv-service-top{margin:0}
+.faithful-landing .faithful-fv-headline[class*=fv-refine] .fv-promise{display:grid;row-gap:var(--message-gap);margin-top:var(--block-gap);padding:0}
+.faithful-landing .faithful-fv-headline[class*=fv-refine] .fv-promise-bottom{margin:0}
+

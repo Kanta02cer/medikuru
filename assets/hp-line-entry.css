@@ -1,0 +1,4 @@
+/* Official LINE entry; preserve the existing HP button design. */
+body.hp-form-theme #site-nav>a.hp-primary-consult{color:#fff}
+body.hp-form-theme .hp-line-note{font-size:14px;line-height:1.7;margin:0 0 12px;color:inherit}
+body.hp-form-theme a[data-hp-line-entry]:focus-visible{outline:3px solid #b29143;outline-offset:4px}

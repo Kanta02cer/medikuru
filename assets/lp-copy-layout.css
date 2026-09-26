@@ -1,0 +1,10 @@
+/* Explicit phrase wrapping; font size follows each section's usable width. */
+.faithful-landing .faithful-comparison{container-type:inline-size}
+.faithful-landing .faithful-comparison .faithful-title>span.faithful-release-headline{display:inline-grid;gap:.15em;max-width:100%;box-sizing:border-box;font-size:clamp(15px,6cqw,30px);line-height:1.5;padding:.7em .85em}
+.faithful-release-headline>span{display:block;white-space:nowrap}
+.faithful-landing .branding-concept-lp{container-type:inline-size}
+.faithful-landing #branding-concept-title{font-size:clamp(16px,6.5cqw,32px);line-height:1.5;letter-spacing:-.025em;display:grid;gap:.25em}
+.faithful-landing #branding-concept-title>.branding-name-line{display:block;white-space:nowrap}
+.faithful-landing #branding-concept-title .branding-times{font-size:.82em;padding:0 .12em 0 0;line-height:inherit}
+.faithful-landing .faithful-pricing .price-card{container-type:inline-size}
+.faithful-landing .faithful-pricing .price-card>h3{font-size:clamp(14px,8.3cqw,27px);letter-spacing:-.025em;line-height:1.5;white-space:nowrap}
