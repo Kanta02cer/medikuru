@@ -37,6 +37,28 @@ body.hp-form-theme .hp-contact-options .hp-line-cta-label{display:flex;flex-wrap
 body.hp-form-theme .hp-contact-options .hp-line-cta-label>span{display:block;white-space:nowrap}
 body.hp-form-theme #site-nav .hp-contact-header .hp-contact-line{gap:2px}
 body.hp-form-theme #site-nav .hp-contact-header .hp-line-cta-label{flex-direction:column}
+.corporate #simulation .simple-result h3 .simple-result-value{display:inline-flex;align-items:baseline;white-space:nowrap;gap:2px}
+@media(max-width:360px){
+ .corporate #simulation label[for="simple-model-cost"] span{display:block}
+ .corporate #simulation .simple-result h3{display:block;text-align:center}
+ .corporate #simulation .simple-result h3 .simple-result-prefix{display:block;font-size:18px}
+ .corporate #simulation .simple-result h3 .simple-result-value{display:inline-flex;font-size:18px}
+ .corporate #simulation .simple-result h3 .simple-result-value strong{font-size:46px}
+ .corporate #simulation .simple-result h3 .simple-result-unit{font-size:18px}
+}
+@media(max-width:900px){
+ body.hp-form-theme.hp-menu-open .mobile-cta{display:none}
+ .corporate #simulation .simulator-body{grid-template-columns:minmax(0,1fr);min-width:0;width:100%}
+ .corporate #simulation .simulator-inputs,
+ .corporate #simulation .simulator-results,
+ .corporate #simulation .model-entry-switch,
+ .corporate #simulation .model-field,
+ .corporate #simulation .model-field-top{min-width:0;max-width:100%;width:100%}
+ .corporate #simulation .model-entry-switch{grid-template-columns:minmax(0,1fr)}
+ .corporate #simulation .model-entry-switch button{min-width:0;width:100%;white-space:normal}
+ .corporate #simulation .model-before-after,
+ .corporate #simulation .model-future-table-scroll{max-width:100%;min-width:0;overflow-x:auto}
+}
 @media(max-width:600px){
  body.hp-form-theme .mobile-cta .hp-contact-options .hp-contact-line{gap:2px;min-height:68px}
  body.hp-form-theme .mobile-cta .hp-contact-options .hp-line-cta-label{flex-direction:column}

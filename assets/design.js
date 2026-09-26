@@ -3,7 +3,7 @@
   'use strict';
   const menu = document.querySelector('.menu-toggle');
   const nav = document.querySelector('#site-nav');
-  const setMenu = open => { if (!menu || !nav) return; menu.setAttribute('aria-expanded', String(open)); nav.classList.toggle('open', open); menu.querySelector('.visually-hidden').textContent = open ? 'メニューを閉じる' : 'メニューを開く'; };
+  const setMenu = open => { if (!menu || !nav) return; menu.setAttribute('aria-expanded', String(open)); nav.classList.toggle('open', open); document.body.classList.toggle('hp-menu-open', open); menu.querySelector('.visually-hidden').textContent = open ? 'メニューを閉じる' : 'メニューを開く'; };
   menu?.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
   nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
   const dialog = document.querySelector('#consult-dialog');
