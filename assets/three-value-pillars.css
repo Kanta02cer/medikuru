@@ -1,0 +1,26 @@
+/* Three approved values. Scoped to HP service introduction only. */
+body.hp-form-theme #services .hp-value-heading{container-type:inline-size;margin-bottom:32px}
+body.hp-form-theme #services .hp-value-title{font-size:clamp(24px,7.8cqw,49px);line-height:1.5;letter-spacing:-.04em}
+body.hp-form-theme #services .hp-value-title>span{display:block;white-space:nowrap}
+body.hp-form-theme #services .hp-value-heading>p:not(.eyebrow){font-size:16px;line-height:1.9;margin-top:22px;color:#526077}
+body.hp-form-theme #services .hp-value-pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;list-style:none;padding:0;margin:0 0 44px}
+body.hp-form-theme #services .hp-value-pillars>li{min-width:0;margin:0;padding:18px 0 21px;border-top:3px solid #b49950;border-bottom:1px solid #d8dce3;container-type:inline-size}
+body.hp-form-theme #services .hp-value-pillars h3{display:flex;gap:10px;align-items:center;line-height:1.55;margin:0 0 13px;padding:0;color:#142b66;letter-spacing:-.04em;font-size:clamp(17px,6cqw,22px);font-weight:800}
+body.hp-form-theme #services .hp-value-pillars h3>span{font:italic 900 1.4em/1 Arial,sans-serif;color:#a68b42;flex:none;letter-spacing:-.03em}
+body.hp-form-theme #services .hp-value-pillars h3>strong{white-space:nowrap;font-weight:800;font-size:inherit;line-height:inherit}
+body.hp-form-theme #services .hp-value-pillars p{font-size:clamp(13px,4.65cqw,15px);line-height:1.85;color:#40516b;margin:0;padding:0;letter-spacing:0}
+@media(max-width:900px){
+ body.hp-form-theme #services .hp-value-pillars{grid-template-columns:1fr;gap:0;margin-bottom:32px}
+ body.hp-form-theme #services .hp-value-pillars>li{padding:18px 0 20px;border-top:0}
+ body.hp-form-theme #services .hp-value-pillars>li:first-child{border-top:3px solid #b49950}
+ body.hp-form-theme #services .hp-value-pillars h3{font-size:21px;margin-bottom:9px;gap:13px}
+ body.hp-form-theme #services .hp-value-pillars p{font-size:15px;padding-left:43px}
+}
+@media(max-width:600px){
+ body.hp-form-theme #services .hp-value-heading{margin-bottom:24px}
+ body.hp-form-theme #services .hp-value-title{font-size:clamp(22px,7.8cqw,32px)}
+ body.hp-form-theme #services .hp-value-heading>p:not(.eyebrow){font-size:13px;line-height:1.9;margin-top:18px}
+ body.hp-form-theme #services .hp-value-heading>p>br{display:block}
+ body.hp-form-theme #services .hp-value-pillars h3{font-size:clamp(17px,6cqw,21px);gap:10px}
+ body.hp-form-theme #services .hp-value-pillars p{font-size:clamp(13px,4.65cqw,15px);padding-left:0}
+}

@@ -1,0 +1,95 @@
+/* Only the new LP condition links and the standalone conditions page. */
+body.faithful-landing .lp-condition-link {
+  margin: 14px 0;
+  color: #5d6266;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: .01em;
+  overflow-wrap: anywhere;
+}
+body.faithful-landing .lp-condition-link a {
+  color: #725b2b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+body.faithful-landing .faithful-fv-note.lp-condition-link {
+  max-width: 720px;
+  margin: 14px auto 0;
+  text-align: center;
+  font-size: 12px;
+  color: #dce4f4;
+}
+body.faithful-landing .faithful-fv-note.lp-condition-link a { color: #ffe59c; }
+body.faithful-landing .lp-condition-link a:focus-visible,
+.lp-conditions-page a:focus-visible {
+  outline: 3px solid #a48243;
+  outline-offset: 4px;
+}
+.lp-conditions-page {
+  margin: 0;
+  color: #243442;
+  background: #f6f5f1;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+  -webkit-text-size-adjust: 100%;
+}
+.lp-conditions-page * { box-sizing: border-box; }
+.lp-conditions-page a {
+  color: #765b28;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+}
+.conditions-shell { width: min(920px, calc(100% - 48px)); margin: 0 auto; }
+.conditions-header { padding: 25px 0; border-bottom: 1px solid #dfddd5; background: #fff; }
+.conditions-header .conditions-shell { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.conditions-brand { font-size: 23px; font-weight: 750; letter-spacing: .06em; }
+.conditions-brand img { display: block; width: 120px; max-width: 100%; height: auto; }
+.conditions-header a { font-size: 14px; }
+.conditions-intro { padding: 50px 0 25px; }
+.conditions-intro h1 { margin: 0 0 18px; color: #203447; font-size: clamp(25px, 4.5vw, 38px); line-height: 1.45; }
+.conditions-intro p { max-width: 740px; margin: 0; color: #53616a; }
+.conditions-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 35px; }
+.conditions-nav a { display: block; padding: 9px 13px; border: 1px solid #d8cfbb; border-radius: 5px; background: #fff; font-size: 13px; }
+.conditions-section { margin: 0 0 25px; padding: 30px 35px; border: 1px solid #e4e0d6; border-top: 3px solid #b6995e; background: #fff; scroll-margin-top: 22px; }
+.conditions-section h2 { margin: 0 0 24px; font-size: 24px; line-height: 1.55; color: #203447; }
+.conditions-entry + .conditions-entry { margin-top: 23px; padding-top: 20px; border-top: 1px solid #ece9e2; }
+.conditions-entry h3 { margin: 0 0 10px; font-size: 15px; color: #76623b; }
+.conditions-original { font-size: 15px; line-height: 1.95; overflow-wrap: anywhere; }
+.conditions-original p, .conditions-original small { display: block; margin: 0 0 13px; font-size: inherit; line-height: inherit; }
+.conditions-original p:last-child { margin-bottom: 0; }
+.conditions-original details { margin: 0; }
+.conditions-original details > summary { display: none; }
+.conditions-original .price, .conditions-original .tax { margin: 0; }
+.conditions-original .table-scroll { overflow-x: auto; max-width: 100%; }
+.conditions-original table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: 13px; line-height: 1.8; }
+.conditions-original th, .conditions-original td { padding: 12px; border: 1px solid #ddd9cf; text-align: left; vertical-align: top; }
+.conditions-original thead th { background: #f5f1e8; }
+.conditions-original tbody th { width: 120px; }
+.conditions-original .our-column { background: #faf8f0; }
+.conditions-original table small { margin: 0; font-size: 12px; }
+.conditions-original .source-library h3 { margin: 0 0 12px; font-size: 16px; }
+.conditions-original .source-library ol { margin: 15px 0 0; padding-left: 22px; }
+.conditions-original .source-library li { margin: 0 0 18px; padding-left: 4px; }
+.conditions-original .source-library small { margin: 7px 0 0; color: #59656c; font-size: 13px; }
+.conditions-return { margin: 25px 0 0; text-align: right; font-size: 14px; }
+.conditions-footer { padding: 15px 0 45px; text-align: center; font-size: 14px; }
+@media(max-width: 600px) {
+  .conditions-shell { width: calc(100% - 32px); }
+  .conditions-header { padding: 19px 0; }
+  .conditions-brand { font-size: 21px; }
+  .conditions-intro { padding-top: 35px; }
+  .conditions-section { padding: 23px 20px; }
+  .conditions-section h2 { font-size: 21px; }
+  .conditions-original { font-size: 14px; }
+  .conditions-nav { gap: 7px; }
+}
+@media print {
+  .lp-conditions-page { background: white; }
+  .conditions-shell { width: 100%; }
+  .conditions-nav, .conditions-return, .conditions-footer { display: none; }
+  .conditions-section { break-inside: avoid; border: 0; padding: 15px 0; }
+}

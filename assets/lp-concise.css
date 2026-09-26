@@ -1,0 +1,90 @@
+/* Shorter LP, preserving the original navy / gold / yellow design. */
+body.faithful-landing .lp-concise{padding:40px 32px;background:#fff;color:#142b66;text-align:center;container-type:inline-size}
+.lp-concise .lp-concise-kicker{font-size:clamp(13px,3.6cqw,20px);color:#927637;font-weight:800;line-height:1.7;margin:0 0 17px;padding:0;white-space:nowrap}
+.lp-concise h2{color:#142b66;font-size:clamp(24px,7.8cqw,42px);font-style:italic;font-weight:900;line-height:1.5;margin:0 0 28px;letter-spacing:-.025em;padding:0}
+.lp-concise h2>span{display:block}
+.lp-concise mark{background:linear-gradient(transparent 52%,#fff45a 52%);color:#142b66;padding:0 .12em}
+.lp-concise .lp-concise-lead{font-size:clamp(14px,4.8cqw,23px);line-height:1.9;color:#142b66;margin:23px 0 0;padding:0}
+.lp-concise-lead>span,.lp-concise-lead>strong{display:block;white-space:nowrap}
+.lp-concise-lead>strong{font-weight:800}
+.lp-concise-benefits{list-style:none;padding:0;margin:0;text-align:left}
+.lp-concise-benefits li{padding:0;margin:0 0 23px}
+.lp-concise-benefits li:last-child{margin-bottom:0}
+.lp-concise-benefits h3{display:grid;grid-template-columns:1.75em minmax(0,1fr);gap:.4em;align-items:center;font-size:clamp(14px,5.5cqw,28px);line-height:1.45;margin:0 0 14px;padding:12px 12px 11px 9px;background:#142b66;border-radius:26px 0 0 26px;border-bottom:3px solid #dfc47b;color:#fff;font-weight:800;letter-spacing:-.025em}
+.lp-concise-benefits h3>span{font:italic 900 1.5em/1 Arial,sans-serif;color:#dfc47b;text-align:center}
+.lp-concise-benefits h3>strong{display:block;white-space:nowrap;color:#fff;font-size:inherit;font-weight:800;line-height:inherit}
+.lp-concise-benefits p{font-size:clamp(14px,3.9cqw,20px);line-height:1.85;color:#34476a;margin:0;padding:0 13px}
+.lp-concise-benefits p>span{display:block;white-space:nowrap}
+/* A clear secondary action, below the main LINE registration CTA. */
+.lp-concise .lp-concise-link{display:flex;align-items:center;justify-content:center;gap:clamp(14px,4cqw,28px);width:100%;max-width:510px;min-height:82px;box-sizing:border-box;margin:25px auto 0;padding:15px 18px;background:#ead699;border:1px solid #b49950;border-bottom:3px solid #b49950;color:#142b66;text-decoration:none;transition:background-color .16s ease,transform .16s ease}
+.lp-concise-link__copy{display:block;text-align:center;min-width:0}
+.lp-concise-link__copy>strong{display:block;font-size:clamp(15px,5.7cqw,23px);line-height:1.5;font-weight:800;letter-spacing:0;white-space:nowrap}
+.lp-concise-link__copy>span{display:block;margin-top:3px;font-size:clamp(12px,4cqw,15px);font-weight:600;line-height:1.5;letter-spacing:.08em}
+.lp-concise-link__arrow{display:flex;align-items:center;justify-content:center;flex:0 0 30px;width:30px;height:30px;border-radius:50%;background:#142b66;color:#fff;font:400 20px/1 Arial,sans-serif}
+.lp-concise .lp-concise-link:hover{background:#f2e3b7}
+.lp-concise .lp-concise-link:focus-visible{outline:3px solid #142b66;outline-offset:4px}
+.lp-concise .lp-concise-link:active{transform:translateY(1px)}
+@media(prefers-reduced-motion:reduce){.lp-concise .lp-concise-link{transition:none}}
+body.faithful-landing .lp-concise-more{margin:0;padding:0;border:0;background:#f4f5f7;color:#142b66;text-align:left}
+.lp-concise-more>summary{display:flex;justify-content:space-between;align-items:center;gap:14px;list-style:none;padding:20px 24px;border-top:1px solid #c9d0df;border-bottom:1px solid #c9d0df;font-size:15px;line-height:1.65;font-weight:700;cursor:pointer}
+.lp-concise-more>summary>span{min-width:0}
+.lp-concise-more>summary>span>span{display:block}
+.lp-concise-more>summary small{display:block;font-size:12px;font-weight:500;line-height:1.6;margin-top:3px;color:#5b6880}
+.lp-concise-more>summary::-webkit-details-marker{display:none}
+.lp-concise-more>summary>b{font:400 25px/1 Arial,sans-serif;color:#a68b42;flex:none}
+.lp-concise-more[open]>summary>b{transform:rotate(45deg)}
+.lp-concise-more>img{display:block;width:100%;height:auto}
+.lp-concise-more .faithful-calculator{margin:0}
+body.faithful-landing .faithful-pricing .lp-concise-more{margin-top:22px;background:#fff}
+.faithful-pricing .lp-concise-more>summary{font-size:14px;padding:17px 18px;border:2px solid #142b66}
+body.faithful-landing .faithful-pricing .lp-concise-more .dedicated-lp-option{margin:0;border-top:0;box-shadow:none}
+body.faithful-landing .faithful-pricing .price-card .check-list{margin-top:20px;margin-bottom:0}
+.lp-concise-commit{margin-top:25px;padding:28px 22px;background:#142b66;color:#fff;text-align:center;border-bottom:5px solid #dfc47b;container-type:inline-size}
+.lp-concise-commit h3{line-height:1.6;color:#fff;margin:0 0 19px;padding:0;font-weight:900}
+.lp-concise-commit h3 mark{display:inline-block;background:#fff45a;color:#142b66;font-size:clamp(24px,9cqw,40px);line-height:1.45;padding:.03em .3em;font-style:normal}
+.lp-concise-commit h3>span{display:block;font-size:clamp(17px,7.05cqw,30px);white-space:nowrap;margin-top:10px;letter-spacing:-.02em}
+.lp-concise-commit p{color:#fff;font-size:clamp(12px,4.9cqw,18px);line-height:1.9;margin:0;padding:0}
+.lp-concise-commit p>span{display:block;white-space:nowrap}
+.lp-concise-commit small{display:block;color:#dfe5f1;font-size:11px;line-height:1.7;margin-top:9px}
+.lp-concise-commit a{display:inline-block;margin-top:12px;color:#f1d996;text-decoration:underline;font-size:12px}
+.lp-concise-faq details{border-top:1px solid #c6b784;text-align:left}
+.lp-concise-faq details:last-child{border-bottom:1px solid #c6b784}
+.lp-concise-faq summary{display:grid;grid-template-columns:20px 1fr 12px;align-items:baseline;gap:8px;padding:19px 0;color:#142b66;font-size:16px;font-weight:800;line-height:1.6;cursor:pointer;list-style:none}
+.lp-concise-faq summary::-webkit-details-marker{display:none}
+.lp-concise-faq summary:before{content:"Q";color:#a68b42;font:800 20px/1 Arial,sans-serif}
+.lp-concise-faq summary:after{content:"+";color:#947c3d;font:400 17px/1 Arial,sans-serif}
+.lp-concise-faq details[open]>summary:after{content:"−"}
+.lp-concise-faq p{font-size:14px;line-height:1.9;margin:0;padding:0 0 19px;color:#40506d}
+.lp-concise-faq a{color:inherit;text-decoration:underline}
+body.faithful-landing .lp-concise-directors{overflow:hidden;background:#f5f5f5}
+body.faithful-landing .lp-concise-directors>img{display:block;width:100%;height:auto;max-width:none;margin-top:-57.733333%}
+.lp-concise-testimonial-note{font-size:11px;line-height:1.7;color:#68788c;background:#fff;text-align:center;padding:10px 16px;margin:0}
+@media(max-width:600px){
+ body.faithful-landing .lp-concise{padding:32px 22px}
+ .lp-concise h2{margin-bottom:25px}
+ .lp-concise-benefits h3{padding-right:7px;padding-left:7px}
+ .lp-concise-more>summary{padding:17px 20px;font-size:14px}
+ .lp-concise-commit{padding:23px 17px}
+ .lp-concise-faq summary{font-size:13px}
+ .lp-concise-faq p{font-size:13px}
+}
+/* Small, high-contrast roles sit above the original nameplates; source photos unchanged. */
+body.faithful-landing .faithful-fv-portraits{position:relative}
+body.faithful-landing .lp-hero-role{position:absolute;z-index:2;display:block;padding:2px 0;color:#142b66;background:#fff;text-align:center;font-size:clamp(7px,2cqw,12px);font-weight:600;line-height:1.3;letter-spacing:0;white-space:nowrap;font-style:normal;box-sizing:border-box;pointer-events:none}
+.lp-hero-role{--role-angle:-11.09deg;transform:skewX(var(--role-angle));transform-origin:center bottom}
+.lp-hero-role>span{display:block;transform:skewX(calc(-1 * var(--role-angle)))}
+/* Match the horizontal width and slanted edges at the nameplate's top edge. */
+.lp-hero-role--takenouchi{left:7.2472%;width:22.7528%;bottom:35.38%}
+.lp-hero-role--urushizawa{--role-angle:-10deg;left:40.232%;width:20.468%;bottom:30.27%}
+.lp-hero-role--ando{left:72.2472%;width:22.7528%;bottom:35.38%}
+/* The smaller live names cover the original white nameplates; image pixels are preserved. */
+body.faithful-landing .lp-hero-name{position:absolute;z-index:3;display:flex;align-items:center;justify-content:center;background:#fff;color:#142b66;font-size:clamp(9px,2.85cqw,21px);line-height:1;font-style:italic;font-weight:800;letter-spacing:.025em;white-space:nowrap;box-sizing:border-box;pointer-events:none;clip-path:polygon(4.8% 0,100% 0,95.2% 100%,0 100%)}
+.lp-hero-name--takenouchi{left:6.1%;width:23.9%;top:64.62%;height:8.98%}
+.lp-hero-name--urushizawa{left:39.2%;width:21.5%;top:69.73%;height:8.98%}
+.lp-hero-name--ando{left:71.1%;width:23.9%;top:64.62%;height:8.98%}
+/* Use the existing transparent official logo, not the logo baked into the masthead. */
+body.faithful-landing .faithful-fv-masthead{position:relative;aspect-ratio:750/96;background:#f6f6f7;isolation:isolate}
+.faithful-fv-masthead:before{content:"";position:absolute;inset:0;background:#142b66;clip-path:polygon(0 0,83% 0,0 70%);z-index:-1}
+.lp-masthead-audience{position:absolute;left:7.7%;top:40.6%;padding:.35cqw 1.6cqw;background:#b49950;color:#fff;font-size:3.8cqw;font-weight:900;font-style:italic;line-height:1.25;white-space:nowrap}
+.lp-masthead-logo{position:absolute;right:3.5%;top:21%;width:31%;aspect-ratio:648/192;overflow:hidden}
+body.faithful-landing .faithful-original-fv .lp-masthead-logo>img{position:absolute;left:-19.444445%;top:-45.833334%;width:138.888889%;max-width:none;height:auto;margin:0;background:transparent}

@@ -1,0 +1,355 @@
+/* Final spacing/type pass, retaining the established corporate design. */
+.corporate .section{padding-top:80px;padding-bottom:80px}
+.corporate .section-heading{margin-bottom:36px}
+.corporate .section-heading.centered{margin-bottom:42px}
+.corporate .section-heading h2{line-height:1.6;text-wrap:pretty}
+.corporate .section-heading p:not(.eyebrow){margin-top:18px}
+.corporate .service-grid{gap:42px}
+.corporate .service-card{display:flex;flex-direction:column;padding:30px 16px}
+.corporate .service-card>p{font-size:14px;line-height:1.95;flex-grow:1}
+.corporate .service-card .service-bottom{margin-top:26px;padding-top:22px;gap:20px}
+.corporate .service-card .service-value-text{font-size:21px}
+.corporate .source-note,.corporate .scope-note,.corporate .branding-concept-note,.corporate .branding-concept-sources,.corporate .branding-journey-note{font-size:11px;line-height:1.85;color:#61707c}
+.corporate .performance-box .source-note{color:#c1ccd5}
+.corporate #branding{padding-top:72px;padding-bottom:0}
+.corporate .branding-concept{margin:0;padding:36px 30px 28px}
+.corporate .branding-concept-intro{margin-bottom:26px}
+.corporate .branding-operand{padding-top:20px}
+.corporate .branding-operand svg{margin:12px 0 8px}
+.corporate .branding-operand p{margin-bottom:18px}
+.corporate .branding-journey{padding-top:26px;margin-top:20px}
+.corporate .branding-journey>h3{font-size:26px}
+.corporate .branding-journey-lead{margin-bottom:23px}
+.corporate .branding-journey-steps{gap:24px}
+.corporate .branding-journey-steps>li{padding:19px 14px 18px}
+.corporate .branding-journey-steps>li+li:before{left:-24px}
+.corporate .branding-journey-steps svg{margin:13px 0}
+.corporate .branding-outcome{margin:24px 0;padding:29px 20px}
+.corporate .branding-outcome h3{font-size:34px;line-height:1.7;margin:10px 0 14px}
+.corporate .branding-difference{margin:20px auto;max-width:800px}
+.corporate .roi-priority{padding-top:0;padding-bottom:80px}
+.corporate .price-grid{gap:30px}
+.corporate .price-card{padding:38px 32px 30px}
+.corporate .price-card .plan-sub{font-size:13px}
+.corporate .price-card .tax{font-size:12px}
+.corporate .price-card .plan-ribbon{font-size:11px;line-height:1.65}
+.corporate .price-card .scope-note,.corporate .price-card .contract{font-size:11px;line-height:1.9}
+.corporate .price-card .contract{margin-bottom:22px}
+.corporate .performance-heading h3{font-size:24px;text-wrap:balance}
+.corporate .performance-heading h3>span{display:inline-block;white-space:nowrap}
+.corporate .performance-box .performance-heading .eyebrow{font-size:9px;line-height:1.6}
+.corporate .process-grid h3{text-wrap:balance}
+.corporate .performance-box p{font-size:13px;line-height:1.95}
+.corporate .performance-box p.source-note{font-size:11px}
+.corporate .simple-result-subtitle{line-height:1.8}
+.corporate .directors-grid{gap:40px}
+.corporate .directors-grid article p{max-width:320px;margin:0 auto;font-size:13px;line-height:1.95}
+.corporate .footer-grid{padding-bottom:36px}
+.corporate .closing-section{padding:80px 0}
+@media(min-width:861px){.corporate .hero-grid{gap:56px;padding-top:58px;padding-bottom:58px}}
+@media(max-width:860px){
+.corporate .service-grid{gap:28px}.corporate .service-card .service-value-text{font-size:19px}
+.corporate .service-card .service-bottom{gap:12px}.corporate .directors-grid{gap:25px}
+.corporate .branding-journey-steps{gap:20px}.corporate .branding-journey-steps>li+li:before{left:-21px}
+}
+@media(max-width:600px){
+.corporate .section{padding-top:56px;padding-bottom:56px}
+.corporate .section-heading,.corporate .section-heading.centered{margin-bottom:28px}
+.corporate .section-heading h2{font-size:26px;line-height:1.6;letter-spacing:0}
+.corporate .section-heading p:not(.eyebrow){font-size:14px;line-height:1.9;margin-top:16px}
+.corporate .hero-lead{font-size:14px;line-height:1.95}
+.corporate .hero .benefit-hero-condition{font-size:11px;line-height:1.9}
+.corporate .service-grid{gap:26px}.corporate .service-card{padding:25px 6px}
+.corporate .service-card h3{font-size:23px;margin:12px 0}
+.corporate .service-card>p{font-size:14px;line-height:1.9}
+.corporate .service-card .service-bottom{margin-top:22px;padding-top:18px}
+.corporate .service-card .service-value-text{font-size:19px}
+.corporate .service-bottom a{font-size:12px}
+.corporate #branding{padding-top:56px;padding-bottom:0}
+.corporate .branding-concept{padding:26px 14px 22px}
+.corporate .branding-concept-kicker{font-size:11px}
+.corporate .branding-concept h2{font-size:23px;line-height:1.45}
+.corporate .branding-concept-intro{font-size:14px;line-height:1.85;margin-bottom:24px}
+.corporate .branding-role{font-size:10px;line-height:1.7}
+.corporate .branding-operand{padding-top:16px}.corporate .branding-operand h3{font-size:18px;line-height:1.6}
+.corporate .branding-operand p{font-size:11px;margin-bottom:16px}
+.corporate .branding-journey{padding-top:23px;margin-top:20px}
+.corporate .branding-journey>h3{font-size:20px;line-height:1.65}
+.corporate .branding-journey-lead{font-size:12px;line-height:1.85;margin-bottom:21px}
+.corporate .branding-journey-steps{gap:28px}
+.corporate .branding-journey-steps>li{padding:17px 10px 16px;grid-template-columns:45px 1fr;column-gap:9px}
+.corporate .branding-journey-steps>li+li:before{left:calc(50% - 10px)}
+.corporate .branding-journey-steps svg{width:45px;height:43px;margin:0 auto}
+.corporate .journey-step{margin-bottom:12px}
+.corporate .journey-step b{font-size:14px}
+.corporate .branding-journey-steps>li>p{font-size:12px;line-height:1.8;margin-top:12px}
+.corporate .journey-answer p{font-size:12px;line-height:1.8}
+.corporate .journey-decision-copy>span{margin:5px}
+.corporate .branding-journey-summary{font-size:12px;line-height:1.9;margin-top:23px}
+.corporate .branding-outcome{padding:24px 9px;margin:25px 0 22px}
+.corporate .branding-outcome h3{font-size:22px;line-height:1.8}
+.corporate .branding-difference{font-size:12px}
+.corporate .branding-difference b{font-size:14px}
+.corporate .citation-targets{padding:24px 20px}.corporate .citation-report{font-size:13px;line-height:1.9}
+.corporate .source-note,.corporate .scope-note,.corporate .branding-concept-note,.corporate .branding-concept-sources,.corporate .branding-journey-note{font-size:11px;line-height:1.9}
+.corporate .three-pillars p,.corporate .faq-list details>p{font-size:13px;line-height:1.95}
+.corporate .faq-list summary{font-size:14px;padding:21px 3px}
+.corporate .roi-priority{padding-top:0;padding-bottom:56px}
+.corporate .price-grid{gap:34px}
+.corporate .price-card{padding:30px 23px 26px}
+.corporate .price-card h3{font-size:22px;line-height:1.6}
+.corporate .price-card .plan-sub{font-size:12px;line-height:1.85}
+.corporate .price-card .price{margin-top:19px}.corporate .price-card .price strong{font-size:68px}
+.corporate .price-card .plan-quantity{font-size:13px;line-height:1.9}
+.corporate .price-card .plan-ribbon{font-size:10px;left:18px;right:18px}
+.corporate .price-card .check-list{font-size:13px;line-height:2.1}
+.corporate .price-card .button{font-size:12px;min-height:52px;padding:12px}
+.corporate .total-strip>div>span{font-size:11px;line-height:1.8}
+.corporate .total-strip h3{font-size:16px}.corporate .total-strip>div:last-child{font-size:12px;line-height:1.9}
+.corporate .performance-heading{gap:13px}
+.corporate .performance-heading h3{font-size:20px;line-height:1.7}
+.corporate .performance-box p{font-size:13px;line-height:1.9}
+.corporate .performance-box .seal{width:58px;height:58px;flex-shrink:0;font-size:13px}
+.corporate .process-grid h3{font-size:14px}.corporate .process-grid p{font-size:12px;line-height:1.85}
+.corporate .directors-grid{gap:25px}
+.corporate .directors-grid article{grid-template-columns:108px 1fr;gap:18px;padding-bottom:25px}
+.corporate .directors-grid article>img{width:108px;height:108px}
+.corporate .directors-grid article p{font-size:12px;line-height:1.9}
+.corporate .directors-grid h3{font-size:21px;margin:5px 0 11px}
+.corporate .directors-grid article>div>span{font-size:11px}
+.corporate .closing-section{padding:56px 0}.corporate .closing-section p:not(.eyebrow){font-size:13px}
+.corporate .closing-section small{font-size:11px}
+.corporate .site-footer .footer-grid p,.corporate .footer-links,.corporate .footer-links button{font-size:12px;line-height:1.8}
+.corporate .footer-bottom{font-size:10px;line-height:1.8}
+}
+@media(max-width:360px){
+.corporate .section-heading h2{font-size:24px}.corporate .hero .corporate-benefit-title{font-size:27px}
+.corporate .branding-concept{padding-left:10px;padding-right:10px}.corporate .branding-concept h2{font-size:21px}
+.corporate .branding-operand h3{font-size:16px}.corporate .branding-operand p{font-size:10px}
+.corporate .branding-outcome h3{font-size:19px}
+.corporate .price-card{padding-left:19px;padding-right:19px}.corporate .price-card h3{font-size:20px}
+.corporate .performance-heading h3{font-size:18px}.corporate .performance-box{padding-left:18px;padding-right:18px}
+.corporate .directors-grid article{grid-template-columns:88px 1fr;gap:15px}.corporate .directors-grid article>img{width:88px;height:88px}
+.corporate .directors-grid h3{font-size:19px}
+.corporate .process-grid{grid-template-columns:1fr;gap:20px}
+.corporate .process-grid article{display:grid;grid-template-columns:32px 1fr;column-gap:12px}
+.corporate .process-grid article>span{grid-row:1/3;font-size:23px}
+.corporate .process-grid article>h3{margin:0 0 8px}.corporate .process-grid article>p{grid-column:2}
+}
+
+
+/* Editorial illustrations explain the work through people and real-world objects. */
+.corporate .branding-concept{background:#f6f3eb}
+.corporate .branding-concept-kicker{background:transparent;color:#806533;border-bottom:1px solid #b9a574;padding:0 0 10px}
+.corporate .branding-equation{max-width:980px;gap:8px;grid-template-columns:1fr 38px 1fr}
+.corporate .branding-operand{border:0;background:transparent;padding:12px 12px 0}
+.corporate .branding-operand .editorial-scene{width:100%;max-width:365px;height:190px;margin:15px 0 6px;flex-shrink:0}
+.corporate .branding-operand h3{font-size:24px;line-height:1.6;margin-bottom:12px}
+.corporate .branding-operand>b{margin:auto 0 0;align-self:stretch;background:transparent;color:#20364b;border-top:1px solid #bfb293;padding:15px 4px 0;font-size:18px}
+.corporate .branding-operand p{text-wrap:balance}
+.corporate .branding-multiply{align-self:center;font-size:42px;color:#9e8045}
+.corporate .branding-journey{border-top:1px solid #c6b797;margin-top:30px}
+.corporate .branding-journey-steps>li{border:0;border-top:2px solid #b9a574;background:transparent}
+.corporate .journey-queries>span{border-radius:3px;background:#fff;border:1px solid #e1ddcf}
+.corporate .journey-answer{background:#f6f3eb}
+.corporate .closing-section:before,.corporate .closing-section:after{display:none}
+@media(max-width:750px){
+.corporate .branding-equation{grid-template-columns:1fr 22px 1fr;gap:0}
+.corporate .branding-operand{padding:9px 3px 0}
+.corporate .branding-operand .editorial-scene{height:auto;aspect-ratio:380/220;margin:13px 0 9px;max-width:none}
+.corporate .branding-operand h3{font-size:18px;line-height:1.6}
+.corporate .branding-operand>b{font-size:12px;line-height:1.8;letter-spacing:-.04em;padding:12px 0 0}
+.corporate .branding-multiply{font-size:28px}
+.corporate .branding-journey{margin-top:25px}
+}
+@media(max-width:360px){.corporate .branding-operand h3{font-size:16px}.corporate .branding-operand>b{font-size:11px}}
+
+/* LP final balance pass. Load after faithful-lp.css and branding-concept.css.
+   Scope: added HTML only. Original raster sections, FV and CTA are untouched. */
+
+/* Keep the two services and the three customer steps visually connected. */
+.faithful-landing .faithful-addition .branding-concept h2 {
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+.faithful-landing .faithful-addition .branding-concept-intro {
+  margin-bottom: 23px;
+}
+.faithful-landing .faithful-addition .branding-operand p {
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+.faithful-landing .faithful-addition .branding-journey {
+  margin-top: 20px;
+  padding-top: 24px;
+}
+.faithful-landing .faithful-addition .branding-journey-steps {
+  gap: 24px;
+}
+.faithful-landing .faithful-addition .branding-journey-steps > li {
+  padding: 18px 20px;
+}
+.faithful-landing .faithful-addition .journey-step {
+  margin-bottom: 11px;
+}
+.faithful-landing .faithful-addition .branding-journey-steps > li + li::before {
+  top: -26px;
+  line-height: 1;
+}
+.faithful-landing .faithful-addition .branding-journey-steps > li > p {
+  margin-top: 10px;
+  line-height: 1.75;
+}
+.faithful-landing .faithful-addition .branding-outcome {
+  margin: 21px 0;
+  padding: 22px 12px;
+}
+.faithful-landing .faithful-addition .branding-outcome h3 {
+  margin: 8px 0 12px;
+}
+
+/* Assumptions remain readable next to the large modeled result. */
+.faithful-landing .faithful-addition .simple-main-assumption,
+.faithful-landing .faithful-addition .simple-grounding,
+.faithful-landing .faithful-addition .simple-income-note {
+  color: #586879;
+  line-height: 1.8;
+}
+.faithful-landing .faithful-addition .simple-income-note {
+  margin-bottom: 12px;
+}
+.faithful-landing .faithful-addition .simple-fee-period {
+  color: #625b40;
+}
+
+@media (max-width: 600px) {
+  .faithful-landing .faithful-addition .branding-concept h2 {
+    line-height: 1.35;
+  }
+  .faithful-landing .faithful-addition .branding-operand p {
+    margin-bottom: 12px;
+  }
+  .faithful-landing .faithful-addition .branding-journey-steps > li {
+    padding: 14px 12px;
+  }
+  .faithful-landing .faithful-addition .journey-step {
+    margin-bottom: 10px;
+  }
+  .faithful-landing .faithful-addition .branding-journey-steps > li + li::before {
+    top: -25px;
+  }
+  .faithful-landing .faithful-addition .journey-answer p {
+    line-height: 1.75;
+  }
+  .faithful-landing .faithful-addition .simple-result-secondary span {
+    font-size: 11px;
+  }
+  .faithful-landing .faithful-addition .simple-result-secondary small {
+    font-size: 10px;
+    color: #657480;
+  }
+  .faithful-landing .faithful-addition .simple-fee-strip {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 5px 10px;
+    padding: 12px 14px;
+    margin: 18px 0 15px;
+  }
+  .faithful-landing .faithful-addition .simple-fee-strip > span:first-child {
+    text-align: left;
+    line-height: 1.65;
+  }
+  .faithful-landing .faithful-addition .simple-fee-strip > strong {
+    white-space: nowrap;
+  }
+  .faithful-landing .faithful-addition .simple-fee-strip > span:last-child {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+  .faithful-landing .faithful-addition .simple-fee-period {
+    font-size: 10px;
+  }
+  .faithful-landing .faithful-addition .simple-main-assumption,
+  .faithful-landing .faithful-addition .simple-grounding,
+  .faithful-landing .faithful-addition .simple-income-note {
+    font-size: 11px;
+  }
+  .faithful-landing .faithful-addition .simple-future small {
+    font-size: 10px;
+    color: #657480;
+    line-height: 1.8;
+  }
+}
+
+/* Targeted LP refinement: symmetric metrics, compact journey, deliberate line breaks. */
+.faithful-landing .faithful-ai .citation-targets {padding:26px 24px;border-width:2px}
+.faithful-landing .citation-target-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:0;align-items:stretch}
+.faithful-landing .citation-target-grid>div {min-width:0;padding:0 12px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.faithful-landing .citation-target-grid>div+div {border-left:1px solid #d5ccba}
+.faithful-landing .citation-target-grid>div>span {font-size:13px;line-height:1.6;white-space:nowrap;letter-spacing:0;margin:0 0 10px}
+.faithful-landing .citation-target-grid strong {display:flex;align-items:baseline;justify-content:center;gap:6px;white-space:nowrap;font-size:64px;line-height:1.1;letter-spacing:-.035em;font-variant-numeric:tabular-nums}
+.faithful-landing .citation-target-grid strong small {display:inline-block;margin:0;font-size:21px;line-height:1.3;letter-spacing:0}
+.faithful-landing .citation-report {margin-top:24px}
+.faithful-landing .faithful-addition .branding-journey-steps {gap:28px}
+.faithful-landing .faithful-addition .branding-journey-steps>li {display:grid;grid-template-columns:minmax(0,1fr) 56px;grid-template-rows:auto auto auto;gap:18px 12px;padding:22px 26px;align-items:center;border:1px solid #a9b1c4;border-top:3px solid #142b66;text-align:left}
+.faithful-landing .faithful-addition .journey-step {grid-column:1;grid-row:1;display:flex;align-items:center;gap:12px;margin:0;line-height:1.4;letter-spacing:0}
+.faithful-landing .faithful-addition .journey-number {font:italic 25px/1 Arial,sans-serif;color:#b49950;flex:none}
+.faithful-landing .faithful-addition .journey-step b {display:block;margin:0;font-size:20px;line-height:1.5}
+.faithful-landing .faithful-addition .branding-journey-steps>li>svg {grid-column:2;grid-row:1;width:56px;height:46px;margin:0;justify-self:end}
+.faithful-landing .faithful-addition .branding-journey-steps>li+li::before {content:'';width:9px;height:9px;border-right:2px solid #b49950;border-bottom:2px solid #b49950;transform:rotate(45deg);left:calc(50% - 5px);top:-21px}
+.faithful-landing .faithful-addition .journey-queries,
+.faithful-landing .faithful-addition .journey-answer,
+.faithful-landing .faithful-addition .journey-decision-copy {grid-column:1/-1;grid-row:2;width:100%;margin:0}
+.faithful-landing .faithful-addition .journey-queries {gap:8px}
+.faithful-landing .faithful-addition .journey-queries>span {padding:10px 14px;border-radius:4px;background:#f2f4f7;font-size:15px;text-align:left;line-height:1.65}
+.faithful-landing .faithful-addition .journey-answer {padding:18px 20px;background:#f7f5ed;border-left:3px solid #b49950}
+.faithful-landing .faithful-addition .journey-answer small {font-size:11px;line-height:1.7}
+.faithful-landing .faithful-addition .journey-answer p {font-size:16px;line-height:1.85;margin:9px 0 12px}
+.faithful-landing .faithful-addition .journey-answer p>br {display:none}
+.faithful-landing .faithful-addition .journey-answer>span {font-size:11px;line-height:1.8;padding-top:10px}
+.faithful-landing .faithful-addition .journey-decision-copy {text-align:center;background:#f7f5ed;padding:18px 14px;box-sizing:border-box}
+.faithful-landing .faithful-addition .journey-decision-copy>strong {font-size:17px;line-height:1.6}
+.faithful-landing .faithful-addition .journey-decision-copy>span {font-size:13px;line-height:1;margin:10px 0}
+.faithful-landing .faithful-addition .journey-decision-copy>b {font-size:21px;line-height:1.65}
+.faithful-landing .faithful-addition .branding-journey-steps>li>p {grid-column:1/-1;grid-row:3;margin:0;font-size:14px;line-height:1.8;text-align:center}
+.faithful-landing .faithful-addition .branding-outcome {container-type:inline-size}
+.faithful-landing .faithful-addition .branding-outcome h3 {font-size:clamp(16px,5.6cqw,32px);line-height:1.8;margin:8px 0 12px;letter-spacing:-.035em}
+.faithful-landing .faithful-addition .branding-outcome h3 mark {display:inline-block;white-space:nowrap;padding:0 .18em;line-height:1.55}
+.faithful-landing .faithful-fv-consolidated .faithful-fv-billing>p {flex:none;white-space:nowrap;font-size:17px;line-height:1.85}
+@media(max-width:600px){
+ .faithful-landing .faithful-ai .citation-targets {padding:20px 12px}
+ .faithful-landing .citation-target-grid>div {padding:0 7px}
+ .faithful-landing .citation-target-grid>div>span {font-size:10px;margin-bottom:10px}
+ .faithful-landing .citation-target-grid strong {font-size:48px;gap:4px}
+ .faithful-landing .citation-target-grid strong small {font-size:16px}
+ .faithful-landing .citation-report {margin-top:20px}
+ .faithful-landing .faithful-addition .branding-journey-steps>li {grid-template-columns:minmax(0,1fr) 38px;padding:17px 15px;gap:15px 8px}
+ .faithful-landing .faithful-addition .journey-step {gap:8px}
+ .faithful-landing .faithful-addition .journey-number {font-size:21px}
+ .faithful-landing .faithful-addition .journey-step b {font-size:14px}
+ .faithful-landing .faithful-addition .branding-journey-steps>li>svg {width:38px;height:36px}
+ .faithful-landing .faithful-addition .journey-queries>span {font-size:12px;padding:9px 10px}
+ .faithful-landing .faithful-addition .journey-answer {padding:14px 13px}
+ .faithful-landing .faithful-addition .journey-answer small,
+ .faithful-landing .faithful-addition .journey-answer>span {font-size:10px}
+ .faithful-landing .faithful-addition .journey-answer p {font-size:13px;line-height:1.85}
+ .faithful-landing .faithful-addition .journey-decision-copy>strong {font-size:14px}
+ .faithful-landing .faithful-addition .journey-decision-copy>b {font-size:17px}
+ .faithful-landing .faithful-addition .branding-journey-steps>li>p {font-size:12px}
+ .faithful-landing .faithful-fv-consolidated .faithful-fv-billing {gap:12px}
+ .faithful-landing .faithful-fv-consolidated .faithful-fv-billing>strong {font-size:20px}
+ .faithful-landing .faithful-fv-consolidated .faithful-fv-billing>p {font-size:11px;letter-spacing:-.025em}
+}
+@media(max-width:350px){
+ .faithful-landing .faithful-fv-consolidated .faithful-fv-billing {flex-direction:column;gap:8px}
+ .faithful-landing .faithful-fv-consolidated .faithful-fv-billing>strong {font-size:22px}
+ .faithful-landing .faithful-fv-consolidated .faithful-fv-billing>p {font-size:12px;text-align:center;letter-spacing:0}
+ .faithful-landing .citation-target-grid strong {font-size:42px;gap:3px}
+ .faithful-landing .citation-target-grid strong small {font-size:14px}
+ .faithful-landing .citation-target-grid>div>span {font-size:9px}
+ .faithful-landing .faithful-addition .journey-step b {font-size:12px}
+}
+.faithful-landing .citation-target-grid>div {width:100%;justify-self:stretch}
+.faithful-landing .faithful-addition .journey-step {justify-self:stretch}
+.faithful-landing .citation-report>span {display:block}

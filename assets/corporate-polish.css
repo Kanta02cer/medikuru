@@ -1,0 +1,40 @@
+
+/* Emphasis follows the site's existing navy, gold and warm-white palette. */
+.corporate .corporate-performance{background:#20364b;border:0;color:#fff;padding:9px 22px;font-size:16px;letter-spacing:.12em;font-weight:800}
+.corporate .section-heading h2 em{font-style:normal;color:#8e6d30;text-decoration:underline;text-decoration-color:#decda5;text-decoration-thickness:5px;text-underline-offset:7px;text-decoration-skip-ink:none}
+.corporate .branding-concept{border-top-width:5px;padding-top:36px}
+.corporate .branding-concept-kicker{display:inline-block;padding:9px 20px;background:#20364b;color:#fff;font-size:14px;letter-spacing:.03em}
+.corporate .branding-concept h2{font-size:clamp(26px,2.7vw,36px);font-weight:800;letter-spacing:0;margin-top:7px}
+.corporate .branding-times{font-size:1.4em;vertical-align:-.05em}
+.corporate .branding-role{color:#8a6b30;font-size:14px;font-weight:700}
+.corporate .branding-outcome{padding:36px 20px;border-bottom:5px solid #ad925b}
+.corporate .branding-outcome h3{font-size:36px;font-weight:800;line-height:1.8}
+.corporate .branding-difference b{font-size:18px;display:inline-block;margin-bottom:7px}
+.corporate .interview-result h3{font-size:26px;font-weight:800}
+.corporate .interview-result>strong{font-size:45px}
+.corporate .citation-report{font-weight:700;color:#20364b;border-top:1px solid #c9b990;padding-top:18px}
+.corporate .simple-result{border-top-width:5px;background:#fffdf7}
+.corporate .simple-result-kicker{color:#785d2d;font-weight:700}
+.corporate .performance-box{border-left:6px solid #ad925b}
+.corporate .performance-heading h3{font-size:27px;line-height:1.7}
+.corporate .price-featured{border-top:4px solid #ad925b}
+.corporate .directors-grid article>img{width:230px;height:230px;object-fit:cover;object-position:center center;border-radius:0;box-shadow:none;border:0}
+/* Transparent official logo, directly on a continuous light footer. */
+.corporate .site-footer{background:#f4f2ed;color:#405061;border-top:1px solid #d8d3c6}
+.corporate .site-footer .official-logo{background:transparent;padding:0;width:175px;height:auto}
+.corporate .site-footer .footer-grid p{color:#526171}
+.corporate .site-footer .footer-links a,.corporate .site-footer .footer-links button{color:#34495b}
+.corporate .site-footer .footer-bottom{border-top-color:#d8d3c6;color:#63717a}
+@media(max-width:860px){.corporate .directors-grid article>img{width:190px;height:190px}}
+@media(max-width:600px){
+.corporate .corporate-performance{font-size:13px;padding:8px 17px}
+.corporate .section-heading h2 em{text-decoration-thickness:3px;text-underline-offset:5px}
+.corporate .branding-concept{padding:25px 16px;border-top-width:4px}
+.corporate .branding-concept-kicker{font-size:11px;letter-spacing:0;padding:9px 8px;line-height:1.8}
+.corporate .branding-concept h2{font-size:24px;line-height:1.5;letter-spacing:-.015em}
+.corporate .branding-role{font-size:9px}.corporate .branding-outcome{padding:25px 9px;border-bottom-width:4px}
+.corporate .branding-outcome h3{font-size:22px;letter-spacing:-.04em}.corporate .branding-difference b{font-size:14px}
+.corporate .interview-result h3{font-size:21px}.corporate .interview-result>strong{font-size:37px}
+.corporate .performance-heading h3{font-size:22px}.corporate .performance-box{border-left-width:4px}
+.corporate .directors-grid article>img{width:115px;height:115px}.corporate .site-footer .official-logo{width:155px}
+}

@@ -1,0 +1,44 @@
+/* Two clear contact choices, in the existing navy / gold HP design. */
+body.hp-form-theme .hp-contact-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:660px;min-width:0}
+body.hp-form-theme .hp-contact-options .button{display:flex;align-items:center;justify-content:center;gap:0;min-width:0;min-height:54px;padding:12px 16px;font-size:15px;line-height:1.6;text-align:center;letter-spacing:0;border-radius:2px;box-shadow:none;font-weight:800}
+body.hp-form-theme .hp-contact-options .button>span{white-space:nowrap}
+body.hp-form-theme .hp-contact-options .hp-contact-line{background:var(--navy);border:1px solid var(--navy);color:#fff}
+body.hp-form-theme .hp-contact-options .hp-contact-form{background:#fff;border:1px solid var(--navy);color:var(--navy)}
+body.hp-form-theme .hp-contact-options .button:hover{background:#eeeae0;color:var(--navy)}
+body.hp-form-theme .hp-contact-options .hp-contact-line:hover{background:var(--deep);color:#fff}
+body.hp-form-theme .hp-contact-options .button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+body.hp-form-theme #site-nav .hp-contact-header{display:flex;gap:8px;flex-shrink:0}
+body.hp-form-theme #site-nav .hp-contact-header .button{font-size:13px;min-height:46px;padding:9px 12px;white-space:nowrap}
+body.hp-form-theme .price-card .hp-contact-options,body.hp-form-theme .option-price .hp-contact-options{grid-template-columns:1fr;width:100%;gap:10px;margin-top:20px}
+body.hp-form-theme .closing-section .hp-contact-options{margin:28px 0 22px}
+body.hp-form-theme .closing-section .hp-contact-options .button{font-size:18px;min-height:64px;padding:16px 22px}
+body.hp-form-theme .closing-section .hp-contact-options .hp-contact-line{background:#d6b964;border:1px solid #d6b964;color:var(--deep)}
+body.hp-form-theme .closing-section .hp-contact-options .hp-contact-form{background:transparent;border:1px solid #fff;color:#fff}
+body.hp-form-theme .closing-section .hp-contact-options .button:hover{background:#fff;color:var(--navy)}
+body.hp-form-theme .footer-links .hp-contact-options{grid-template-columns:1fr;gap:8px;width:100%}
+body.hp-form-theme .footer-links .hp-contact-options .button{font-size:14px}
+body.hp-form-theme .mobile-cta .hp-contact-options{width:100%;max-width:none;margin:0}
+@media(max-width:900px){
+ body.hp-form-theme #site-nav .hp-contact-header{display:grid;width:100%;grid-template-columns:repeat(2,minmax(0,1fr))}
+ body.hp-form-theme #site-nav .hp-contact-header .button{padding:12px 8px;min-height:50px}
+}
+@media(max-width:600px){
+ body.hp-form-theme .closing-section .hp-contact-options{grid-template-columns:1fr;max-width:none;gap:12px}
+ body.hp-form-theme .closing-section .hp-contact-options .button{font-size:16px;min-height:58px;padding:12px}
+ body.hp-form-theme .mobile-cta{padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid #d8d4c8}
+ body.hp-form-theme .mobile-cta .hp-contact-options{gap:10px}
+ body.hp-form-theme .mobile-cta .hp-contact-options .button{flex-direction:column;font-size:14px;line-height:1.4;min-height:54px;padding:7px 8px;gap:0}
+}
+
+/* 2026-09-26: One-page guide CTA, keeping the LINE / form choice explicit. */
+body.hp-form-theme .hp-contact-options .hp-contact-line{flex-direction:column;gap:2px}
+body.hp-form-theme .hp-contact-options .hp-line-cta-caption{font-size:11px;line-height:1.2;font-weight:600;white-space:nowrap}
+body.hp-form-theme .hp-contact-options .hp-line-cta-label{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0;min-width:0;max-width:100%;line-height:1.4;white-space:normal}
+body.hp-form-theme .hp-contact-options .hp-line-cta-label>span{display:block;white-space:nowrap}
+body.hp-form-theme #site-nav .hp-contact-header .hp-contact-line{gap:2px}
+body.hp-form-theme #site-nav .hp-contact-header .hp-line-cta-label{flex-direction:column}
+@media(max-width:600px){
+ body.hp-form-theme .mobile-cta .hp-contact-options .hp-contact-line{gap:2px;min-height:68px}
+ body.hp-form-theme .mobile-cta .hp-contact-options .hp-line-cta-label{flex-direction:column}
+ body.hp-form-theme .mobile-cta .hp-contact-options .hp-line-cta-caption{font-size:11px}
+}

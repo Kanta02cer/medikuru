@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "source_lp_sha256": "63c26b36464f207b2a22875c7cef0de834781e145afeaca2c8b0c66e0092f6bc",
+  "read_only_corporate_sha256": "a76048a83627798bc39bb06c582c34ecd62954378f6d42da7bd3a503d4f6c23f",
+  "generated_lp_sha256": "b103a377b108c158bc83725d97e4579671865d8b8313235bca6b255260978b33",
+  "conditions_sha256": "6304e3aa8046b21db34cf1a8c0199581ad36e4293a6faab4bdda0749d5e8bbce",
+  "css_sha256": "363eed7db2b57676d7e1e188ee894357da931bad9cde15b2e768774481da6dec",
+  "replacements": 22,
+  "original_notes": [
+    {
+      "group": "ai-search",
+      "label": "対象と推薦に関するご案内",
+      "html": "<p class=\"faithful-fv-note\">※会社名・代表者名（社長名）・サービス名の指名検索が対象。毎回の引用・推薦を保証するものではありません。両サービスをご利用の場合の初回課金条件です。達成後のAI検索ブランディングは1年契約・自動更新の固定月額で継続します。<a href=\"#pricing\">料金・契約条件を見る</a></p>",
+      "moved": true
+    },
+    {
+      "group": "news",
+      "label": "配信と取材記事の工程",
+      "html": "<p class=\"source-note process-note\">メディアによる独自取材・編集記事の掲載は媒体判断です。上記は工程の違いを示すもので、特定の配信回数での取材獲得率を示す統計ではありません。メディくるは1本の記事を3媒体へ掲載する内容です。</p>",
+      "moved": true
+    },
+    {
+      "group": "news",
+      "label": "比較の対象と出典",
+      "html": "<p class=\"source-note\">PR TIMES通常の従量課金プランとの比較。提供範囲は異なります。PR TIMESにもストーリー発信等の別サービスがあります。メディくるの3掲載は、1本の記事を3媒体へ掲載する内容です。2026年9月25日確認。<a href=\"corporate.html#research\">比較条件・出典 ↗</a></p>",
+      "moved": true
+    },
+    {
+      "group": "news",
+      "label": "予算例の読み方",
+      "html": "<small>提供範囲は異なり、最安費用・同一条件の比較ではありません。PR TIMESには定額プランもあります。</small>",
+      "moved": true
+    },
+    {
+      "group": "reviews",
+      "label": "消費者庁調査の対象と数値の意味",
+      "html": "<p class=\"faithful-stat-source\">2023年11月／ネット利用者4,439人。口コミを調べる人の割合ではありません。<a href=\"corporate.html#source-caa\">調査の出典</a></p>",
+      "moved": true
+    },
+    {
+      "group": "ai-search",
+      "label": "図解の位置づけ",
+      "html": "<p class=\"branding-journey-note\">※上記は記事が引用された場合の仕組みのイメージです。実際のAI回答や顧客の声ではありません。引用・問い合わせ・売上の増加を保証するものではありません。</p>",
+      "moved": true
+    },
+    {
+      "group": "ai-search",
+      "label": "検索語と24時間365日の意味",
+      "html": "<p class=\"branding-concept-note\">※会社名・代表者名（社長名）・サービス名と評判・口コミ・実績を組み合わせた指名検索を想定。AIはWeb上の情報を参照して回答する場合があります。掲載だけで自動的に引用・推薦されるものではなく、回答や引用先は質問・利用環境・AI側の判断により変わります。24時間365日は、お客様が検索する時間を問わず記事を活かす考え方で、毎回の推薦を保証するものではありません。</p>",
+      "moved": true
+    },
+    {
+      "group": "ai-search",
+      "label": "AI検索の仕組みに関する参考資料",
+      "html": "<p class=\"branding-concept-sources\">仕組みの参考：<a href=\"https://developers.google.com/search/docs/appearance/ai-features?hl=ja\" target=\"_blank\" rel=\"noopener noreferrer\">Google 検索のAI機能</a> ／ <a href=\"https://help.openai.com/en/articles/9237897-searching-the-web-with-chatgpt\" target=\"_blank\" rel=\"noopener noreferrer\">ChatGPT検索の出典表示</a>。特定サービスの成果を裏付ける資料ではありません。</p>",
+      "moved": true
+    },
+    {
+      "group": "measurement",
+      "label": "引用率の対象と集計方法",
+      "html": "<p class=\"scope-note\">※対象は会社名・代表者名（社長名）・サービス名の指名検索と、それに口コミ・評判・実績を組み合わせた質問。引用率は、合意した対象AI・質問・回数などの測定条件で集計します。</p>",
+      "moved": true
+    },
+    {
+      "group": "measurement",
+      "label": "引用率の対象と集計方法",
+      "html": "<p class=\"scope-note\">※対象は会社名・代表者名（社長名）・サービス名の指名検索と、それに口コミ・評判・実績を組み合わせた質問。引用率は合意した測定条件で集計します。</p>",
+      "moved": true
+    },
+    {
+      "group": "billing",
+      "label": "AI検索ブランディングの継続契約",
+      "html": "<p class=\"faithful-small\">※対象は会社名・代表者名（社長名）・サービス名と口コミ・評判・実績を組み合わせた指名検索。合意した測定条件で集計します。開始後は固定月額、1年契約・自動更新です。</p>",
+      "moved": true
+    },
+    {
+      "group": "research",
+      "label": "購入前比較でのAI利用経験の調査",
+      "html": "<p class=\"source-note\">グランネット調査：全国20代以上の就業者、各500人。公表人数101人・187人を全回答者で再集計。検索全体のAIシェアではありません。<a href=\"corporate.html#source-grannet\">出典 ↗</a></p>",
+      "moved": true
+    },
+    {
+      "group": "research",
+      "label": "2027〜2031年の条件付き試算",
+      "html": "<p class=\"source-note\">調査会社の予測や、日本全体の検索に占めるAIの割合ではありません。実測はグランネット調査（各500人）の購入比較利用経験人数を全回答者で再集計。2026年8月37.4%に、月平均増加幅1.72ポイント × 経過月数 × 仮定倍率を加算。将来値の実現や成果を保証するものではありません。<a href=\"corporate.html#source-grannet\">調査出典 ↗</a></p>",
+      "moved": true
+    },
+    {
+      "group": "simulation",
+      "label": "対象となる企業の前提",
+      "html": "<p class=\"model-baseline-note\">初めて取材記事を持つ会社を想定した計算です。すでに取材記事の効果が出ている会社には、そのまま適用できません。</p>",
+      "moved": true
+    },
+    {
+      "group": "measurement",
+      "label": "効果試算で想定する検索と引用率",
+      "html": "<p class=\"model-scope\">※会社名・代表者名（社長名）・サービス名の指名検索と、口コミ・評判・実績を組み合わせた質問が対象。引用率は合意した測定条件で集計する値です。</p>",
+      "moved": true
+    },
+    {
+      "group": "simulation",
+      "label": "測定した引用率と顧客の接触",
+      "html": "<p>顧客が接するAI回答にも、設定した引用率が当てはまると仮定しています。実際の回答・行動は異なります。</p>",
+      "moved": true
+    },
+    {
+      "group": "simulation",
+      "label": "費用相当額の意味と対象費用",
+      "html": "<p class=\"model-output-note\"><span data-model-cost-label=\"short\">広告獲得費相当額</span>は、同じ追加問い合わせを現在の獲得単価で得るとした場合の費用換算です。売上増・利益増と足し合わせず、実際の費用削減や追加支出が不要であることを保証しません。ニュース掲載枠の広告料金ではありません。専用LP制作オプション30万円は含みません。</p>",
+      "moved": true
+    },
+    {
+      "group": "simulation",
+      "label": "AI利用拡大を自社試算へ置く仮定",
+      "html": "<p class=\"model-future-note\">調査の購入比較でのAI利用経験は20.2%→37.4%（2025年10月→2026年8月）。母数が異なる御社の「AIで会社を確認する割合」へ同じ増加幅を置いた、条件付きの自社試算です。調査会社の予測・日本全体の検索割合ではありません。</p>",
+      "moved": true
+    },
+    {
+      "group": "simulation",
+      "label": "各年の効果と継続費用",
+      "html": "<p class=\"model-future-note\">取材記事が引き続き利用でき、ほかの条件が変わらないとした各年1年間の試算。初年度48万円、2年目以降AI継続18万円〈税別〉。過去年の効果との累計ではありません。将来もニュースとAI支援を合わせた施策全体の効果であり、AI支援だけの追加効果ではありません。AI利用が広がるだけで売上が自動的に増えるわけではありません。</p>",
+      "moved": true
+    },
+    {
+      "group": "simulation",
+      "label": "計算式と試算の読み方",
+      "html": "<details class=\"model-formula\"><summary>計算式と試算の読み方 <span>＋</span></summary><div><p>記事認識割合 e ＝ AI以外の記事認識 d ＋（1 − d）× AI確認 a × 引用率 c × 引用内容認識 v。両経路で認識する人を重複計上しない仮定です。</p><p>問い合わせ変化率 ＝ e ×（記事認識者の問い合わせ率倍率 m − 1）。年間追加問い合わせ ＝ 現在の月間問い合わせ × 12 × 変化率。年間売上増 ＝ 追加問い合わせ × 成約率 × 客単価。年間限界利益増 ＝ 売上増 × 限界利益率。</p><p>費用相当額 ＝ 追加問い合わせ × CPL。CAC入力では CPL ＝ CAC × 成約率で換算します。広告費以外も含む場合は「獲得コスト相当額」と表示します。現在の単価にはメディくるの費用を含めず、同じ期間・対象で費用と問い合わせ・成約を集計します。成約率0%でのCAC換算は成立しないため、相当額を算出しません。</p><p>広告費から計算する場合は月間問い合わせ ＝ 月広告費 ÷ CPL。問い合わせ数から計算する場合の既存年間費用は月間問い合わせ × 12 × CPL。既存費用分だけの導入後CPL ＝ 現在CPL ÷（1＋変化率）。初年度総費用込みCPL ＝（既存年間費用＋48万円）÷ 導入後年間問い合わせ。単価改善率 ＝ 1 − 総費用込みCPL ÷ 現在CPL。0件・0円など比較できない場合は比率を算出しません。</p><p>各年のAI確認割合 ＝ min（100%, 現在の入力割合 ＋ 1.72ポイント × 12か月 × 経過年数 × 増加ペース倍率）。初期入力値の37.4%は指名検討者の実測ではなく、購入比較経験率を参考にした仮定です。</p><p>記事認識者の問い合わせ率が変わらない1.00倍なら増分は0、1.00倍未満ならマイナスです。引用率60%・80%を達成しても、このモデルの改善が生じると保証するものではありません。</p><p>出典：<a href=\"corporate.html#source-grannet\">グランネット「Google検索と生成AIの実態調査」</a>。結果を判断する際は、公開前後の自社の問い合わせ・成約と接触経路を実際に計測してください。</p></div></details>",
+      "moved": true
+    },
+    {
+      "group": "billing",
+      "label": "専用LP制作オプション",
+      "html": "<p class=\"source-note\">任意の追加オプションです。ニュース掲載30万円、AI支援月1.5万円、2つのブランディングの初年度合計48万円には含まれません。制作内容・お支払い条件は個別にご案内します。</p>",
+      "moved": true
+    },
+    {
+      "group": "billing",
+      "label": "初回成果の判定と継続月額",
+      "html": "<p class=\"source-note\">対象AI・質問・測定回数・判定方法は契約前に合意。継続月額は、開始後の支援に対する固定料金です。毎月の成果達成を条件とする料金ではありません。</p>",
+      "moved": true
+    },
+    {
+      "group": "billing",
+      "label": "AI検索ブランディングの契約期間・料金",
+      "html": "<p class=\"contract\">1年契約・自動更新。達成後は固定月額の継続支援です。ニュース掲載費30万円は別途。</p>",
+      "moved": false
+    },
+    {
+      "group": "billing",
+      "label": "セット利用時の初回課金",
+      "html": "<p>ニュースブランディング × AI検索ブランディングのセットは、契約したニュース掲載と、事前に合意したAI引用目標の両方を達成後、初期費用と月額費用の課金を開始します。</p>",
+      "moved": false
+    },
+    {
+      "group": "ai-comparison",
+      "label": "公式公開情報による料金・提供範囲",
+      "html": "<div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"AI支援サービスの料金と範囲の比較表\"><table class=\"comparison-table wide-table\"><thead><tr><th scope=\"col\">比較項目</th><th scope=\"col\"><small>セルフサービス型</small>AIMention Pro</th><th scope=\"col\"><small>分析レポート型</small>インハウスプラス</th><th scope=\"col\" class=\"our-column\"><small>ニュース活用型</small>メディくる</th></tr></thead><tbody><tr><th scope=\"row\">月額</th><td>14,800円〈税込〉</td><td>100,000円〈税区分未確認〉</td><td class=\"our-column\">15,000円〈税別〉<br><small>税込16,500円</small></td></tr><tr><th scope=\"row\">サービスの形</th><td>自社で使う引用計測ツール</td><td>アナリストによる計測・分析・提案</td><td class=\"our-column\">取材記事の活用を継続支援</td></tr><tr><th scope=\"row\">主な対象</th><td>3サイト・30キーワード・3AI</td><td>1サイト・100プロンプト・6AI</td><td class=\"our-column\">指名検索と評判・実績の組み合わせ〈注記参照〉</td></tr><tr><th scope=\"row\">記事・改善</th><td>記事制作・改善代行の商品ではない</td><td>記事制作・改善実行は別商品</td><td class=\"our-column\">初期プランで記事制作。月額で情報整備・引用確認</td></tr><tr><th scope=\"row\">初期・前提費用</th><td>別建て初期費用の記載を確認できず</td><td>初期150,000円〈税区分未確認〉</td><td class=\"our-column\">ニュース掲載300,000円〈税別〉</td></tr><tr><th scope=\"row\">契約</th><td>月額払いは月次自動更新</td><td>最低3か月</td><td class=\"our-column\">1年契約・自動更新</td></tr><tr><th scope=\"row\">初回課金</th><td>申込・決済後に利用開始</td><td>掲載＋引用達成後課金の公開条件は未確認</td><td class=\"our-column\">掲載＋合意したAI引用条件の両方達成後</td></tr></tbody></table></div>",
+      "moved": false,
+      "origin": "corporate"
+    },
+    {
+      "group": "ai-comparison",
+      "label": "比較条件",
+      "html": "<p class=\"source-note\">2026年9月25日の公式公開情報。提供範囲と契約期間が異なる料金例で、同条件の相見積もりではありません。メディくるのAI・質問数・支援範囲は契約前に合意します。開始後は固定月額です。<a href=\"#research\">各社の公式出典 ↗</a></p>",
+      "moved": false,
+      "origin": "corporate"
+    },
+    {
+      "group": "sources",
+      "label": "調査・比較に使用した出典",
+      "html": "<div class=\"source-library\"><h3>調査と比較表の出典</h3><p>公表値と条件付き試算を区別しています。サービスの料金・内容は2026年9月25日確認。</p><ol><li id=\"source-caa\"><b>口コミ・評価への態度</b> <a href=\"https://www.caa.go.jp/policies/policy/consumer_research/research_report/survey_002/assets/consumer_research_cms201_240614_15.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">消費者庁「令和5年度消費者意識基本調査」<span aria-hidden=\"true\"> ↗</span></a><small>2023年11月／ネット利用者4,439人／冊子13ページ。高評価の商品を選ぶことへの肯定回答70.1%。</small></li><li id=\"source-grannet\"><b>AIでの購入比較</b> <a href=\"https://grannet.co.jp/report/search-ai-survey/\" target=\"_blank\" rel=\"noopener noreferrer\">グランネット「Google検索と生成AIの実態調査」<span aria-hidden=\"true\"> ↗</span></a><small>2025年10月・2026年8月／全国20代以上の就業者各500人。購入比較利用経験人数を全回答者で再集計。</small></li><li><b>買物でのAI利用</b> <a href=\"https://www.hakuhodo.co.jp/news/newsrelease/267248/\" target=\"_blank\" rel=\"noopener noreferrer\">博報堂買物研究所「AIショッパー調査」<span aria-hidden=\"true\"> ↗</span></a><small>2026年2月／20〜69歳20,000人。買物やサービス利用で生成AIを使う人24.6%。上記の時系列と母集団が異なります。</small></li><li><b>PR TIMES</b> <a href=\"https://prtimes.jp/price/\" target=\"_blank\" rel=\"noopener noreferrer\">公式料金<span aria-hidden=\"true\"> ↗</span></a> ／ <a href=\"https://prtimes.com/magazine/reprint-verification/\" target=\"_blank\" rel=\"noopener noreferrer\">転載と取材・編集記事の違い<span aria-hidden=\"true\"> ↗</span></a> ／ <a href=\"https://prtimes.com/story/service\" target=\"_blank\" rel=\"noopener noreferrer\">PR TIMES STORY<span aria-hidden=\"true\"> ↗</span></a></li><li><b>PR・広報代行</b> <a href=\"https://kitaq.style/pr_support/\" target=\"_blank\" rel=\"noopener noreferrer\">キタキュースタイル<span aria-hidden=\"true\"> ↗</span></a> ／ <a href=\"https://lp.frontstage-pr.co.jp/\" target=\"_blank\" rel=\"noopener noreferrer\">フロントステージ<span aria-hidden=\"true\"> ↗</span></a> ／ <a href=\"https://dokuritsusha.sejp.net/menu/\" target=\"_blank\" rel=\"noopener noreferrer\">独立社<span aria-hidden=\"true\"> ↗</span></a></li><li><b>AI計測・分析</b> <a href=\"https://www.aimention.jp/\" target=\"_blank\" rel=\"noopener noreferrer\">AIMention料金<span aria-hidden=\"true\"> ↗</span></a> ／ <a href=\"https://www.aimention.jp/tokusho\" target=\"_blank\" rel=\"noopener noreferrer\">税込・契約条件<span aria-hidden=\"true\"> ↗</span></a> ／ <a href=\"https://inhouse-plus.jp/aio-llmo-report/\" target=\"_blank\" rel=\"noopener noreferrer\">インハウスプラス<span aria-hidden=\"true\"> ↗</span></a></li></ol></div>",
+      "moved": false,
+      "origin": "corporate"
+    }
+  ],
+  "checks": {
+    "images_unchanged": true,
+    "controls_and_cta_unchanged": true,
+    "all_dynamic_hooks_unchanged": true,
+    "scripts_unchanged": true,
+    "original_note_text_preserved": true,
+    "source_links_preserved": true,
+    "independent_lp_package_links": true,
+    "unrelated_lp_source_preserved": true,
+    "corporate_untouched": true
+  }
+}

@@ -1,0 +1,8 @@
+/* Personalized headline, preserving the original LP artwork and frame. */
+.personalized-lead{display:block;font-size:.5em;line-height:1.6;letter-spacing:.025em;font-style:normal;color:inherit;margin:0 0 .3em}
+.faithful-landing .faithful-fv-headline .faithful-fv-brands{font-size:3.9cqw}
+.faithful-landing .faithful-fv-headline h1{font-size:6cqw}
+.faithful-landing .faithful-fv-headline h1 .personalized-lead{font-size:3.1cqw;line-height:1.25;margin:0 0 .35cqw;letter-spacing:.035em}
+.faithful-landing .branding-outcome h3 .personalized-lead{font-size:.72em;line-height:1.4;margin:0 0 .4em;letter-spacing:.02em}
+.corporate .corporate-benefit-title .personalized-lead{font-size:.43em;line-height:1.4;margin-bottom:.5em}
+.corporate .branding-outcome h3 .personalized-lead{font-size:.6em;line-height:1.5;margin-bottom:.35em}
