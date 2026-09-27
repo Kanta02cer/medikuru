@@ -26,6 +26,8 @@
       '#pricing .process-grid',
       '#pricing .strategy-roi__math'
     ].join(','));
+    // The longest CSS sequence ends at 3360ms; keep its fill until it finishes.
+    const playbackCleanupMs = 4000;
     const timers = new Map();
     const observer = new IntersectionObserver((entries) => {
       for (const entry of entries) {
@@ -37,7 +39,7 @@
         timers.set(target, window.setTimeout(() => {
           target.classList.remove('hp-motion-play');
           timers.delete(target);
-        }, 1850));
+        }, playbackCleanupMs));
       }
     }, { threshold: 0.12, rootMargin: '0px 0px -18% 0px' });
 
