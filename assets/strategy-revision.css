@@ -1,0 +1,243 @@
+/* 2026-09-27 strategy draft. Keep the existing homepage design language. */
+.corporate .corporate-hero .hero-grid {
+  min-height: 0;
+  align-items: center;
+  padding-bottom: 0;
+}
+.hp-form-theme .corporate-hero { padding-bottom: 36px; }
+.hp-form-theme #site-nav .hp-contact-header { padding-bottom: 0; }
+.hp-form-theme .price-card .hp-contact-options>.hp-contact-form,
+.hp-form-theme .option-price .hp-contact-options>.hp-contact-form,
+.hp-form-theme .footer-links .hp-contact-options>.hp-contact-form {
+  grid-row: 2;
+}
+.strategy-hero-visual {
+  min-width: 0;
+  width: 100%;
+  align-self: center;
+  padding: 20px 20px 0;
+  overflow: hidden;
+  color: #fff;
+  border: 1px solid #b59a59;
+  box-shadow: 12px 12px 0 #e5dfd2;
+  background:
+    linear-gradient(90deg, #ffffff09 1px, transparent 1px),
+    linear-gradient(#ffffff09 1px, transparent 1px),
+    linear-gradient(145deg, #1b3979, #112756 72%);
+  background-size: 32px 32px, 32px 32px, auto;
+}
+.strategy-visual-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #ddc682;
+  font: 800 10px/1.4 Arial, sans-serif;
+  letter-spacing: .13em;
+}
+.strategy-visual-head span:last-child { color: #fff; }
+.strategy-visual-formula {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 26px minmax(0,1fr);
+  gap: 10px;
+  align-items: stretch;
+  margin-top: 18px;
+}
+.strategy-visual-factor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  min-height: 125px;
+  padding: 12px;
+  color: #142b66;
+  background: #fff;
+  border-top: 3px solid #d6bb73;
+}
+.strategy-visual-factor svg {
+  width: 29px;
+  height: 29px;
+  margin-bottom: 7px;
+  color: #ad8a3e;
+  flex: none;
+}
+.strategy-visual-factor>span {
+  color: #947a46;
+  font: 800 9px/1.3 Arial, sans-serif;
+  letter-spacing: .1em;
+}
+.strategy-visual-factor strong {
+  margin-top: 5px;
+  font-size: clamp(12px, 1.3vw, 17px);
+  line-height: 1.35;
+  letter-spacing: -.055em;
+}
+.strategy-visual-factor small {
+  margin-top: 4px;
+  color: #586b88;
+  font-size: 10px;
+  line-height: 1.4;
+}
+.strategy-visual-times {
+  align-self: center;
+  color: #ddc682;
+  font: 800 30px/1 Arial, sans-serif;
+  text-align: center;
+}
+.strategy-visual-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px 0 7px;
+  color: #ddc682;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+.strategy-visual-connector::before,
+.strategy-visual-connector::after {
+  content: "";
+  width: 46px;
+  height: 1px;
+  background: #ddc682a3;
+}
+.strategy-visual-promise {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 900;
+  line-height: 1.35;
+  letter-spacing: -.045em;
+}
+.strategy-visual-promise span { display: block; }
+.strategy-visual-outcomes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 14px -20px 0;
+  padding: 11px 18px;
+  background: #ddc682;
+  color: #142b66;
+}
+.strategy-visual-outcomes>span {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+.strategy-visual-outcomes>strong {
+  font-size: 14px;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+.strategy-visual-outcomes i {
+  color: #947a46;
+  font-style: normal;
+}
+@media(max-width:1100px) {
+  .strategy-visual-outcomes { display: block; text-align: center; }
+  .strategy-visual-outcomes>span { display: block; }
+  .strategy-visual-outcomes>strong { display: block; margin-top: 3px; }
+}
+@media(max-width:860px) {
+  .strategy-hero-visual { justify-self: center; max-width: 560px; }
+}
+.corporate .hero .corporate-benefit-title.strategy-promise {
+  font-size: clamp(20px, 2.4vw, 34px);
+  line-height: 1.35;
+  letter-spacing: -.055em;
+  gap: .1em;
+}
+.corporate .strategy-promise .hp-promise-top,
+.corporate .strategy-promise .hp-promise-bottom {
+  display: block;
+  white-space: nowrap;
+}
+.corporate .strategy-promise em { font-style: normal; color: #e3cb8d; }
+.corporate .hero .strategy-subline {
+  display: grid;
+  gap: 5px;
+  font-size: clamp(13px, 1.1vw, 16px);
+  font-weight: 700;
+  line-height: 1.55;
+  color: #172d5e;
+  margin: 20px 0 14px;
+}
+.corporate .hero .strategy-subline span { display: block; }
+.corporate #pricing .performance-box h3 span { display: inline; }
+.corporate #pricing .total-strip>div:last-child small { display: block; }
+.corporate #pricing .total-strip>p small { display: block; }
+.corporate #pricing .model-cost-check [data-model-output="service-cost"] { font: inherit; }
+.corporate #services .service-card .service-value-text span { display: block; white-space: nowrap; }
+.corporate #pricing .strategy-roi {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  gap: 12px 24px;
+  align-items: center;
+  margin: 22px 0 26px;
+  padding: clamp(20px, 2.5vw, 30px);
+  color: #172d5e;
+  border-left: 5px solid #b99b4d;
+  background: #f6f3ea;
+}
+.corporate #pricing .strategy-roi__eyebrow { margin: 0 0 5px; color: #98783b; font-size: 11px; font-weight: 900; letter-spacing: .12em; }
+.corporate #pricing .strategy-roi h3 { margin: 0 0 8px; font-size: clamp(19px, 2vw, 26px); line-height: 1.3; letter-spacing: -.045em; }
+.corporate #pricing .strategy-roi__lead { margin: 0; font-size: clamp(13px, 1.1vw, 15px); line-height: 1.7; }
+.corporate #pricing .strategy-roi__math { display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); align-items: center; justify-items: center; gap: 10px 5px; min-width: 0; padding: 13px 9px 10px; border: 1px solid #d7c99f; background: #fff; text-align: center; white-space: nowrap; }
+.corporate #pricing .strategy-roi__part { display: grid; gap: 3px; min-width: 0; }
+.corporate #pricing .strategy-roi__math strong { color: #172d5e; font-size: clamp(21px, 2vw, 29px); line-height: 1.1; }
+.corporate #pricing .strategy-roi__math span { color: #6f644c; font-size: 10px; font-weight: 800; }
+.corporate #pricing .strategy-roi__math b { color: #b5974e; font-size: 19px; }
+.corporate #pricing .strategy-roi__total { display: flex; grid-column: 1/-1; align-items: baseline; justify-content: center; gap: 8px; width: 100%; padding-top: 8px; border-top: 1px solid #e3d8ba; }
+.corporate #pricing .strategy-roi__total strong { color: #98783b; font-size: clamp(24px, 2.3vw, 33px); }
+.corporate #pricing .strategy-roi__cases { grid-column: 1/-1; border-top: 1px solid #d8ccb2; }
+.corporate #pricing .strategy-roi__cases summary { display: flex; justify-content: space-between; gap: 10px; padding: 9px 2px 4px; color: #172d5e; cursor: pointer; font-size: 13px; font-weight: 900; list-style: none; }
+.corporate #pricing .strategy-roi__cases summary::-webkit-details-marker { display: none; }
+.corporate #pricing .strategy-roi__cases[open] summary span { transform: rotate(45deg); }
+.corporate #pricing .strategy-roi__cases ol { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 9px; margin: 12px 0 0; padding: 0; list-style: none; }
+.corporate #pricing .strategy-roi__cases li { min-width: 0; padding: 14px; background: #fff; border-top: 2px solid #b99b4d; text-align: left; }
+.corporate #pricing .strategy-roi__case-no { display: block; margin-bottom: 6px; color: #98783b; font-size: 10px; font-weight: 900; }
+.corporate #pricing .strategy-roi__cases li strong { display: block; font-size: 13px; line-height: 1.4; }
+.corporate #pricing .strategy-roi__cases li p { margin: 6px 0 0; color: #4f5e77; font-size: 12px; line-height: 1.55; }
+.corporate #pricing .strategy-roi__cases li b { color: #172d5e; }
+.corporate #pricing .strategy-roi__note { grid-column: 1 / -1; margin: 0; color: #617089; font-size: 11px; line-height: 1.65; }
+.corporate .simple-fee-note { margin: -7px 0 14px; font-size: 11px; line-height: 1.6; color: #53647e; text-align: center; }
+@media(max-width:600px) {
+  .corporate #pricing .strategy-roi { grid-template-columns: minmax(0,1fr); gap: 12px; }
+  .corporate #pricing .strategy-roi__math { padding: 12px 5px; }
+  .corporate #pricing .strategy-roi__math strong { font-size: clamp(19px, 6.4vw, 26px); }
+  .corporate #pricing .strategy-roi__math span { font-size: 10px; }
+  .corporate #pricing .strategy-roi__total strong { font-size: clamp(23px, 7vw, 29px); }
+  .corporate #pricing .strategy-roi__cases ol { grid-template-columns: minmax(0,1fr); }
+  .hp-form-theme .corporate-hero { padding-bottom: 28px; }
+  .hp-form-theme .closing-section .hp-contact-options>.hp-contact-form { grid-row: 2; }
+  .strategy-hero-visual { padding: 16px 16px 0; }
+  .strategy-visual-formula { grid-template-columns: minmax(0,1fr) 20px minmax(0,1fr); gap: 7px; margin-top: 15px; }
+  .strategy-visual-factor { padding: 9px; min-height: 118px; }
+  .strategy-visual-factor svg { width: 24px; height: 24px; }
+  .strategy-visual-factor>span { font-size: 8px; }
+  .strategy-visual-factor strong { font-size: 12px; }
+  .strategy-visual-factor small { font-size: 9px; }
+  .strategy-visual-times { font-size: 23px; }
+  .strategy-visual-promise { font-size: clamp(20px, 5.8vw, 25px); }
+  .strategy-visual-outcomes { margin: 13px -16px 0; padding: 10px; }
+  .corporate .hero .corporate-benefit-title.strategy-promise {
+    font-size: clamp(18px, 5.1vw, 23px);
+  }
+  .corporate .hero .strategy-subline { font-size: 12px; line-height: 1.5; }
+  .corporate #pricing .performance-box h3 { line-height: 1.4; }
+}
+@media(max-width:350px) {
+  .corporate #services .service-card .service-value-text { font-size: 18px; }
+  .corporate #pricing .strategy-roi h3 span { display: block; }
+  .corporate .corporate-hero .hero-copy>.eyebrow {
+    font-size: 10px;
+    letter-spacing: .04em;
+    white-space: nowrap;
+  }
+  .corporate .corporate-hero .eyebrow-line {
+    width: 30px;
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,189 @@
+/* Homepage diagram motion. The resting page remains fully visible without JS. */
+@keyframes hp-motion-rise {
+  from { opacity: .62; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hp-motion-pop {
+  from { opacity: .65; transform: scale(.82); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes hp-motion-line {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes hp-motion-rule {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes hp-motion-result {
+  from { background-color: #fff; box-shadow: inset 0 0 0 0 #ddc682; }
+  65% { background-color: #fff9e8; box-shadow: inset 0 0 0 2px #ddc682; }
+  to { background-color: #fff; box-shadow: inset 0 0 0 0 #ddc682; }
+}
+
+@keyframes hp-motion-bar {
+  from { transform: scaleY(.07); opacity: .55; }
+  to { transform: scaleY(1); opacity: 1; }
+}
+@keyframes hp-motion-halo {
+  from { filter: drop-shadow(0 0 0 transparent); opacity: .55; }
+  60% { filter: drop-shadow(0 0 14px #c8a85c66); opacity: 1; }
+  to { filter: drop-shadow(0 0 0 transparent); opacity: 1; }
+}
+
+/* Scroll through the whole story: proof, benefits, comparison, then pricing. */
+.corporate .official-media-logos.hp-motion-play img,
+.corporate #services .hp-value-pillars.hp-motion-play > li,
+.corporate #services .service-grid.hp-motion-play > article,
+.corporate #ai-comparison .three-pillars.hp-motion-play > article,
+.corporate #pricing .price-grid.hp-motion-play > article,
+.corporate #pricing .process-grid.hp-motion-play > article {
+  animation: hp-motion-rise 620ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate .official-media-logos.hp-motion-play img:nth-child(2),
+.corporate #services .hp-value-pillars.hp-motion-play > li:nth-child(2),
+.corporate #services .service-grid.hp-motion-play > article:nth-child(2),
+.corporate #ai-comparison .three-pillars.hp-motion-play > article:nth-child(2),
+.corporate #pricing .price-grid.hp-motion-play > article:nth-child(2),
+.corporate #pricing .process-grid.hp-motion-play > article:nth-child(2) { animation-delay: 170ms; }
+.corporate .official-media-logos.hp-motion-play img:nth-child(3),
+.corporate #services .hp-value-pillars.hp-motion-play > li:nth-child(3),
+.corporate #ai-comparison .three-pillars.hp-motion-play > article:nth-child(3),
+.corporate #pricing .process-grid.hp-motion-play > article:nth-child(3) { animation-delay: 340ms; }
+
+.corporate #research .review-data.hp-motion-play .donut {
+  animation: hp-motion-halo 1050ms ease-out both;
+}
+.corporate #research .review-data.hp-motion-play > div:last-child {
+  animation: hp-motion-rise 680ms 170ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate #research .adoption-card.hp-motion-play .bar {
+  transform-origin: bottom center;
+  animation: hp-motion-bar 840ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate #research .adoption-card.hp-motion-play .bar-new { animation-delay: 220ms; }
+.corporate #research .adoption-card.hp-motion-play .delta {
+  animation: hp-motion-pop 540ms 630ms cubic-bezier(.15,1.5,.4,1) both;
+}
+
+.corporate #news-comparison .interview-process.hp-motion-play .process-route .route-steps > div,
+.corporate #news-comparison .interview-process.hp-motion-play .process-route .route-steps > span {
+  animation: hp-motion-rise 480ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate #news-comparison .interview-process.hp-motion-play .process-route .route-steps > :nth-child(2) { animation-delay: 130ms; }
+.corporate #news-comparison .interview-process.hp-motion-play .process-route .route-steps > :nth-child(3) { animation-delay: 250ms; }
+.corporate #news-comparison .interview-process.hp-motion-play .process-route .route-steps > :nth-child(4) { animation-delay: 380ms; }
+.corporate #news-comparison .interview-process.hp-motion-play .process-route .route-steps > :nth-child(5) { animation-delay: 510ms; }
+.corporate #news-comparison .interview-process.hp-motion-play .interview-result > strong {
+  animation: hp-motion-pop 630ms 690ms cubic-bezier(.15,1.5,.4,1) both;
+}
+.corporate #ai-comparison .citation-targets.hp-motion-play .citation-target-grid > div:first-child {
+  animation: hp-motion-rise 590ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate #ai-comparison .citation-targets.hp-motion-play .citation-target-grid > div:last-child {
+  animation: hp-motion-rise 590ms 190ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate #ai-comparison .citation-targets.hp-motion-play .citation-report {
+  animation: hp-motion-result 1000ms 520ms ease-out both;
+}
+
+/* First view: two sources converge, then the outcome settles into place. */
+.corporate .strategy-hero-visual.hp-motion-play .strategy-visual-factor:first-child {
+  animation: hp-motion-rise 720ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate .strategy-hero-visual.hp-motion-play .strategy-visual-factor:last-child {
+  animation: hp-motion-rise 720ms 140ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate .strategy-hero-visual.hp-motion-play .strategy-visual-times {
+  animation: hp-motion-pop 510ms 380ms cubic-bezier(.15,1.5,.4,1) both;
+}
+.corporate .strategy-hero-visual.hp-motion-play .strategy-visual-connector::before {
+  transform-origin: right center;
+  animation: hp-motion-rule 450ms 500ms ease-out both;
+}
+.corporate .strategy-hero-visual.hp-motion-play .strategy-visual-connector::after {
+  transform-origin: left center;
+  animation: hp-motion-rule 450ms 500ms ease-out both;
+}
+.corporate .strategy-hero-visual.hp-motion-play .strategy-visual-promise {
+  animation: hp-motion-rise 660ms 620ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate .strategy-hero-visual.hp-motion-play .strategy-visual-outcomes {
+  animation: hp-motion-rise 590ms 790ms cubic-bezier(.2,.8,.2,1) both;
+}
+
+/* The evidence and search panels share the same visual sequence as the hero. */
+.corporate .branding-equation .branding-operand:first-child.hp-motion-play {
+  animation: hp-motion-rise 650ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate .branding-equation .branding-multiply.hp-motion-play {
+  animation: hp-motion-pop 450ms 250ms cubic-bezier(.15,1.5,.4,1) both;
+}
+.corporate .branding-equation .branding-operand:last-child.hp-motion-play {
+  animation: hp-motion-rise 650ms 360ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate .branding-journey-steps > li.hp-motion-play {
+  animation: hp-motion-rise 560ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate .branding-journey-steps > li:nth-child(2).hp-motion-play { animation-delay: 170ms; }
+.corporate .branding-journey-steps > li:nth-child(3).hp-motion-play { animation-delay: 340ms; }
+
+/* Only the lines draw. Axis labels and numerical annotations stay readable. */
+.corporate .future-graphic.hp-motion-play .future-chart-svg polyline {
+  animation: hp-motion-line 1150ms cubic-bezier(.2,.7,.2,1) both;
+}
+.corporate .future-graphic.hp-motion-play .future-chart-svg [data-future-line="half"] { animation-delay: 170ms; }
+.corporate .future-graphic.hp-motion-play .future-chart-svg [data-future-line="quarter"] { animation-delay: 300ms; }
+.corporate .model-future-charts figure:first-child.hp-motion-play {
+  animation: hp-motion-rise 580ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate .model-future-charts figure:last-child.hp-motion-play {
+  animation: hp-motion-rise 580ms 180ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate .model-future-charts figure.hp-motion-play svg polyline {
+  animation: hp-motion-line 1050ms 260ms cubic-bezier(.2,.7,.2,1) both;
+}
+.corporate .model-future-charts figure:last-child.hp-motion-play svg polyline { animation-delay: 420ms; }
+
+/* The recovery example emphasizes the calculation without changing its values. */
+.corporate #pricing .strategy-roi__math.hp-motion-play .strategy-roi__part:first-child {
+  animation: hp-motion-rise 520ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate #pricing .strategy-roi__math.hp-motion-play > b {
+  animation: hp-motion-pop 440ms 170ms cubic-bezier(.15,1.5,.4,1) both;
+}
+.corporate #pricing .strategy-roi__math.hp-motion-play .strategy-roi__part:nth-of-type(2) {
+  animation: hp-motion-rise 520ms 330ms cubic-bezier(.2,.8,.2,1) both;
+}
+.corporate #pricing .strategy-roi__math.hp-motion-play .strategy-roi__total {
+  animation: hp-motion-rise 540ms 610ms cubic-bezier(.2,.8,.2,1) both,
+             hp-motion-result 920ms 760ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .corporate .strategy-hero-visual.hp-motion-play *,
+  .corporate .strategy-hero-visual.hp-motion-play *::before,
+  .corporate .strategy-hero-visual.hp-motion-play *::after,
+  .corporate .official-media-logos.hp-motion-play *,
+  .corporate #services .hp-value-pillars.hp-motion-play *,
+  .corporate #services .service-grid.hp-motion-play *,
+  .corporate #research .review-data.hp-motion-play *,
+  .corporate #research .adoption-card.hp-motion-play *,
+  .corporate #news-comparison .interview-process.hp-motion-play *,
+  .corporate #ai-comparison .citation-targets.hp-motion-play *,
+  .corporate #ai-comparison .three-pillars.hp-motion-play *,
+  .corporate #pricing .price-grid.hp-motion-play *,
+  .corporate #pricing .process-grid.hp-motion-play *,
+  .corporate .branding-equation .hp-motion-play,
+  .corporate .branding-journey-steps > li.hp-motion-play,
+  .corporate .future-graphic.hp-motion-play .future-chart-svg polyline,
+  .corporate .model-future-charts figure.hp-motion-play,
+  .corporate .model-future-charts figure.hp-motion-play svg polyline,
+  .corporate #pricing .strategy-roi__math.hp-motion-play * {
+    animation: none !important;
+  }
+}

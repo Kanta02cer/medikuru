@@ -25,17 +25,19 @@
     const cpl=base.cpl;
     const equivalent=cpl===null||additionalInquiries===null?null:additionalInquiries*cpl;
     const annualExistingCost=base.monthlyCost===null?null:base.monthlyCost*12;
-    const annualInclusiveCost=annualExistingCost===null?null:annualExistingCost+480000;
+    // Scenario: the chosen citation rate holds for all 12 months. Actual bills use each month's report.
+    const firstYearCost=300000+(input.citation>=60?180000:0);
+    const annualInclusiveCost=annualExistingCost===null?null:annualExistingCost+firstYearCost;
     const existingCplAfter=annualInquiries>0&&annualExistingCost!==null?annualExistingCost/annualInquiries:null;
     const inclusiveCpl=annualInquiries>0&&annualInclusiveCost!==null?annualInclusiveCost/annualInquiries:null;
     const inclusiveImprovement=cpl>0&&inclusiveCpl!==null?1-inclusiveCpl/cpl:null;
-    return {ai:a*100,exposure,uplift,additionalInquiries,additionalDeals,revenue,contribution,cpl,equivalent,netContribution:contribution===null?null:contribution-480000,costRatio:equivalent===null?null:equivalent/480000,baseMonthlyInquiries:base.monthlyInquiries,baseAnnualInquiries,annualInquiries,annualExistingCost,annualInclusiveCost,existingCplAfter,inclusiveCpl,inclusiveImprovement,costScope:base.costScope};
+    return {ai:a*100,exposure,uplift,additionalInquiries,additionalDeals,revenue,contribution,cpl,equivalent,netContribution:contribution===null?null:contribution-firstYearCost,costRatio:equivalent===null?null:equivalent/firstYearCost,serviceCost:firstYearCost,baseMonthlyInquiries:base.monthlyInquiries,baseAnnualInquiries,annualInquiries,annualExistingCost,annualInclusiveCost,existingCplAfter,inclusiveCpl,inclusiveImprovement,costScope:base.costScope};
   }
   function scenarios(input) {
     return Array.from({length:6},(_,n)=>{
       const a=Math.min(100,input.ai+1.72*12*n*input.futureSpeed);
-      const result=calculate(input,a),cost=n===0?480000:180000;
-      return {...result,year:n===0?'現在':String(2026+n),cost,netContribution:result.contribution===null?null:result.contribution-cost,costRatio:result.equivalent===null?null:result.equivalent/cost};
+      const result=calculate(input,a),cost=n===0?result.serviceCost:(input.citation>=60?180000:0);
+      return {...result,year:n===0?'現在':String(2026+n),cost,netContribution:result.contribution===null?null:result.contribution-cost,costRatio:result.equivalent===null||cost===0?null:result.equivalent/cost};
     });
   }
   const api={DEFAULTS,baseline,calculate,scenarios};
@@ -86,7 +88,7 @@
       ['equivalent',state.costScope==='acquisition'&&state.entryMode!=='budget'?'獲得コスト相当額':'広告獲得費相当額',r=>r.equivalent===null?'算出不可':`${fmt(man(r.equivalent),2)}万円`],
       ['revenue','年間売上の増加',r=>`${signed(man(r.revenue),2)}万円`],
       ['contribution','年間限界利益の増加',r=>`${signed(man(r.contribution),2)}万円`],
-      ['cost','その年のサービス費用',r=>`${fmt(r.cost/10000,0)}万円`],
+      ['cost','その年のサービス費用（引用率が通年一定の仮定）',r=>`${fmt(r.cost/10000,0)}万円`],
       ['net','費用を引いた限界利益増分',r=>`${signed(man(r.netContribution),2)}万円`],
     ];
     root.querySelector('[data-model-future-table]').innerHTML=definitions.map(([key,label,format])=>`<tr data-row="${key}"><th scope="row">${label}</th>${rows.map(row=>`<td>${format(row)}</td>`).join('')}</tr>`).join('');
@@ -102,6 +104,9 @@
     output('current-monthly',result.baseMonthlyInquiries===null?'—':fmt(result.baseMonthlyInquiries,Number.isInteger(result.baseMonthlyInquiries)?0:1));
     output('after-monthly',result.annualInquiries===null?'—':rounded(result.annualInquiries/12));
     output('inclusive-cpl',fmt(man(result.inclusiveCpl),1));
+    output('simple-service-cost',fmt(man(result.serviceCost),0));
+    output('simple-service-tax',`税別（税込${fmt(man(result.serviceCost*1.1),1)}万円）`);
+    output('fee-basis',state.citation>=60?'引用率60%以上が12か月の仮定':'引用率60%未満が12か月の仮定');
     output('future-equivalent',rounded(man(yearFive.equivalent)));
     output('future-revenue',rounded(man(yearFive.revenue)));
     output('effect-label',`の${result.equivalent<0?'変化':'獲得効果'}〈${result.costScope==='acquisition'?'獲得コスト':'広告獲得費'}への換算〉`);
@@ -140,6 +145,8 @@
     put('extra-revenue',signed(man(result.revenue),2),result.revenue<0);
     put('extra-deals',result.additionalDeals===null?'基準となる問い合わせ数が算出できません':`年間の追加成約 ${signed(result.additionalDeals,1)}件`);
     put('extra-margin',signed(man(result.contribution),2),result.contribution<0);
+    put('service-cost',fmt(man(result.serviceCost),0));
+    put('service-cost-note',result.serviceCost===480000?'税別 / ニュース30万円＋AI達成月12か月分':'税別 / ニュース30万円＋AI未達月12か月分（AI支援費0円）');
     put('net-contribution',signed(man(result.netContribution),2),result.netContribution<0);
     put('cost-ratio',result.costRatio===null?'算出不可':`${fmt(result.costRatio,2)}倍`,result.costRatio<0);
     put('before-inquiries',result.baseAnnualInquiries===null?'算出不可':`${fmt(result.baseAnnualInquiries,1)}件`);
