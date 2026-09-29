@@ -27,7 +27,7 @@
 }
 
 @keyframes hp-motion-bar {
-  from { transform: scaleY(.07); opacity: .55; }
+  from { transform: scaleY(0); }
   to { transform: scaleY(1); opacity: 1; }
 }
 @keyframes hp-motion-halo {
@@ -57,19 +57,19 @@
 .corporate #pricing .process-grid.hp-motion-play > article:nth-child(3) { animation-delay: 680ms; }
 .corporate #pricing .process-grid.hp-motion-play > article:nth-child(4) { animation-delay: 1020ms; }
 
-.corporate #research .review-data.hp-motion-play .donut {
-  animation: hp-motion-halo 2100ms ease-out both;
+.corporate #research .donut.hp-chart-play {
+  background: conic-gradient(var(--gold) 0% var(--hp-donut-progress, 70.1%), #e8ecee var(--hp-donut-progress, 70.1%) 100%);
 }
 .corporate #research .review-data.hp-motion-play > div:last-child {
   animation: hp-motion-rise 1360ms 340ms cubic-bezier(.2,.8,.2,1) both;
 }
-.corporate #research .adoption-card.hp-motion-play .bar {
+.corporate #research .bar-chart.hp-chart-play .bar {
   transform-origin: bottom center;
-  animation: hp-motion-bar 1680ms cubic-bezier(.2,.8,.2,1) both;
+  animation: hp-motion-bar 2400ms cubic-bezier(.22,.65,.3,1) both;
 }
-.corporate #research .adoption-card.hp-motion-play .bar-new { animation-delay: 440ms; }
-.corporate #research .adoption-card.hp-motion-play .delta {
-  animation: hp-motion-pop 1080ms 1260ms cubic-bezier(.15,1.5,.4,1) both;
+.corporate #research .bar-chart.hp-chart-play .bar-new { animation-delay: 450ms; }
+.corporate #research .adoption-card.hp-chart-playing .delta {
+  animation: hp-motion-pop 1080ms 1950ms cubic-bezier(.2,.8,.2,1) both;
 }
 
 .corporate #news-comparison .interview-process.hp-motion-play .process-route .route-steps > div,
@@ -167,6 +167,11 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .corporate #research .donut.hp-chart-play {
+    background: conic-gradient(var(--gold) 0% 70.1%, #e8ecee 70.1% 100%);
+  }
+  .corporate #research .bar-chart.hp-chart-play .bar,
+  .corporate #research .adoption-card.hp-chart-playing .delta,
   .corporate .strategy-hero-visual.hp-motion-play *,
   .corporate .strategy-hero-visual.hp-motion-play *::before,
   .corporate .strategy-hero-visual.hp-motion-play *::after,
