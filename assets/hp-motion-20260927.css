@@ -65,11 +65,11 @@
 }
 .corporate #research .bar-chart.hp-chart-play .bar {
   transform-origin: bottom center;
-  animation: hp-motion-bar 2400ms cubic-bezier(.22,.65,.3,1) both;
+  animation: hp-motion-bar 1700ms cubic-bezier(.22,.65,.3,1) both;
 }
-.corporate #research .bar-chart.hp-chart-play .bar-new { animation-delay: 450ms; }
+.corporate #research .bar-chart.hp-chart-play .bar-new { animation-delay: 300ms; }
 .corporate #research .adoption-card.hp-chart-playing .delta {
-  animation: hp-motion-pop 1080ms 1950ms cubic-bezier(.2,.8,.2,1) both;
+  animation: hp-motion-pop 760ms 1350ms cubic-bezier(.2,.8,.2,1) both;
 }
 
 .corporate #news-comparison .interview-process.hp-motion-play .process-route .route-steps > div,
