@@ -74,7 +74,7 @@
         let startedAt;
         const draw = (now) => {
           if (startedAt === undefined) startedAt = now;
-          const progress = Math.min((now - startedAt) / 1800, 1);
+          const progress = Math.min((now - startedAt) / 1200, 1);
           const eased = 1 - Math.pow(1 - progress, 3);
           target.style.setProperty('--hp-donut-progress', `${percentage * eased}%`);
           if (progress < 1) run.frame = window.requestAnimationFrame(draw);
@@ -82,8 +82,8 @@
         };
         run.frame = window.requestAnimationFrame(draw);
       } else {
-        // Bars: 1700ms + 300ms stagger; result emphasis ends at 2110ms.
-        run.timer = window.setTimeout(() => finishChart(target), 2300);
+        // Bars: 1100ms + 200ms stagger; result emphasis ends at 1400ms.
+        run.timer = window.setTimeout(() => finishChart(target), 1600);
       }
     };
     const chartObserver = new IntersectionObserver((entries) => {
