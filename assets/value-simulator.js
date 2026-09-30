@@ -1,7 +1,7 @@
 /* Local scenario model. No network requests, data storage or submissions. */
 (function () {
   'use strict';
-  const DEFAULTS = Object.freeze({inquiries:30,cost:20000,close:10,order:500000,margin:40,news:20,ai:37.4,recognition:80,multiplier:1.6,citation:60,costMode:'cpl',futureSpeed:.5,entryMode:'direct',budget:600000,budgetCost:20000,costScope:'advertising'});
+  const DEFAULTS = Object.freeze({inquiries:30,cost:20000,close:10,order:500000,margin:40,news:20,ai:37.4,recognition:80,multiplier:1.6,citation:50,costMode:'cpl',futureSpeed:.5,entryMode:'direct',budget:600000,budgetCost:20000,costScope:'advertising'});
   function baseline(input) {
     const r=input.close/100;
     const budgetMode=input.entryMode==='budget';
@@ -26,7 +26,7 @@
     const equivalent=cpl===null||additionalInquiries===null?null:additionalInquiries*cpl;
     const annualExistingCost=base.monthlyCost===null?null:base.monthlyCost*12;
     // Scenario: the chosen citation rate holds for all 12 months. Actual bills use each month's report.
-    const firstYearCost=300000+(input.citation>=60?180000:0);
+    const firstYearCost=300000+(input.citation>=50?180000:0);
     const annualInclusiveCost=annualExistingCost===null?null:annualExistingCost+firstYearCost;
     const existingCplAfter=annualInquiries>0&&annualExistingCost!==null?annualExistingCost/annualInquiries:null;
     const inclusiveCpl=annualInquiries>0&&annualInclusiveCost!==null?annualInclusiveCost/annualInquiries:null;
@@ -36,7 +36,7 @@
   function scenarios(input) {
     return Array.from({length:6},(_,n)=>{
       const a=Math.min(100,input.ai+1.72*12*n*input.futureSpeed);
-      const result=calculate(input,a),cost=n===0?result.serviceCost:(input.citation>=60?180000:0);
+      const result=calculate(input,a),cost=n===0?result.serviceCost:(input.citation>=50?180000:0);
       return {...result,year:n===0?'現在':String(2026+n),cost,netContribution:result.contribution===null?null:result.contribution-cost,costRatio:result.equivalent===null||cost===0?null:result.equivalent/cost};
     });
   }
@@ -106,7 +106,7 @@
     output('inclusive-cpl',fmt(man(result.inclusiveCpl),1));
     output('simple-service-cost',fmt(man(result.serviceCost),0));
     output('simple-service-tax',`税別（税込${fmt(man(result.serviceCost*1.1),1)}万円）`);
-    output('fee-basis',state.citation>=60?'引用率60%以上が12か月の仮定':'引用率60%未満が12か月の仮定');
+    output('fee-basis',state.citation>=50?'引用率50%以上が12か月の仮定':'引用率50%未満が12か月の仮定');
     output('future-equivalent',rounded(man(yearFive.equivalent)));
     output('future-revenue',rounded(man(yearFive.revenue)));
     output('effect-label',`の${result.equivalent<0?'変化':'獲得効果'}〈${result.costScope==='acquisition'?'獲得コスト':'広告獲得費'}への換算〉`);
