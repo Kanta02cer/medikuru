@@ -1,0 +1,21 @@
+/* Individual-quote pricing presentation, 2026-10-02. */
+#pricing .ask-price{display:flex;align-items:center;gap:18px;min-height:100px;margin:20px 0 22px;color:#ae8d43}
+#pricing .ask-price strong{font-size:clamp(30px,3.1vw,40px);line-height:1;font-weight:900;letter-spacing:.03em}
+#pricing .ask-price>span{font-size:15px;font-weight:800;color:#172f5e;border:1px solid #d6c69b;background:#fff8e5;padding:8px 12px;border-radius:3px;white-space:nowrap}
+#pricing .ask-news-note{font-size:14px;line-height:1.8;margin:0 0 20px;color:#46596b}
+#pricing .ask-achievement{display:grid;gap:5px;text-align:left;min-height:67px;font-size:13px;line-height:1.55}
+#pricing .ask-achievement b{font-size:16px;color:#172f5e}
+#pricing .ask-guidance{border:1px solid #d8c79e;background:#fcf8ef;margin:30px 0;padding:30px 36px;border-radius:8px}
+#pricing .ask-guidance h3{font-size:clamp(23px,2.2vw,30px);line-height:1.5;margin:8px 0 14px;color:#172f5e}
+#pricing .ask-guidance>p:last-child{max-width:760px;line-height:1.9;margin:0;color:#46596b}
+#pricing .ask-total{display:flex;justify-content:space-between;align-items:center;gap:28px;padding:30px 36px;margin:26px 0;background:#172f5e;color:#fff;border-radius:8px}
+#pricing .ask-total>div>span{font-size:12px;line-height:1.8;color:#e7d59f}
+#pricing .ask-total h3{font-size:clamp(20px,2vw,26px);line-height:1.6;margin:9px 0 0}
+#pricing .ask-total p{font-size:13px;line-height:1.8;margin:12px 0 0;color:#e8edf5}
+#pricing .ask-total-price{display:grid;text-align:center;gap:10px;flex:0 0 auto}
+#pricing .ask-total-price strong{font-size:30px;line-height:1;letter-spacing:.04em;color:#e7d59f}
+#pricing .option-price .ask-option-price{font-size:30px;line-height:1.1;letter-spacing:.03em}
+.ask-simulation-note{display:grid;gap:8px;border:1px solid #d6c69b;background:#fff9e9;border-radius:8px;padding:18px;margin:20px 0;color:#172f5e;font-size:14px;line-height:1.8}
+.ask-simulation-note b{font-size:18px}.simple-result-secondary .ask-pending{font-size:15px!important;line-height:1.7;color:#7f6a3c!important}
+.ask-simulation-note small{display:block;margin-top:4px;font-size:12px;color:#667789}
+@media(max-width:600px){#pricing .ask-price{min-height:90px;gap:15px;margin:18px 0}#pricing .ask-price strong{font-size:34px}#pricing .ask-guidance,#pricing .ask-total{padding:25px 22px}#pricing .ask-total{display:grid;gap:24px}#pricing .ask-total-price{text-align:left}#pricing .ask-total h3{font-size:21px}#pricing .ask-guidance>p:last-child{font-size:14px}}
