@@ -1,0 +1,14 @@
+/* Separate the original counts and website examples without changing their artwork. */
+body.faithful-landing .proof-slice{position:relative;width:100%;max-width:750px;overflow:hidden;container-type:inline-size;margin:0;padding:0}
+body.faithful-landing .proof-slice--counts{aspect-ratio:750 / 317;background:#142b66}
+body.faithful-landing .proof-slice--appeal{aspect-ratio:750 / 984;background:#fff}
+body.faithful-landing .proof-slice>.proof-band{position:absolute;left:0;top:0;width:100%;margin:0;padding:0}
+body.faithful-landing .proof-slice--appeal>.proof-band{top:-42.2666667cqw}
+body.faithful-landing .proof-slice .proof-band>img{display:block;width:100%;height:auto}
+/* Reuse the original hero CTA artwork and type styles without restyling it. */
+body.faithful-landing[data-placement-page="lp"]{padding-bottom:calc(min(26vw,195px) + env(safe-area-inset-bottom,0px))}
+body.faithful-landing .lp-fixed-cta{position:fixed;z-index:10000;left:50%;bottom:0;transform:translateX(-50%);box-sizing:border-box;width:min(100%,750px);margin:0;padding:0 0 env(safe-area-inset-bottom,0px);background:#142b66}
+body.faithful-landing .lp-fixed-cta[hidden]{display:none}
+body.faithful-landing .lp-fixed-cta>.cta{width:100%;margin:0}
+body.faithful-landing:has(dialog[open]) .lp-fixed-cta{visibility:hidden;pointer-events:none}
+@media print{body.faithful-landing .lp-fixed-cta{display:none}body.faithful-landing[data-placement-page="lp"]{padding-bottom:0}}

@@ -1,0 +1,26 @@
+.full-report-section{display:block;position:static;width:100%;max-width:880px;height:auto;max-height:none;margin:48px auto 0;overflow:visible;text-align:left}
+.full-report-heading{text-align:center;margin:0 0 32px}
+.full-report-eyebrow{font-size:10px!important;letter-spacing:.17em;color:#a28542;font-weight:700}
+.full-report-heading h2{font-size:23px;font-weight:600;line-height:1.65;margin:12px 0}
+.full-report-heading p{font-size:12px;line-height:1.9}
+.full-report-download{display:inline-flex;align-items:center;gap:24px;font-size:12px;text-underline-offset:6px;margin:8px 0 0}
+.full-report-sheet{display:block;position:static;width:100%;height:auto;max-height:none;margin:0 0 42px;transform:none;overflow:visible}
+.full-report-sheet figcaption{display:flex;align-items:center;gap:18px;padding:0 0 13px;margin:0;border-bottom:1px solid #cfc6b1;color:#162d53;font-size:13px;font-weight:600;line-height:1.8}
+.full-report-number{font-size:21px;line-height:1.5;font-weight:500;letter-spacing:.025em;white-space:nowrap;font-variant-numeric:tabular-nums;color:#9b7c39}
+.full-report-number small{font-size:11px;font-weight:400;color:#9b9382}
+.full-report-sheet a{display:block;margin-top:16px}
+.full-report-sheet img{position:static;display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:contain;transform:none;background:#fff;box-shadow:0 12px 36px #142b6614;border:1px solid #e1e0dc}
+.full-report-end{text-align:center;font-size:12px;line-height:1.95;margin:0 0 10px;color:#6b778a}
+.lp-page .full-report-eyebrow,.lp-page .full-report-number{color:#dfc47b}
+.lp-page .full-report-heading h2{color:#fff2c9}
+.lp-page .full-report-heading p,.lp-page .full-report-end{color:#cbd4e7}
+.lp-page .full-report-download{color:#f4e0aa}
+.lp-page .full-report-sheet figcaption{color:#fff;border-color:#ffffff33}
+.lp-page .full-report-number small{color:#aab6cf}
+.lp-page .full-report-sheet img{box-shadow:0 12px 36px #07132d55}
+.section:has(.full-report-section) .intro{display:block;text-align:center}
+.section:has(.full-report-section) .copy{max-width:700px;margin:auto}
+.section:has(.full-report-section) .kicker{justify-content:center}
+.section:has(.full-report-section) .lead{margin:auto;max-width:600px}
+.sample-dialog .sample-report-sheet,.mk-preview-dialog .sample-report-sheet{position:static;display:block;width:100%;height:auto;transform:none;inset:auto;float:none}
+@media(max-width:600px){.full-report-section{margin-top:34px}.full-report-heading{margin-bottom:24px}.full-report-heading h2{font-size:18px}.full-report-heading p,.full-report-download{font-size:11px}.full-report-sheet{margin-bottom:30px}.full-report-sheet figcaption{gap:12px;font-size:11px;padding-bottom:10px}.full-report-number{font-size:19px}.full-report-sheet a{margin-top:12px}.full-report-end{font-size:11px}}
