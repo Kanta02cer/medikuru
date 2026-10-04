@@ -14,12 +14,12 @@
     if (video.error) return;
     const state = video.ended ? "再生終了" : video.paused ? "停止中" : "再生中";
     const status = statuses.get(video);
-    const label = `${state} ${time(video.currentTime)} / 1:12`;
+    const label = `${state} ${time(video.currentTime)} / 1:18`;
     if (status.dataset.label === label) return;
     status.dataset.label = label;
     status.replaceChildren(document.createTextNode(`${state} `));
     const position = document.createElement("span");
-    position.textContent = `${time(video.currentTime)} / 1:12`;
+    position.textContent = `${time(video.currentTime)} / 1:18`;
     status.append(position);
   }
   function pauseOthers(video) {
