@@ -13,13 +13,15 @@
   function update(video) {
     if (video.error) return;
     const state = video.ended ? "再生終了" : video.paused ? "停止中" : "再生中";
+    const declaredDuration = Number(video.dataset.duration);
+    const duration = time(Number.isFinite(declaredDuration) && declaredDuration > 0 ? declaredDuration : 78);
     const status = statuses.get(video);
-    const label = `${state} ${time(video.currentTime)} / 1:18`;
+    const label = `${state} ${time(video.currentTime)} / ${duration}`;
     if (status.dataset.label === label) return;
     status.dataset.label = label;
     status.replaceChildren(document.createTextNode(`${state} `));
     const position = document.createElement("span");
-    position.textContent = `${time(video.currentTime)} / 1:18`;
+    position.textContent = `${time(video.currentTime)} / ${duration}`;
     status.append(position);
   }
   function pauseOthers(video) {

@@ -18,3 +18,5 @@
 .card-kicker .selected-story-badge{margin-right:auto;border:1px solid #cdbd97;padding:3px 8px;color:var(--gold);font-size:10px;line-height:1.6;letter-spacing:.04em}#story-c{scroll-margin-top:24px}
 
 .opening-link{margin:8px 0;font-size:13px;color:var(--gold)}.opening-link a{text-decoration:underline;text-underline-offset:4px}
+
+#story-c .scene-buttons button[data-scene="60"]{grid-column:1/-1;background:#eee4ce;border-color:#b79b60;font-size:12px}@media(max-width:740px){#story-c .scene-buttons button[data-scene="60"]{font-size:13px}}
