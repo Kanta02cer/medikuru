@@ -28,17 +28,17 @@
     // Scenario: the chosen citation rate holds for all 12 months. Actual bills use each month's report.
     const aiMonthlyFee=15000;
     const annualAiCost=input.citation>=50?aiMonthlyFee*12:0;
-    const firstYearCost=null; // News is individually quoted; never assume its unknown fee is zero.
-    const annualInclusiveCost=null;
+    const firstYearCost=300000+annualAiCost; // Campaign news: 330,000 JPY incl tax = 300,000 excl tax, charged once.
+    const annualInclusiveCost=annualExistingCost===null?null:annualExistingCost+firstYearCost;
     const existingCplAfter=annualInquiries>0&&annualExistingCost!==null?annualExistingCost/annualInquiries:null;
     const inclusiveCpl=annualInquiries>0&&annualInclusiveCost!==null?annualInclusiveCost/annualInquiries:null;
     const inclusiveImprovement=cpl>0&&inclusiveCpl!==null?1-inclusiveCpl/cpl:null;
-    return {ai:a*100,exposure,uplift,additionalInquiries,additionalDeals,revenue,contribution,cpl,equivalent,netContribution:null,costRatio:null,serviceCost:firstYearCost,aiMonthlyFee,annualAiCost,baseMonthlyInquiries:base.monthlyInquiries,baseAnnualInquiries,annualInquiries,annualExistingCost,annualInclusiveCost,existingCplAfter,inclusiveCpl,inclusiveImprovement,costScope:base.costScope};
+    return {ai:a*100,exposure,uplift,additionalInquiries,additionalDeals,revenue,contribution,cpl,equivalent,netContribution:contribution===null?null:contribution-firstYearCost,costRatio:equivalent===null?null:equivalent/firstYearCost,serviceCost:firstYearCost,aiMonthlyFee,annualAiCost,baseMonthlyInquiries:base.monthlyInquiries,baseAnnualInquiries,annualInquiries,annualExistingCost,annualInclusiveCost,existingCplAfter,inclusiveCpl,inclusiveImprovement,costScope:base.costScope};
   }
   function scenarios(input) {
     return Array.from({length:6},(_,n)=>{
       const a=Math.min(100,input.ai+1.72*12*n*input.futureSpeed);
-      const result=calculate(input,a),cost=n===0?null:result.annualAiCost;
+      const result=calculate(input,a),cost=n===0?result.serviceCost:result.annualAiCost;
       return {...result,year:n===0?'現在':String(2026+n),cost,netContribution:cost===null||result.contribution===null?null:result.contribution-cost,costRatio:cost===null||result.equivalent===null||cost===0?null:result.equivalent/cost};
     });
   }
@@ -90,9 +90,9 @@
       ['equivalent',state.costScope==='acquisition'&&state.entryMode!=='budget'?'獲得コスト相当額':'広告獲得費相当額',r=>r.equivalent===null?'算出不可':`${fmt(man(r.equivalent),2)}万円`],
       ['revenue','年間売上の増加',r=>`${signed(man(r.revenue),2)}万円`],
       ['contribution','年間限界利益の増加',r=>`${signed(man(r.contribution),2)}万円`],
-      ['ai-cost','うちAI支援費（引用率が通年一定の仮定）',r=>`${fmt(r.annualAiCost/10000,0)}万円（税別）`],
-      ['cost','その年の合計費用（初年度のニュース掲載費は個別見積り）',r=>r.cost===null?'お見積り後に算出':`${fmt(r.cost/10000,0)}万円（税別）`],
-      ['net','費用を引いた限界利益増分',r=>r.netContribution===null?'お見積り後に算出':`${signed(man(r.netContribution),2)}万円`],
+      ['ai-cost','うちAI検索ブランディング費（引用率が通年一定の仮定）',r=>`${fmt(r.annualAiCost/10000,0)}万円（税別）`],
+      ['cost','その年の合計費用（初年度のみニュース30万円税別を含む）',r=>r.cost===null?'算出不可':`${fmt(r.cost/10000,0)}万円（税別）`],
+      ['net','費用を引いた限界利益増分',r=>r.netContribution===null?'算出不可':`${signed(man(r.netContribution),2)}万円`],
     ];
     root.querySelector('[data-model-future-table]').innerHTML=definitions.map(([key,label,format])=>`<tr data-row="${key}"><th scope="row">${label}</th>${rows.map(row=>`<td>${format(row)}</td>`).join('')}</tr>`).join('');
   }
@@ -109,7 +109,7 @@
     output('inclusive-cpl',fmt(man(result.inclusiveCpl),1));
     output('simple-service-cost',fmt(man(result.serviceCost),0));
     output('ai-service-cost',`${fmt(man(result.annualAiCost),0)}万円（税別）`);
-    output('simple-service-tax','要お見積り');
+    output('simple-service-tax','税別・初年度');
     output('fee-basis',state.citation>=50?'引用率50%以上が12か月の仮定':'引用率50%未満が12か月の仮定');
     output('future-equivalent',rounded(man(yearFive.equivalent)));
     output('future-revenue',rounded(man(yearFive.revenue)));
@@ -150,7 +150,7 @@
     put('extra-deals',result.additionalDeals===null?'基準となる問い合わせ数が算出できません':`年間の追加成約 ${signed(result.additionalDeals,1)}件`);
     put('extra-margin',signed(man(result.contribution),2),result.contribution<0);
     put('service-cost',fmt(man(result.serviceCost),0));
-    put('service-cost-note','ニュース掲載費は個別お見積り。AI支援は達成月のみ月15,000円（税別）です。');
+    put('service-cost-note','ニュースは正規55万円、キャンペーン33万円（いずれも税込）。試算は税別30万円を初年度のみ計上。AI検索ブランディングは達成月のみ月15,000円（税別）です。');
     put('net-contribution',signed(man(result.netContribution),2),result.netContribution<0);
     put('cost-ratio',result.costRatio===null?'算出不可':`${fmt(result.costRatio,2)}倍`,result.costRatio<0);
     put('before-inquiries',result.baseAnnualInquiries===null?'算出不可':`${fmt(result.baseAnnualInquiries,1)}件`);
