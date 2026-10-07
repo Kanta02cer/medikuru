@@ -139,3 +139,6 @@ python main.py --seo-report --dry-run
 | 問合せ | lp@medikuru.com |
 
 **メディア掲載先:** Rakuten Infoseek News（約1億PV）、exciteニュース（約6,000万PV）、ニコニコニュース（約4,000万PV）
+
+### CSS移植（2026-10-07）
+- BEMクラスの前方一致を一括置換すると、子要素のセレクタまで壊れる。親スコープだけを置き換え、PC・スマホで実表示を確認する。
