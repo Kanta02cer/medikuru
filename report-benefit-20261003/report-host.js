@@ -6,7 +6,7 @@
   function showReport(){
     if(!modal){
       modal=document.createElement('dialog');modal.className='report-sample-dialog';modal.setAttribute('aria-labelledby','report-sample-title');
-      const url=name=>new URL('assets/'+name+'?v=company-score-20261007',base).href;
+      const url=name=>new URL('assets/'+name+'?v=evidence-20261004',base).href;
       const labels=['診断サマリー','GPT・Geminiの評価比較','改善の進め方と試算','Geminiの採点根拠','GPTの採点根拠'];
       modal.innerHTML=`<div class="report-dialog-head"><h2 id="report-sample-title">AI検索ブランディング診断レポート</h2><button class="report-close" type="button" aria-label="レポートを閉じる">×</button></div><div class="report-dialog-body"><p>掲載画像はメディくる自身の診断例です。無料相談にご参加いただいた方へ、御社専用の診断レポートをお渡しします。</p><p class="report-complete">サンプル全5ページ<br><a href="${url('report-sample.pdf')}" download>全5ページのPDFを保存</a></p>${labels.map((label,i)=>`<figure class="sample-report-sheet"><figcaption>${String(i+1).padStart(2,'0')} / 05　${label}</figcaption><img src="${url('report-0'+(i+1)+'.png')}" width="1075" height="1521" loading="${i===0?'eager':'lazy'}" alt="${i+1}ページ目：${label}"></figure>`).join('')}<p>スコアは独自の参考評価です。改善後の数値は条件付きの試算です。</p><a href="${url('report-sample.pdf')}" download>サンプルPDFを保存</a></div>`;
       document.body.append(modal);
